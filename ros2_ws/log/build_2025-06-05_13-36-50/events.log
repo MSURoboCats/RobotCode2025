@@ -1,0 +1,453 @@
+[0.000000] (-) TimerEvent: {}
+[0.000708] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000929] (py_sensors) JobQueued: {'identifier': 'py_sensors', 'dependencies': OrderedDict([('custom_interfaces', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces')])}
+[0.001104] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.012362] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.013114] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robocats'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/robocats'), ('OLDPWD', '/home/robocats/Desktop/RobotCode2025'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('SYSTEMD_EXEC_PID', '39224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'robocats'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1423123021241'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robocats'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin'), ('SESSION_MANAGER', 'local/robocatsorin:@/tmp/.ICE-unix/39193,unix/robocatsorin:/tmp/.ICE-unix/39193'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c81e20bd_a36f_46e1_94e3_354217ba7b55'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.099436] (-) TimerEvent: {}
+[0.110342] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199653] (-) TimerEvent: {}
+[0.219704] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.243745] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299824] (-) TimerEvent: {}
+[0.386519] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.399952] (-) TimerEvent: {}
+[0.409677] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.410649] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.412087] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.424688] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500135] (-) TimerEvent: {}
+[0.578752] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.591645] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.592515] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.594343] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.600202] (-) TimerEvent: {}
+[0.601156] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700458] (-) TimerEvent: {}
+[0.801319] (-) TimerEvent: {}
+[0.902105] (-) TimerEvent: {}
+[0.907156] (custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002267] (-) TimerEvent: {}
+[1.092453] (custom_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.102395] (-) TimerEvent: {}
+[1.159744] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.166130] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.176605] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.191133] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.202480] (-) TimerEvent: {}
+[1.210162] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.259428] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.302606] (-) TimerEvent: {}
+[1.403192] (-) TimerEvent: {}
+[1.503959] (-) TimerEvent: {}
+[1.604904] (-) TimerEvent: {}
+[1.705631] (-) TimerEvent: {}
+[1.806238] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.807225] (-) TimerEvent: {}
+[1.907883] (-) TimerEvent: {}
+[2.008558] (-) TimerEvent: {}
+[2.109610] (-) TimerEvent: {}
+[2.210747] (-) TimerEvent: {}
+[2.311524] (-) TimerEvent: {}
+[2.412234] (-) TimerEvent: {}
+[2.513030] (-) TimerEvent: {}
+[2.614078] (-) TimerEvent: {}
+[2.637823] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.714307] (-) TimerEvent: {}
+[2.815460] (-) TimerEvent: {}
+[2.949395] (-) TimerEvent: {}
+[2.960788] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.011645] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.023273] (custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.049495] (-) TimerEvent: {}
+[3.070799] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.071368] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.071694] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.071989] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.114406] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.149641] (-) TimerEvent: {}
+[3.268870] (-) TimerEvent: {}
+[3.303330] (custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.368949] (-) TimerEvent: {}
+[3.475564] (-) TimerEvent: {}
+[3.555701] (custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[3.575740] (-) TimerEvent: {}
+[3.577045] (custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces\n'}
+[3.601350] (custom_interfaces) CommandEnded: {'returncode': 0}
+[3.605790] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[3.607074] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robocats'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/robocats'), ('OLDPWD', '/home/robocats/Desktop/RobotCode2025'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('SYSTEMD_EXEC_PID', '39224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'robocats'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1423123021241'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robocats'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin'), ('SESSION_MANAGER', 'local/robocatsorin:@/tmp/.ICE-unix/39193,unix/robocatsorin:/tmp/.ICE-unix/39193'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c81e20bd_a36f_46e1_94e3_354217ba7b55'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[3.676033] (-) TimerEvent: {}
+[3.694628] (custom_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.713544] (custom_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.730767] (custom_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[3.776131] (-) TimerEvent: {}
+[3.876713] (-) TimerEvent: {}
+[3.977272] (-) TimerEvent: {}
+[4.189087] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.189522] (-) TimerEvent: {}
+[4.189660] (custom_interfaces) StdoutLine: {'line': b'creating custom_interfaces.egg-info\n'}
+[4.200143] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[4.200520] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[4.200798] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[4.201200] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[4.204681] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[4.205428] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[4.269788] (custom_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[4.296868] (-) TimerEvent: {}
+[4.397469] (-) TimerEvent: {}
+[4.498196] (-) TimerEvent: {}
+[4.579276] (custom_interfaces) StdoutLine: {'line': b'[  5%] Built target custom_interfaces__cpp\n'}
+[4.598478] (-) TimerEvent: {}
+[4.629231] (custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.629676] (custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.629889] (custom_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.c.o\x1b[0m\n'}
+[4.630084] (custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.630262] (custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.c.o\x1b[0m\n'}
+[4.698575] (-) TimerEvent: {}
+[4.802197] (-) TimerEvent: {}
+[4.933395] (-) TimerEvent: {}
+[5.034008] (-) TimerEvent: {}
+[5.134799] (-) TimerEvent: {}
+[5.235597] (-) TimerEvent: {}
+[5.484980] (custom_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[5.485469] (-) TimerEvent: {}
+[5.519242] (custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.cpp.o\x1b[0m\n'}
+[5.519881] (custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/depth_report__type_support.cpp.o\x1b[0m\n'}
+[5.586097] (-) TimerEvent: {}
+[5.596770] (custom_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/depth_report__type_support.cpp.o\x1b[0m\n'}
+[5.598203] (custom_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.cpp.o\x1b[0m\n'}
+[5.602410] (custom_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o\x1b[0m\n'}
+[5.602873] (custom_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/depth_report__type_support.cpp.o\x1b[0m\n'}
+[5.686266] (-) TimerEvent: {}
+[5.786889] (-) TimerEvent: {}
+[5.887627] (-) TimerEvent: {}
+[5.988321] (-) TimerEvent: {}
+[6.088984] (-) TimerEvent: {}
+[6.189675] (-) TimerEvent: {}
+[6.290483] (-) TimerEvent: {}
+[6.391671] (-) TimerEvent: {}
+[6.492823] (-) TimerEvent: {}
+[6.593837] (-) TimerEvent: {}
+[6.694825] (-) TimerEvent: {}
+[6.795834] (-) TimerEvent: {}
+[7.043543] (custom_interfaces) StdoutLine: {'line': b'[ 35%] Built target custom_interfaces__rosidl_generator_c\n'}
+[7.044150] (-) TimerEvent: {}
+[7.126382] (custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.127175] (custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.127380] (custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.127538] (custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.144314] (-) TimerEvent: {}
+[7.223224] (custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.223595] (custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.244459] (-) TimerEvent: {}
+[7.269062] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[7.344610] (-) TimerEvent: {}
+[7.445145] (-) TimerEvent: {}
+[7.545695] (-) TimerEvent: {}
+[7.646493] (-) TimerEvent: {}
+[7.747675] (-) TimerEvent: {}
+[7.848654] (-) TimerEvent: {}
+[7.949671] (-) TimerEvent: {}
+[8.050736] (-) TimerEvent: {}
+[8.151603] (-) TimerEvent: {}
+[8.252317] (-) TimerEvent: {}
+[8.353054] (-) TimerEvent: {}
+[8.453708] (-) TimerEvent: {}
+[8.554566] (-) TimerEvent: {}
+[8.655438] (-) TimerEvent: {}
+[8.756170] (-) TimerEvent: {}
+[8.856950] (-) TimerEvent: {}
+[8.957674] (-) TimerEvent: {}
+[9.058435] (-) TimerEvent: {}
+[9.159400] (-) TimerEvent: {}
+[9.260022] (-) TimerEvent: {}
+[9.360874] (-) TimerEvent: {}
+[9.461923] (-) TimerEvent: {}
+[9.563064] (-) TimerEvent: {}
+[9.663943] (-) TimerEvent: {}
+[9.681330] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[9.697118] (custom_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/depth_report__type_support.c.o\x1b[0m\n'}
+[9.697658] (custom_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp.o\x1b[0m\n'}
+[9.698023] (custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/depth_report__type_support_c.cpp.o\x1b[0m\n'}
+[9.698197] (custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/depth_report__type_support.cpp.o\x1b[0m\n'}
+[9.698395] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[9.700557] (custom_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.cpp.o\x1b[0m\n'}
+[9.701049] (custom_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.c.o\x1b[0m\n'}
+[9.752800] (custom_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.761196] (custom_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.764015] (-) TimerEvent: {}
+[9.808958] (custom_interfaces) StdoutLine: {'line': b'[ 71%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[9.817500] (custom_interfaces) StdoutLine: {'line': b'[ 71%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[9.864203] (-) TimerEvent: {}
+[9.964827] (-) TimerEvent: {}
+[10.065479] (-) TimerEvent: {}
+[10.166090] (-) TimerEvent: {}
+[10.236104] (custom_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.266257] (-) TimerEvent: {}
+[10.366884] (-) TimerEvent: {}
+[10.382761] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[10.438416] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces\n'}
+[10.467163] (-) TimerEvent: {}
+[10.497778] (custom_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.567324] (-) TimerEvent: {}
+[10.667906] (-) TimerEvent: {}
+[10.768670] (-) TimerEvent: {}
+[10.869233] (-) TimerEvent: {}
+[10.969746] (-) TimerEvent: {}
+[11.070482] (-) TimerEvent: {}
+[11.171091] (-) TimerEvent: {}
+[11.210966] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__py\n'}
+[11.258532] (custom_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_imu_data_s.c.o\x1b[0m\n'}
+[11.259432] (custom_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c.o\x1b[0m\n'}
+[11.271256] (-) TimerEvent: {}
+[11.371880] (-) TimerEvent: {}
+[11.440240] (custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[11.472057] (-) TimerEvent: {}
+[11.523308] (custom_interfaces) StdoutLine: {'line': b'[ 84%] Built target custom_interfaces__rosidl_generator_py\n'}
+[11.572237] (-) TimerEvent: {}
+[11.581833] (custom_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[11.582347] (custom_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[11.582576] (custom_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.672392] (-) TimerEvent: {}
+[11.743831] (custom_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.747215] (custom_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.747688] (custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.772549] (-) TimerEvent: {}
+[11.818640] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[11.819422] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[11.823798] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.848749] (custom_interfaces) CommandEnded: {'returncode': 0}
+[11.851389] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[11.872627] (-) TimerEvent: {}
+[11.873455] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robocats'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/robocats'), ('OLDPWD', '/home/robocats/Desktop/RobotCode2025'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('SYSTEMD_EXEC_PID', '39224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'robocats'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1423123021241'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robocats'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin'), ('SESSION_MANAGER', 'local/robocatsorin:@/tmp/.ICE-unix/39193,unix/robocatsorin:/tmp/.ICE-unix/39193'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c81e20bd_a36f_46e1_94e3_354217ba7b55'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[11.893210] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.893846] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[11.894483] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.894902] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.895336] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/depth_report.h\n'}
+[11.895764] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.896145] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__functions.h\n'}
+[11.896520] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__struct.h\n'}
+[11.896894] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__functions.c\n'}
+[11.897242] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__struct.h\n'}
+[11.897515] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__functions.h\n'}
+[11.897771] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.h\n'}
+[11.898025] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__functions.c\n'}
+[11.898434] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__type_support.h\n'}
+[11.898695] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/imu_data.h\n'}
+[11.898969] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.899231] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[11.899684] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[11.900022] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[11.900385] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""\n'}
+[11.900650] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.901027] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.901460] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.901809] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__rosidl_typesupport_fastrtps_c.h\n'}
+[11.902120] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h\n'}
+[11.902458] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.902788] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[11.903115] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[11.903512] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.903885] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.904244] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.904546] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.hpp\n'}
+[11.904807] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__type_support.hpp\n'}
+[11.905175] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__struct.hpp\n'}
+[11.905502] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__builder.hpp\n'}
+[11.905819] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__struct.hpp\n'}
+[11.906145] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__traits.hpp\n'}
+[11.906398] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__builder.hpp\n'}
+[11.906720] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__traits.hpp\n'}
+[11.907017] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[11.907285] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/depth_report.hpp\n'}
+[11.907686] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/imu_data.hpp\n'}
+[11.908047] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.908420] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.908774] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.909034] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.909368] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.909713] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[11.910083] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.910346] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.910657] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[11.910971] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.911253] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.911578] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.911874] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h\n'}
+[11.912136] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.c\n'}
+[11.912420] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__rosidl_typesupport_introspection_c.h\n'}
+[11.912679] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__type_support.c\n'}
+[11.913026] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.913353] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[11.913711] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[11.914050] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[11.914407] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[11.914742] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[11.915141] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[11.915529] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[11.915938] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.916205] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.cpp\n'}
+[11.916463] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__type_support.cpp\n'}
+[11.916711] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.916940] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[11.917067] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[11.917192] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[11.917319] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[11.917485] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[11.917614] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[11.917739] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[11.917864] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[11.918005] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[11.918135] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[11.918262] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[11.918386] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[11.918508] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.918640] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[11.918791] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[11.918940] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[11.919192] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[11.919441] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_imu_data_s.c\n'}
+[11.919684] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_imu_data.py\n'}
+[11.919925] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_depth_report.py\n'}
+[11.920162] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[11.920402] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_depth_report_s.c\n'}
+[11.920644] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.920886] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[11.921129] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.921370] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[11.972832] (-) TimerEvent: {}
+[11.974766] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[11.975228] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...\n"}
+[11.975545] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[11.975781] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py'...\n"}
+[11.976008] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_depth_report.py'...\n"}
+[11.976252] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_imu_data.py'...\n"}
+[11.984604] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.985103] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.985452] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.985810] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.986133] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.986501] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.986825] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[11.987206] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so" to ""\n'}
+[11.987524] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/ImuData.idl\n'}
+[11.987838] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/DepthReport.idl\n'}
+[11.988150] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/ImuData.msg\n'}
+[11.988465] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/DepthReport.msg\n'}
+[11.988765] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[11.989494] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[11.990093] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[11.990432] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[11.991076] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[11.991440] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[11.992034] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[11.992364] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[11.992699] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[11.993091] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[11.993640] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[11.994346] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[11.994752] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[11.995117] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.995462] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.995800] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.996117] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[11.996454] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.996771] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.997124] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.997442] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.997755] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[11.998139] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.998425] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.998768] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.999144] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[11.999450] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.999776] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[12.000070] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.000384] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[12.000673] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.000995] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.001306] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.001691] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.001961] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.002212] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.002464] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[12.002706] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[12.002980] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[12.008305] (custom_interfaces) CommandEnded: {'returncode': 0}
+[12.073103] (-) TimerEvent: {}
+[12.088028] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[12.091811] (py_sensors) JobStarted: {'identifier': 'py_sensors'}
+[12.173236] (-) TimerEvent: {}
+[12.273766] (-) TimerEvent: {}
+[12.374280] (-) TimerEvent: {}
+[12.474804] (-) TimerEvent: {}
+[12.575340] (-) TimerEvent: {}
+[12.676018] (-) TimerEvent: {}
+[12.776739] (-) TimerEvent: {}
+[12.877354] (-) TimerEvent: {}
+[12.977821] (-) TimerEvent: {}
+[13.078319] (-) TimerEvent: {}
+[13.099555] (py_sensors) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_sensors', 'build', '--build-base', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build', 'install', '--record', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/py_sensors', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robocats', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64', 'HOME': '/home/robocats', 'OLDPWD': '/home/robocats/Desktop/RobotCode2025', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.3.0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson AGX Orin Developer Kit', 'SYSTEMD_EXEC_PID': '39224', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/robocats/Desktop/RobotCode2025/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'robocats', 'JETSON_MODULE': 'NVIDIA Jetson AGX Orin (64GB ram)', 'JETSON_SERIAL_NUMBER': '1423123021241', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robocats', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin', 'SESSION_MANAGER': 'local/robocatsorin:@/tmp/.ICE-unix/39193,unix/robocatsorin:/tmp/.ICE-unix/39193', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c81e20bd_a36f_46e1_94e3_354217ba7b55', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.112', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '6.0', 'CMAKE_PREFIX_PATH': '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces', 'JETSON_P_NUMBER': 'p3701-0005'}, 'shell': False}
+[13.178435] (-) TimerEvent: {}
+[13.278965] (-) TimerEvent: {}
+[13.379503] (-) TimerEvent: {}
+[13.479616] (py_sensors) StdoutLine: {'line': b'running egg_info\n'}
+[13.480102] (-) TimerEvent: {}
+[13.480414] (py_sensors) StdoutLine: {'line': b'creating ../../build/py_sensors/py_sensors.egg-info\n'}
+[13.480763] (py_sensors) StdoutLine: {'line': b'writing ../../build/py_sensors/py_sensors.egg-info/PKG-INFO\n'}
+[13.481284] (py_sensors) StdoutLine: {'line': b'writing dependency_links to ../../build/py_sensors/py_sensors.egg-info/dependency_links.txt\n'}
+[13.481513] (py_sensors) StdoutLine: {'line': b'writing entry points to ../../build/py_sensors/py_sensors.egg-info/entry_points.txt\n'}
+[13.481696] (py_sensors) StdoutLine: {'line': b'writing requirements to ../../build/py_sensors/py_sensors.egg-info/requires.txt\n'}
+[13.481843] (py_sensors) StdoutLine: {'line': b'writing top-level names to ../../build/py_sensors/py_sensors.egg-info/top_level.txt\n'}
+[13.482129] (py_sensors) StdoutLine: {'line': b"writing manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'\n"}
+[13.484856] (py_sensors) StdoutLine: {'line': b"reading manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'\n"}
+[13.485086] (py_sensors) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.485895] (py_sensors) StdoutLine: {'line': b"writing manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'\n"}
+[13.486154] (py_sensors) StdoutLine: {'line': b'running build\n'}
+[13.486277] (py_sensors) StdoutLine: {'line': b'running build_py\n'}
+[13.486444] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build\n'}
+[13.486571] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib\n'}
+[13.486703] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.486806] (py_sensors) StdoutLine: {'line': b'copying py_sensors/depth_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.487043] (py_sensors) StdoutLine: {'line': b'copying py_sensors/BAR02.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.487227] (py_sensors) StdoutLine: {'line': b'copying py_sensors/imu_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.487404] (py_sensors) StdoutLine: {'line': b'copying py_sensors/BNO.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.487574] (py_sensors) StdoutLine: {'line': b'copying py_sensors/__init__.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors\n'}
+[13.487826] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837\n'}
+[13.487948] (py_sensors) StdoutLine: {'line': b'copying py_sensors/ms5837/__init__.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837\n'}
+[13.488106] (py_sensors) StdoutLine: {'line': b'copying py_sensors/ms5837/ms5837.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837\n'}
+[13.488546] (py_sensors) StdoutLine: {'line': b'running install\n'}
+[13.489033] (py_sensors) StdoutLine: {'line': b'running install_lib\n'}
+[13.490098] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.490243] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/depth_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.490446] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/BAR02.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.490611] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/imu_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.490781] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/BNO.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.491032] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837\n'}
+[13.491160] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837/__init__.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837\n'}
+[13.491296] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837/ms5837.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837\n'}
+[13.491459] (py_sensors) StdoutLine: {'line': b'copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/__init__.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors\n'}
+[13.494423] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/depth_publisher.py to depth_publisher.cpython-310.pyc\n'}
+[13.495467] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/BAR02.py to BAR02.cpython-310.pyc\n'}
+[13.496012] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/imu_publisher.py to imu_publisher.cpython-310.pyc\n'}
+[13.496775] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/BNO.py to BNO.cpython-310.pyc\n'}
+[13.497256] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837/__init__.py to __init__.cpython-310.pyc\n'}
+[13.497576] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837/ms5837.py to ms5837.cpython-310.pyc\n'}
+[13.499658] (py_sensors) StdoutLine: {'line': b'byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/__init__.py to __init__.cpython-310.pyc\n'}
+[13.499919] (py_sensors) StdoutLine: {'line': b'running install_data\n'}
+[13.500096] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/ament_index\n'}
+[13.500215] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/ament_index/resource_index\n'}
+[13.500331] (py_sensors) StdoutLine: {'line': b'creating /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/ament_index/resource_index/packages\n'}
+[13.500451] (py_sensors) StdoutLine: {'line': b'copying resource/py_sensors -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/ament_index/resource_index/packages\n'}
+[13.500568] (py_sensors) StdoutLine: {'line': b'copying package.xml -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/py_sensors\n'}
+[13.500715] (py_sensors) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.503508] (py_sensors) StdoutLine: {'line': b'Copying ../../build/py_sensors/py_sensors.egg-info to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors-0.0.0-py3.10.egg-info\n'}
+[13.505509] (py_sensors) StdoutLine: {'line': b'running install_scripts\n'}
+[13.536751] (py_sensors) StdoutLine: {'line': b'Installing bar02 script to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/py_sensors\n'}
+[13.537150] (py_sensors) StdoutLine: {'line': b'Installing imu script to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/py_sensors\n'}
+[13.537896] (py_sensors) StdoutLine: {'line': b"writing list of installed files to '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_sensors/install.log'\n"}
+[13.580295] (-) TimerEvent: {}
+[13.598454] (py_sensors) CommandEnded: {'returncode': 0}
+[13.620931] (py_sensors) JobEnded: {'identifier': 'py_sensors', 'rc': 0}
+[13.623610] (-) EventReactorShutdown: {}

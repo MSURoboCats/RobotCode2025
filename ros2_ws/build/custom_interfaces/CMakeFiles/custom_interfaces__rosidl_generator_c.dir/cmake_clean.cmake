@@ -1,0 +1,37 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.o.d"
+  "libcustom_interfaces__rosidl_generator_c.pdb"
+  "libcustom_interfaces__rosidl_generator_c.so"
+  "rosidl_generator_c/custom_interfaces/msg/depth_report.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.c"
+  "rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/depth_report__struct.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/depth_report__type_support.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.c"
+  "rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/imu_data__struct.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/imu_data__type_support.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.c"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__struct.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__type_support.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h"
+  "rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h"
+  "rosidl_generator_c/custom_interfaces/msg/imu_data.h"
+  "rosidl_generator_c/custom_interfaces/msg/motion_goal.h"
+  "rosidl_generator_c/custom_interfaces/msg/motor_command.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/custom_interfaces__rosidl_generator_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

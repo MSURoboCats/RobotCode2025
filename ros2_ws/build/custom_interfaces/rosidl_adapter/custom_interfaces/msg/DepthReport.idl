@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/DepthReport.msg
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "depth (meters)")
+    struct DepthReport {
+      double depth;
+
+      @verbatim (language="comment", text=
+        "pressure (mbar)")
+      double pressure;
+
+      @verbatim (language="comment", text=
+        "temperature (celsius)")
+      double temperature;
+    };
+  };
+};
