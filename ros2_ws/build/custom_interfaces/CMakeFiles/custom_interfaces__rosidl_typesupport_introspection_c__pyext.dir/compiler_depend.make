@@ -249,8 +249,22 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosi
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/depth_report__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/detail/depth_report__struct.h \
-  rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.h
+  rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h
 
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__struct.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.h:
 
@@ -366,6 +380,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/depth_report__struct.h:
 
 /usr/include/python3.10/pyhash.h:
 
+rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.h:
+
 /usr/include/python3.10/cpython/object.h:
 
 /usr/include/python3.10/pystrtod.h:
@@ -411,6 +427,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/depth_report__struct.h:
 /usr/include/aarch64-linux-gnu/bits/floatn-common.h:
 
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stdarg.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -459,6 +477,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/depth_report__struct.h:
 /usr/include/python3.10/cpython/fileutils.h:
 
 /usr/include/errno.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
@@ -527,6 +547,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/imu_data__type_support.h:
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
 
 /usr/include/asm-generic/types.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__type_support.h:
 
 /usr/include/python3.10/pymath.h:
 
@@ -671,6 +693,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h:
 /usr/include/python3.10/fileutils.h:
 
 /usr/include/aarch64-linux-gnu/bits/getopt_core.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h:
 
 /usr/include/python3.10/object.h:
 

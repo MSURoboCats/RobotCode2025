@@ -7,3 +7,5 @@ custom_interfaces.egg-info/top_level.txt
 custom_interfaces/msg/__init__.py
 custom_interfaces/msg/_depth_report.py
 custom_interfaces/msg/_imu_data.py
+custom_interfaces/msg/_motion_goal.py
+custom_interfaces/msg/_motor_command.py

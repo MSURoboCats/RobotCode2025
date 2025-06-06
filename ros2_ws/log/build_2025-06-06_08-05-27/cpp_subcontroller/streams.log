@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller -- -j12 -l12
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target motion_director[0m
+[0.131s] [ 50%] [32mBuilding CXX object CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o[0m
+[7.135s] [100%] [32m[1mLinking CXX executable motion_director[0m
+[7.471s] [100%] Built target motion_director
+[7.495s] Invoked command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller -- -j12 -l12
+[7.523s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
+[7.539s] -- Install configuration: ""
+[7.539s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/motion_director
+[7.542s] -- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/motion_director" to ""
+[7.543s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/package_run_dependencies/cpp_subcontroller
+[7.543s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/parent_prefix_path/cpp_subcontroller
+[7.543s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/ament_prefix_path.sh
+[7.544s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/ament_prefix_path.dsv
+[7.544s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/path.sh
+[7.544s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/path.dsv
+[7.545s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.bash
+[7.545s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.sh
+[7.545s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.zsh
+[7.546s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.dsv
+[7.546s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/package.dsv
+[7.546s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/packages/cpp_subcontroller
+[7.547s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/cmake/cpp_subcontrollerConfig.cmake
+[7.547s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/cmake/cpp_subcontrollerConfig-version.cmake
+[7.547s] -- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/package.xml
+[7.551s] Invoked command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
