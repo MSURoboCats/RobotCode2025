@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'imu = py_sensors.imu_publisher:main',
             'bar02 = py_sensors.depth_publisher:main',
+            'camera = py_sensors.video_publisher:main',
         ],
     },
 )
