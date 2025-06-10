@@ -5,9 +5,11 @@
 
 module custom_interfaces {
   module msg {
-    typedef int16 int16__6[6];
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "int16 motor_cmds -- old implimentation ")
     struct MotorCommand {
-      int16__6 motor_cmds;
+      double__6 throttles;
     };
   };
 };

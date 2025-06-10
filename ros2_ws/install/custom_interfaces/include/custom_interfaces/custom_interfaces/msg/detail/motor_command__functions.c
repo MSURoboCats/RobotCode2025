@@ -17,7 +17,7 @@ custom_interfaces__msg__MotorCommand__init(custom_interfaces__msg__MotorCommand 
   if (!msg) {
     return false;
   }
-  // motor_cmds
+  // throttles
   return true;
 }
 
@@ -27,7 +27,7 @@ custom_interfaces__msg__MotorCommand__fini(custom_interfaces__msg__MotorCommand 
   if (!msg) {
     return;
   }
-  // motor_cmds
+  // throttles
 }
 
 bool
@@ -36,9 +36,9 @@ custom_interfaces__msg__MotorCommand__are_equal(const custom_interfaces__msg__Mo
   if (!lhs || !rhs) {
     return false;
   }
-  // motor_cmds
+  // throttles
   for (size_t i = 0; i < 6; ++i) {
-    if (lhs->motor_cmds[i] != rhs->motor_cmds[i]) {
+    if (lhs->throttles[i] != rhs->throttles[i]) {
       return false;
     }
   }
@@ -53,9 +53,9 @@ custom_interfaces__msg__MotorCommand__copy(
   if (!input || !output) {
     return false;
   }
-  // motor_cmds
+  // throttles
   for (size_t i = 0; i < 6; ++i) {
-    output->motor_cmds[i] = input->motor_cmds[i];
+    output->throttles[i] = input->throttles[i];
   }
   return true;
 }

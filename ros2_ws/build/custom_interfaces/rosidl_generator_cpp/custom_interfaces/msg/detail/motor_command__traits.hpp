@@ -25,14 +25,14 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: motor_cmds
+  // member: throttles
   {
-    if (msg.motor_cmds.size() == 0) {
-      out << "motor_cmds: []";
+    if (msg.throttles.size() == 0) {
+      out << "throttles: []";
     } else {
-      out << "motor_cmds: [";
-      size_t pending_items = msg.motor_cmds.size();
-      for (auto item : msg.motor_cmds) {
+      out << "throttles: [";
+      size_t pending_items = msg.throttles.size();
+      for (auto item : msg.throttles) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -48,16 +48,16 @@ inline void to_block_style_yaml(
   const MotorCommand & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: motor_cmds
+  // member: throttles
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.motor_cmds.size() == 0) {
-      out << "motor_cmds: []\n";
+    if (msg.throttles.size() == 0) {
+      out << "throttles: []\n";
     } else {
-      out << "motor_cmds:\n";
-      for (auto item : msg.motor_cmds) {
+      out << "throttles:\n";
+      for (auto item : msg.throttles) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

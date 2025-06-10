@@ -18,9 +18,12 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/MotorCommand in the package custom_interfaces.
+/**
+  * int16 motor_cmds -- old implimentation 
+ */
 typedef struct custom_interfaces__msg__MotorCommand
 {
-  int16_t motor_cmds[6];
+  double throttles[6];
 } custom_interfaces__msg__MotorCommand;
 
 // Struct for a sequence of custom_interfaces__msg__MotorCommand.

@@ -32,9 +32,9 @@ cdr_serialize(
   const custom_interfaces::msg::MotorCommand & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: motor_cmds
+  // Member: throttles
   {
-    cdr << ros_message.motor_cmds;
+    cdr << ros_message.throttles;
   }
   return true;
 }
@@ -45,9 +45,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   custom_interfaces::msg::MotorCommand & ros_message)
 {
-  // Member: motor_cmds
+  // Member: throttles
   {
-    cdr >> ros_message.motor_cmds;
+    cdr >> ros_message.throttles;
   }
 
   return true;
@@ -66,10 +66,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: motor_cmds
+  // Member: throttles
   {
     size_t array_size = 6;
-    size_t item_size = sizeof(ros_message.motor_cmds[0]);
+    size_t item_size = sizeof(ros_message.throttles[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -97,13 +97,13 @@ max_serialized_size_MotorCommand(
   is_plain = true;
 
 
-  // Member: motor_cmds
+  // Member: throttles
   {
     size_t array_size = 6;
 
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -114,7 +114,7 @@ max_serialized_size_MotorCommand(
     using DataType = custom_interfaces::msg::MotorCommand;
     is_plain =
       (
-      offsetof(DataType, motor_cmds) +
+      offsetof(DataType, throttles) +
       last_member_size
       ) == ret_val;
   }

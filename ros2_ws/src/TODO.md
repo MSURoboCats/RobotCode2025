@@ -5,9 +5,7 @@
 1. IMU data [DONE]
 2. Depth data [DONE]
 3. Launch File [DONE]
-4. Cameras [IN PROGRESS]
-	- Publish camera data using ros2 opencv pipeline
-	- see: https://www.geeksforgeeks.org/opencv-python-tutorial/#1-getting-started for more info
+4. Cameras [DONE | SEE: usb_cam]
 
 
 ## 2 DRIVE MOTORS
@@ -17,19 +15,30 @@ The current motor command pipeline goes as follows:
 	- Motor_Conductor receives these commands and turns them into individual motor commands (eg. stop thrust, forward thrust, reverse thrust)
 	- These motor commands are received by Motor_Controller, which turns these commands into individual duty cycles for the motors
 
-What I would like to do is to extend (or supercede) motion_director with a "command stream" 
+This works, but isnt the best implimentation as it doesnt allow for fine-tuned control over the robot's speed. 
+A better implimentation would be to map the duty cycle as a range from -1 to 1, with -1 being full reverse and 1 being full forward
 
-Essentially I want to be able to have a list of commands and have them be fed to the drive motor pipeline 
+The function for such a relation would be f(x) = delta_duty_cycle * x + duty_cycle_stop
 
-One way to acheive this is through actions. 
+## 3 ROBOT MOVEMENT (NOT NAVIGATION)
+
+### SUMMARY: 
+As outlined in Notes.md, the goal is to have the robot move from coordinate to coordinate like verticies in a graph.
+
+This is all well and good, but how do we move from vertex to vertex in a safe and efficient fashion? 
+
+We need a controller that can somehow calculate the required duty cycle to bring us to a certain position. 
+
+[TODO]: Look into PID Controllers
+https://gamzeyilan1.medium.com/pid-controller-for-absolute-beginners-4a49c58c8098 
 
 
+## ADDITIONAL PROBLEMS
 
-
-CAMERA NOTES:
+### THE SINGLE VIEWPOINT PROBLEM
 
 Problem: How do we calculate the distance to the camera from a single viewpoint 
 
-
-https://www.reddit.com/r/computervision/comments/1ciot5j/is_it_possible_to_calculate_the_distance_of_an/
+Possible solution: calculate distance using known properties. 
+- https://www.reddit.com/r/computervision/comments/1ciot5j/is_it_possible_to_calculate_the_distance_of_an/
 

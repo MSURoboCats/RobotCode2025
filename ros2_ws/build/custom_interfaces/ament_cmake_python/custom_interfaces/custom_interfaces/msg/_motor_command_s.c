@@ -53,8 +53,8 @@ bool custom_interfaces__msg__motor_command__convert_from_py(PyObject * _pymsg, v
     assert(strncmp("custom_interfaces.msg._motor_command.MotorCommand", full_classname_dest, 49) == 0);
   }
   custom_interfaces__msg__MotorCommand * ros_message = _ros_message;
-  {  // motor_cmds
-    PyObject * field = PyObject_GetAttrString(_pymsg, "motor_cmds");
+  {  // throttles
+    PyObject * field = PyObject_GetAttrString(_pymsg, "throttles");
     if (!field) {
       return false;
     }
@@ -66,12 +66,12 @@ bool custom_interfaces__msg__motor_command__convert_from_py(PyObject * _pymsg, v
       PyArrayObject * seq_field = (PyArrayObject *)field;
       Py_INCREF(seq_field);
       assert(PyArray_NDIM(seq_field) == 1);
-      assert(PyArray_TYPE(seq_field) == NPY_INT16);
+      assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
       Py_ssize_t size = 6;
-      int16_t * dest = ros_message->motor_cmds;
+      double * dest = ros_message->throttles;
       for (Py_ssize_t i = 0; i < size; ++i) {
-        int16_t tmp = *(npy_int16 *)PyArray_GETPTR1(seq_field, i);
-        memcpy(&dest[i], &tmp, sizeof(int16_t));
+        double tmp = *(npy_float64 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(double));
       }
       Py_DECREF(seq_field);
     }
@@ -99,9 +99,9 @@ PyObject * custom_interfaces__msg__motor_command__convert_to_py(void * raw_ros_m
     }
   }
   custom_interfaces__msg__MotorCommand * ros_message = (custom_interfaces__msg__MotorCommand *)raw_ros_message;
-  {  // motor_cmds
+  {  // throttles
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "motor_cmds");
+    field = PyObject_GetAttrString(_pymessage, "throttles");
     if (!field) {
       return NULL;
     }
@@ -110,11 +110,11 @@ PyObject * custom_interfaces__msg__motor_command__convert_to_py(void * raw_ros_m
     assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
     PyArrayObject * seq_field = (PyArrayObject *)field;
     assert(PyArray_NDIM(seq_field) == 1);
-    assert(PyArray_TYPE(seq_field) == NPY_INT16);
-    assert(sizeof(npy_int16) == sizeof(int16_t));
-    npy_int16 * dst = (npy_int16 *)PyArray_GETPTR1(seq_field, 0);
-    int16_t * src = &(ros_message->motor_cmds[0]);
-    memcpy(dst, src, 6 * sizeof(int16_t));
+    assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
+    assert(sizeof(npy_float64) == sizeof(double));
+    npy_float64 * dst = (npy_float64 *)PyArray_GETPTR1(seq_field, 0);
+    double * src = &(ros_message->throttles[0]);
+    memcpy(dst, src, 6 * sizeof(double));
     Py_DECREF(field);
   }
 

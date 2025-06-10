@@ -10,8 +10,8 @@ from adafruit_pca9685 import PCA9685
 ### SPEED STUFF
 
 DUTY_CYCLE_STP = int(65535 * 1.6/2.5)
-DUTY_CYCLE_FWD_MAX = int(65535 * 1.9/2.5)
-DUTY_CYCLE_RVS_MAX = int(65535 * 1.1/2.5)
+DUTY_CYCLE_FWD_MAX = int(65535 * 2.0/2.5)
+DUTY_CYCLE_RVS_MAX = int(65535 * 1.2/2.5)
 
 DELTA_FORWARD = abs(DUTY_CYCLE_FWD_MAX - DUTY_CYCLE_STP)
 DELTA_REVERSE = abs(DUTY_CYCLE_RVS_MAX - DUTY_CYCLE_STP)
@@ -42,43 +42,51 @@ class MotorSpeed(Enum):
     MEDIUM = 1
     FAST = 2
 
-def SetMotorState(motorState, speedSetting = MotorSpeed.SLOW, motorChannel = 0):
-    match motorState:
-        case MotorState.STOPPED:
-            InvokeStopCommand(motorChannel)
-            return
-        case MotorState.FORWARD:
-            InvokeForwardCommand(speedSetting, motorChannel)
-            return
-        case MotorState.REVERSE:
-            InvokeReverseCommand(speedSetting,motorChannel)
-            return
+def __speedFn(x : float) -> int:
+    return int(DELTA_FORWARD * x + DUTY_CYCLE_STP)
+
+### Set motor speed based on a magnitude from -1 (full reverse) to 1 (full forward)
+def SetMotorSpeed(motorSpeedMagnitude : float, motorChannel: int = 0):
+    duty_cycle = __speedFn(motorSpeedMagnitude)
+    motorController.channels[motorChannel].duty_cycle = duty_cycle
+
+# def SetMotorState(motorState, speedSetting = MotorSpeed.SLOW, motorChannel = 0):
+#     match motorState:
+#         case MotorState.STOPPED:
+#             InvokeStopCommand(motorChannel)
+#             return
+#         case MotorState.FORWARD:
+#             InvokeForwardCommand(speedSetting, motorChannel)
+#             return
+#         case MotorState.REVERSE:
+#             InvokeReverseCommand(speedSetting,motorChannel)
+#             return
         
 
-def InvokeForwardCommand(speedSetting, motorChannel):
-    spd = FORWARD_SLOW
-    if(speedSetting == MotorSpeed.SLOW) : spd = FORWARD_SLOW
-    elif(speedSetting == MotorSpeed.MEDIUM) : spd = FORWARD_MED
-    elif(speedSetting == MotorSpeed.FAST) : spd = FORWARD_FAST
+# def InvokeForwardCommand(speedSetting, motorChannel):
+#     spd = FORWARD_SLOW
+#     if(speedSetting == MotorSpeed.SLOW) : spd = FORWARD_SLOW
+#     elif(speedSetting == MotorSpeed.MEDIUM) : spd = FORWARD_MED
+#     elif(speedSetting == MotorSpeed.FAST) : spd = FORWARD_FAST
 
-    motorController.channels[motorChannel].duty_cycle = spd
+#     motorController.channels[motorChannel].duty_cycle = spd
 
-def InvokeStopCommand(motorChannel):
-    motorController.channels[motorChannel].duty_cycle = DUTY_CYCLE_STP
+# def InvokeStopCommand(motorChannel):
+#     motorController.channels[motorChannel].duty_cycle = DUTY_CYCLE_STP
 
-def InvokeReverseCommand(speedSetting, motorChannel):
-    spd = REVERSE_SLOW
-    if(speedSetting == MotorSpeed.SLOW) : spd = REVERSE_SLOW
-    elif(speedSetting == MotorSpeed.MEDIUM) : spd = REVERSE_MED
-    elif(speedSetting == MotorSpeed.FAST) : spd = REVERSE_FAST
+# def InvokeReverseCommand(speedSetting, motorChannel):
+#     spd = REVERSE_SLOW
+#     if(speedSetting == MotorSpeed.SLOW) : spd = REVERSE_SLOW
+#     elif(speedSetting == MotorSpeed.MEDIUM) : spd = REVERSE_MED
+#     elif(speedSetting == MotorSpeed.FAST) : spd = REVERSE_FAST
 
-    motorController.channels[motorChannel].duty_cycle = spd
+#     motorController.channels[motorChannel].duty_cycle = spd
 
 def CleanupMotor():
     print("Cleaning up motor \n")
     for i in range(6):
         motorController.channels[i].duty_cycle = DUTY_CYCLE_STP
-
+    time.sleep(1)
     motorController.deinit()
     i2c.deinit()
 

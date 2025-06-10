@@ -11,89 +11,90 @@ class MotorConductor(Node):
         self._subscription = self.create_subscription(MotionGoal,"MotionGoal",self.publisher_callback, 5)
         self._publisher = self.create_publisher(MotorCommand, "MotorCommand", 5)
     
+    ### Callback for receiving direction commands
     def publisher_callback(self, msg):
         in_msg = msg.goal
         out_msg = MotorCommand()
 
-        cmds = [0,0,0,0,0,0]
+        throttles = [0.0,0.0,0.0,0.0,0.0,0.0]
 
         match in_msg:
             ### VERTICAL
             case "u_sl":        ## UP SLOW
-                cmds[1] = 2
-                cmds[4] = 1
+                throttles[1] = -0.25
+                throttles[4] = 0.25
             
             case "d_sl":        ## DOWN SLOW
-                cmds[1] = 1
-                cmds[4] = 2
+                throttles[1] = 0.25
+                throttles[4] = -0.25
 
             case "u_me":        ## UP MEDIUM
-                cmds[1] = 4
-                cmds[4] = 3
+                throttles[1] = -0.5
+                throttles[4] = 0.5
             
             case "d_me":        ## DOWN MEDIUM
-                cmds[1] = 3
-                cmds[4] = 4
+                throttles[1] = 0.5
+                throttles[4] = -0.5
             
             case "u_fa":        ## UP FAST
-                cmds[1] = 6
-                cmds[4] = 5
+                throttles[1] = -0.75
+                throttles[4] = 0.75
             
             case "d_fa":        ## DOWN FAST
-                cmds[1] = 5
-                cmds[4] = 6
+                throttles[1] = 0.75
+                throttles[4] = -0.75
 
             ### HORIZONTAL
             case "f_sl":        ## FORWARD SLOW
-                cmds[0] = 1
-                cmds[2] = 2     # front and back motors are oriented in opposite dir
-                cmds[3] = 2
-                cmds[5] = 1
+                throttles[0] = 0.25
+                throttles[2] = -0.25     # front and back motors are oriented in opposite dir
+                throttles[3] = -0.25
+                throttles[5] = 0.25
 
             case "r_sl":        ## REVERSE SLOW
-                cmds[0] = 2
-                cmds[2] = 1
-                cmds[3] = 1
-                cmds[5] = 2
+                throttles[0] = -0.25
+                throttles[2] = 0.25
+                throttles[3] = 0.25
+                throttles[5] = -0.25
             
             case "f_me":        ## FORWARD MEDIUM
-                cmds[0] = 3
-                cmds[2] = 4
-                cmds[3] = 4
-                cmds[5] = 3
+                throttles[0] = 0.5
+                throttles[2] = -0.5
+                throttles[3] = -0.5
+                throttles[5] = 0.5
             
             case "r_me":        ## REVERSE MEDIUM
-                cmds[0] = 4
-                cmds[2] = 3
-                cmds[3] = 3
-                cmds[5] = 4
+                throttles[0] = -0.5
+                throttles[2] = 0.5
+                throttles[3] = 0.5
+                throttles[5] = -0.5
             
             case "f_fa":        ## FORWARD FAST
-                cmds[0] = 5
-                cmds[2] = 6
-                cmds[3] = 6
-                cmds[5] = 5
+                throttles[0] = 0.75
+                throttles[2] = -0.75
+                throttles[3] = -0.75
+                throttles[5] = 0.75
             
             case "r_fa":        ## REVERSE FAST
-                cmds[0] = 6
-                cmds[2] = 5
-                cmds[3] = 5
-                cmds[5] = 6    
+                throttles[0] = -0.75
+                throttles[2] = 0.75
+                throttles[3] = 0.75
+                throttles[5] = -0.75   
 
             case _: # Possibly change to continuing previous command
                 print("Unrecognized command: \"%s\" defaulting to killing all motors\n" % in_msg)             
 
 
-        out_msg.motor_cmds = cmds       
+        out_msg.throttles = throttles       
 
         self._publisher.publish(out_msg)
         self.get_logger().info("Received motor goal " + in_msg)
-        self.get_logger().info("Publishing motor command: %d, %d, %d, %d, %d, %d," % (  out_msg.motor_cmds[0],
-                                                                                        out_msg.motor_cmds[1],
-                                                                                        out_msg.motor_cmds[2],
-                                                                                        out_msg.motor_cmds[3],
-                                                                                        out_msg.motor_cmds[4],
-                                                                                        out_msg.motor_cmds[5]))
+        self.get_logger().info("Publishing motor command: %lf, %lf, %lf, %lf, %lf, %lf," % (  out_msg.throttles[0],
+                                                                                        out_msg.throttles[1],
+                                                                                        out_msg.throttles[2],
+                                                                                        out_msg.throttles[3],
+                                                                                        out_msg.throttles[4],
+                                                                                        out_msg.throttles[5]))
 
 def main(args=None):
     rclpy.init(args=args)

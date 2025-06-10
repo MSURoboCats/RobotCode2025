@@ -1,6 +1,30 @@
 # MOTOR_COMMANDS_GLOSSARY.MD
 
-## MOTOR GOALS -- managed by motor conductor
+## MOTOR COMMANDS OUTLINE
+A motor command message consists of the following field(s):
+
+    float64[6] throttles <-- throttles from -1 (full reverse) to 1 (full forward)
+
+Once received, the motor controller will set each of the individual duty cycles using the following function:
+
+    f(x) = delta_duty_cycle * x + duty_cycle_stop
+
+where x = throttle. 
+
+
+
+
+## I2C CHANNELS
+
+0 = PWM 1 (Front right if looking out from camera)
+1 = PWM 2 (Mid right if looking out from camera)
+2 = PWM 3 (Back right if looking out from camera)
+3 = PWM 4 (Back left)
+4 = PWM 5 (Mid Left)
+5 = PWM 6 (Front left)
+
+
+## [OLD] MOTOR GOALS -- managed by motor conductor
 1.  cont     = continue last goal
 2.  kill     = Stop All Motors
 3.  halt     = kill all velocity and then stop the motors
@@ -17,7 +41,7 @@
 14. u_fa    = Up Fast
 15. d_fa    = Down Fast 
 
-## MOTOR COMMANDS -- managed by motor controller
+## [OLD] MOTOR COMMANDS -- managed by motor controller
 
    -1 = Continue Previous Command / Ignore
     0 = Stop Motor
@@ -27,12 +51,3 @@
     4 = Reverse Medium
     5 = Forward Fast
     6 = Reverse Fast 
-
-## I2C CHANNELS
-
-0 = PWM 1 (Front right if looking out from camera)
-1 = PWM 2 (Mid right if looking out from camera)
-2 = PWM 3 (Back right if looking out from camera)
-3 = PWM 4 (Back left)
-4 = PWM 5 (Mid Left)
-5 = PWM 6 (Front left)

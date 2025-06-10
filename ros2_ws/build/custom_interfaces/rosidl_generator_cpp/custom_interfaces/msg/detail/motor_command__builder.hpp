@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_MotorCommand_motor_cmds
+class Init_MotorCommand_throttles
 {
 public:
-  Init_MotorCommand_motor_cmds()
+  Init_MotorCommand_throttles()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::custom_interfaces::msg::MotorCommand motor_cmds(::custom_interfaces::msg::MotorCommand::_motor_cmds_type arg)
+  ::custom_interfaces::msg::MotorCommand throttles(::custom_interfaces::msg::MotorCommand::_throttles_type arg)
   {
-    msg_.motor_cmds = std::move(arg);
+    msg_.throttles = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::custom_interfaces::msg::MotorCommand>()
 {
-  return custom_interfaces::msg::builder::Init_MotorCommand_motor_cmds();
+  return custom_interfaces::msg::builder::Init_MotorCommand_throttles();
 }
 
 }  // namespace custom_interfaces

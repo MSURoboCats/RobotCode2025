@@ -49,10 +49,10 @@ static bool _MotorCommand__cdr_serialize(
     return false;
   }
   const _MotorCommand__ros_msg_type * ros_message = static_cast<const _MotorCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: motor_cmds
+  // Field name: throttles
   {
     size_t size = 6;
-    auto array_ptr = ros_message->motor_cmds;
+    auto array_ptr = ros_message->throttles;
     cdr.serializeArray(array_ptr, size);
   }
 
@@ -68,10 +68,10 @@ static bool _MotorCommand__cdr_deserialize(
     return false;
   }
   _MotorCommand__ros_msg_type * ros_message = static_cast<_MotorCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: motor_cmds
+  // Field name: throttles
   {
     size_t size = 6;
-    auto array_ptr = ros_message->motor_cmds;
+    auto array_ptr = ros_message->throttles;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -92,10 +92,10 @@ size_t get_serialized_size_custom_interfaces__msg__MotorCommand(
   (void)padding;
   (void)wchar_size;
 
-  // field.name motor_cmds
+  // field.name throttles
   {
     size_t array_size = 6;
-    auto array_ptr = ros_message->motor_cmds;
+    auto array_ptr = ros_message->throttles;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
@@ -130,13 +130,13 @@ size_t max_serialized_size_custom_interfaces__msg__MotorCommand(
   full_bounded = true;
   is_plain = true;
 
-  // member: motor_cmds
+  // member: throttles
   {
     size_t array_size = 6;
 
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -147,7 +147,7 @@ size_t max_serialized_size_custom_interfaces__msg__MotorCommand(
     using DataType = custom_interfaces__msg__MotorCommand;
     is_plain =
       (
-      offsetof(DataType, motor_cmds) +
+      offsetof(DataType, throttles) +
       last_member_size
       ) == ret_val;
   }

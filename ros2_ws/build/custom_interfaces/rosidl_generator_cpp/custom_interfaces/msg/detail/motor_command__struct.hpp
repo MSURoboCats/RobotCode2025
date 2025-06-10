@@ -38,30 +38,30 @@ struct MotorCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<int16_t, 6>::iterator, int16_t>(this->motor_cmds.begin(), this->motor_cmds.end(), 0);
+      std::fill<typename std::array<double, 6>::iterator, double>(this->throttles.begin(), this->throttles.end(), 0.0);
     }
   }
 
   explicit MotorCommand_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : motor_cmds(_alloc)
+  : throttles(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      std::fill<typename std::array<int16_t, 6>::iterator, int16_t>(this->motor_cmds.begin(), this->motor_cmds.end(), 0);
+      std::fill<typename std::array<double, 6>::iterator, double>(this->throttles.begin(), this->throttles.end(), 0.0);
     }
   }
 
   // field types and members
-  using _motor_cmds_type =
-    std::array<int16_t, 6>;
-  _motor_cmds_type motor_cmds;
+  using _throttles_type =
+    std::array<double, 6>;
+  _throttles_type throttles;
 
   // setters for named parameter idiom
-  Type & set__motor_cmds(
-    const std::array<int16_t, 6> & _arg)
+  Type & set__throttles(
+    const std::array<double, 6> & _arg)
   {
-    this->motor_cmds = _arg;
+    this->throttles = _arg;
     return *this;
   }
 
@@ -107,7 +107,7 @@ struct MotorCommand_
   // comparison operators
   bool operator==(const MotorCommand_ & other) const
   {
-    if (this->motor_cmds != other.motor_cmds) {
+    if (this->throttles != other.throttles) {
       return false;
     }
     return true;

@@ -7,7 +7,9 @@
 
 import builtins  # noqa: E402, I100
 
-# Member 'motor_cmds'
+import math  # noqa: E402, I100
+
+# Member 'throttles'
 import numpy  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
@@ -58,26 +60,26 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
     """Message class 'MotorCommand'."""
 
     __slots__ = [
-        '_motor_cmds',
+        '_throttles',
     ]
 
     _fields_and_field_types = {
-        'motor_cmds': 'int16[6]',
+        'throttles': 'double[6]',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('int16'), 6),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('double'), 6),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        if 'motor_cmds' not in kwargs:
-            self.motor_cmds = numpy.zeros(6, dtype=numpy.int16)
+        if 'throttles' not in kwargs:
+            self.throttles = numpy.zeros(6, dtype=numpy.float64)
         else:
-            self.motor_cmds = numpy.array(kwargs.get('motor_cmds'), dtype=numpy.int16)
-            assert self.motor_cmds.shape == (6, )
+            self.throttles = numpy.array(kwargs.get('throttles'), dtype=numpy.float64)
+            assert self.throttles.shape == (6, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -108,7 +110,7 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if all(self.motor_cmds != other.motor_cmds):
+        if all(self.throttles != other.throttles):
             return False
         return True
 
@@ -118,18 +120,18 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def motor_cmds(self):
-        """Message field 'motor_cmds'."""
-        return self._motor_cmds
+    def throttles(self):
+        """Message field 'throttles'."""
+        return self._throttles
 
-    @motor_cmds.setter
-    def motor_cmds(self, value):
+    @throttles.setter
+    def throttles(self, value):
         if isinstance(value, numpy.ndarray):
-            assert value.dtype == numpy.int16, \
-                "The 'motor_cmds' numpy.ndarray() must have the dtype of 'numpy.int16'"
+            assert value.dtype == numpy.float64, \
+                "The 'throttles' numpy.ndarray() must have the dtype of 'numpy.float64'"
             assert value.size == 6, \
-                "The 'motor_cmds' numpy.ndarray() must have a size of 6"
-            self._motor_cmds = value
+                "The 'throttles' numpy.ndarray() must have a size of 6"
+            self._throttles = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -143,7 +145,7 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
                  len(value) == 6 and
-                 all(isinstance(v, int) for v in value) and
-                 all(val >= -32768 and val < 32768 for val in value)), \
-                "The 'motor_cmds' field must be a set or sequence with length 6 and each value of type 'int' and each integer in [-32768, 32767]"
-        self._motor_cmds = numpy.array(value, dtype=numpy.int16)
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'throttles' field must be a set or sequence with length 6 and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._throttles = numpy.array(value, dtype=numpy.float64)

@@ -31,67 +31,67 @@ void custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__M
   custom_interfaces__msg__MotorCommand__fini(message_memory);
 }
 
-size_t custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__size_function__MotorCommand__motor_cmds(
+size_t custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__size_function__MotorCommand__throttles(
   const void * untyped_member)
 {
   (void)untyped_member;
   return 6;
 }
 
-const void * custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__motor_cmds(
+const void * custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__throttles(
   const void * untyped_member, size_t index)
 {
-  const int16_t * member =
-    (const int16_t *)(untyped_member);
+  const double * member =
+    (const double *)(untyped_member);
   return &member[index];
 }
 
-void * custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__motor_cmds(
+void * custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__throttles(
   void * untyped_member, size_t index)
 {
-  int16_t * member =
-    (int16_t *)(untyped_member);
+  double * member =
+    (double *)(untyped_member);
   return &member[index];
 }
 
-void custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__fetch_function__MotorCommand__motor_cmds(
+void custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__fetch_function__MotorCommand__throttles(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const int16_t * item =
-    ((const int16_t *)
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__motor_cmds(untyped_member, index));
-  int16_t * value =
-    (int16_t *)(untyped_value);
+  const double * item =
+    ((const double *)
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__throttles(untyped_member, index));
+  double * value =
+    (double *)(untyped_value);
   *value = *item;
 }
 
-void custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__assign_function__MotorCommand__motor_cmds(
+void custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__assign_function__MotorCommand__throttles(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  int16_t * item =
-    ((int16_t *)
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__motor_cmds(untyped_member, index));
-  const int16_t * value =
-    (const int16_t *)(untyped_value);
+  double * item =
+    ((double *)
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__throttles(untyped_member, index));
+  const double * value =
+    (const double *)(untyped_value);
   *item = *value;
 }
 
 static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_message_member_array[1] = {
   {
-    "motor_cmds",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    "throttles",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
     6,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__MotorCommand, motor_cmds),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__MotorCommand, throttles),  // bytes offset in struct
     NULL,  // default value
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__size_function__MotorCommand__motor_cmds,  // size() function pointer
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__motor_cmds,  // get_const(index) function pointer
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__motor_cmds,  // get(index) function pointer
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__fetch_function__MotorCommand__motor_cmds,  // fetch(index, &value) function pointer
-    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__assign_function__MotorCommand__motor_cmds,  // assign(index, value) function pointer
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__size_function__MotorCommand__throttles,  // size() function pointer
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_const_function__MotorCommand__throttles,  // get_const(index) function pointer
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__get_function__MotorCommand__throttles,  // get(index) function pointer
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__fetch_function__MotorCommand__throttles,  // fetch(index, &value) function pointer
+    custom_interfaces__msg__MotorCommand__rosidl_typesupport_introspection_c__assign_function__MotorCommand__throttles,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
   }
 };

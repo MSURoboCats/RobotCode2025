@@ -1,3 +1,10 @@
+/// MotionDirector.cpp
+/// publishes commands to the "MotionionGoal" topic.
+/// Temporary node used for testing purposes, meant to simulate
+/// a more in-depth navigation node that would use some sort of 
+/// PID to navigate from point to point
+
+
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -19,7 +26,7 @@ class MotionDirector : public rclcpp::Node{
             timer_ = this->create_wall_timer(2s,std::bind(&MotionDirector::PublisherCallback,this));
 
             declare_parameter("cmd","halt");
-        }   
+        } 
     
     private:
         void PublisherCallback(){
@@ -37,7 +44,11 @@ class MotionDirector : public rclcpp::Node{
 
 int main(int argc, char* argv[]){
     rclcpp::init(argc, argv);
+
+    
     rclcpp::spin(std::make_shared<MotionDirector>());
+    
+
 
     rclcpp::shutdown();
     return 0;
