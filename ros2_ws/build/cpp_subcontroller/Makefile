@@ -210,6 +210,19 @@ motion_director/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_director.dir/build.make CMakeFiles/motion_director.dir/build
 .PHONY : motion_director/fast
 
+#=============================================================================
+# Target rules for targets named navigator
+
+# Build rule for target.
+navigator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigator
+.PHONY : navigator
+
+# fast build rule for target.
+navigator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/build
+.PHONY : navigator/fast
+
 src/MotionDirector.o: src/MotionDirector.cpp.o
 .PHONY : src/MotionDirector.o
 
@@ -234,6 +247,30 @@ src/MotionDirector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_director.dir/build.make CMakeFiles/motion_director.dir/src/MotionDirector.cpp.s
 .PHONY : src/MotionDirector.cpp.s
 
+src/Navigator.o: src/Navigator.cpp.o
+.PHONY : src/Navigator.o
+
+# target to build an object file
+src/Navigator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/Navigator.cpp.o
+.PHONY : src/Navigator.cpp.o
+
+src/Navigator.i: src/Navigator.cpp.i
+.PHONY : src/Navigator.i
+
+# target to preprocess a source file
+src/Navigator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/Navigator.cpp.i
+.PHONY : src/Navigator.cpp.i
+
+src/Navigator.s: src/Navigator.cpp.s
+.PHONY : src/Navigator.s
+
+# target to generate assembly for a file
+src/Navigator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/Navigator.cpp.s
+.PHONY : src/Navigator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... cpp_subcontroller_uninstall"
 	@echo "... uninstall"
 	@echo "... motion_director"
+	@echo "... navigator"
 	@echo "... src/MotionDirector.o"
 	@echo "... src/MotionDirector.i"
 	@echo "... src/MotionDirector.s"
+	@echo "... src/Navigator.o"
+	@echo "... src/Navigator.i"
+	@echo "... src/Navigator.s"
 .PHONY : help
 
 

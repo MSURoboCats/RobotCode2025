@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-aed71cbf3cbe0d284567.json",
+					"jsonFile" : "directory-.-909ce25cecffe64083c6.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -18,7 +18,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -35,7 +36,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -51,8 +53,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "motion_director::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-motion_director-23b4436e1b66d694ab44.json",
+					"jsonFile" : "target-motion_director-143ae5647e0f04659c96.json",
 					"name" : "motion_director",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigator-ed3c72b1d648207e3854.json",
+					"name" : "navigator",
 					"projectIndex" : 0
 				},
 				{

@@ -33,6 +33,11 @@ def generate_launch_description():
             parameters=[PathJoinSubstitution([
                 FindPackageShare('usb_cam'), 'config', 'params_bottom_camera.yaml'])
             ]
+        ),
+        Node(
+            package='cpp_subcontroller',
+            namespace='sensors',
+            executable='navigator'
         )
 
     ])

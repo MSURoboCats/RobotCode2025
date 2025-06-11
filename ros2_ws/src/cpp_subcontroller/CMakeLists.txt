@@ -15,11 +15,14 @@ find_package(rclcpp REQUIRED)
 find_package(custom_interfaces REQUIRED)
 
 add_executable(motion_director src/MotionDirector.cpp)
+add_executable(navigator src/Navigator.cpp)
 
 ament_target_dependencies(motion_director rclcpp custom_interfaces)
+ament_target_dependencies(navigator rclcpp custom_interfaces)
 
 install(TARGETS
   motion_director
+  navigator
   DESTINATION lib/${PROJECT_NAME}
 )
 

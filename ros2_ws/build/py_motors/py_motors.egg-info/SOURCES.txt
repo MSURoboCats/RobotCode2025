@@ -13,6 +13,7 @@ py_motors/MotorCommands.py
 py_motors/__init__.py
 py_motors/motor_conductor.py
 py_motors/motor_controller.py
+py_motors/torpedo_controller.py
 resource/py_motors
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,181 @@
+[0.000000] (-) TimerEvent: {}
+[0.000610] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.001069] (-) JobUnselected: {'identifier': 'py_motors'}
+[0.001310] (-) JobUnselected: {'identifier': 'py_sensors'}
+[0.001532] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.001636] (cpp_subcontroller) JobQueued: {'identifier': 'cpp_subcontroller', 'dependencies': OrderedDict([('custom_interfaces', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces')])}
+[0.001831] (cpp_subcontroller) JobStarted: {'identifier': 'cpp_subcontroller'}
+[0.018842] (cpp_subcontroller) JobProgress: {'identifier': 'cpp_subcontroller', 'progress': 'cmake'}
+[0.019836] (cpp_subcontroller) JobProgress: {'identifier': 'cpp_subcontroller', 'progress': 'build'}
+[0.020946] (cpp_subcontroller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller', '--', '-j12', '-l12'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robocats'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/robocats'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2206'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aabbe98719b9afc774c7b1c868497dc6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'robocats'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1423123021241'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robocats'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin'), ('SESSION_MANAGER', 'local/robocatsorin:@/tmp/.ICE-unix/2206,unix/robocatsorin:/tmp/.ICE-unix/2206'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7cd0bf1d_1fb8_4e14_aa12_f64c133f535a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aabbe98719b9afc774c7b1c868497dc6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.099369] (-) TimerEvent: {}
+[0.134282] (cpp_subcontroller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/navigator.dir/src/Navigator.cpp.o\x1b[0m\n'}
+[0.135102] (cpp_subcontroller) StdoutLine: {'line': b'[ 75%] Built target motion_director\n'}
+[0.199513] (-) TimerEvent: {}
+[0.300132] (-) TimerEvent: {}
+[0.400743] (-) TimerEvent: {}
+[0.501362] (-) TimerEvent: {}
+[0.601983] (-) TimerEvent: {}
+[0.702616] (-) TimerEvent: {}
+[0.803245] (-) TimerEvent: {}
+[0.903884] (-) TimerEvent: {}
+[1.004514] (-) TimerEvent: {}
+[1.105164] (-) TimerEvent: {}
+[1.205827] (-) TimerEvent: {}
+[1.306486] (-) TimerEvent: {}
+[1.407136] (-) TimerEvent: {}
+[1.507777] (-) TimerEvent: {}
+[1.608402] (-) TimerEvent: {}
+[1.709052] (-) TimerEvent: {}
+[1.809715] (-) TimerEvent: {}
+[1.910372] (-) TimerEvent: {}
+[2.011037] (-) TimerEvent: {}
+[2.111701] (-) TimerEvent: {}
+[2.212349] (-) TimerEvent: {}
+[2.313007] (-) TimerEvent: {}
+[2.413664] (-) TimerEvent: {}
+[2.514327] (-) TimerEvent: {}
+[2.614982] (-) TimerEvent: {}
+[2.715639] (-) TimerEvent: {}
+[2.816308] (-) TimerEvent: {}
+[2.916954] (-) TimerEvent: {}
+[3.017605] (-) TimerEvent: {}
+[3.118276] (-) TimerEvent: {}
+[3.218942] (-) TimerEvent: {}
+[3.319579] (-) TimerEvent: {}
+[3.420462] (-) TimerEvent: {}
+[3.521113] (-) TimerEvent: {}
+[3.621750] (-) TimerEvent: {}
+[3.722405] (-) TimerEvent: {}
+[3.823278] (-) TimerEvent: {}
+[3.923937] (-) TimerEvent: {}
+[4.024606] (-) TimerEvent: {}
+[4.125259] (-) TimerEvent: {}
+[4.225894] (-) TimerEvent: {}
+[4.326584] (-) TimerEvent: {}
+[4.427221] (-) TimerEvent: {}
+[4.527845] (-) TimerEvent: {}
+[4.628477] (-) TimerEvent: {}
+[4.729126] (-) TimerEvent: {}
+[4.829780] (-) TimerEvent: {}
+[4.930424] (-) TimerEvent: {}
+[5.031304] (-) TimerEvent: {}
+[5.131945] (-) TimerEvent: {}
+[5.232607] (-) TimerEvent: {}
+[5.333274] (-) TimerEvent: {}
+[5.433907] (-) TimerEvent: {}
+[5.534555] (-) TimerEvent: {}
+[5.635177] (-) TimerEvent: {}
+[5.736059] (-) TimerEvent: {}
+[5.836928] (-) TimerEvent: {}
+[5.937762] (-) TimerEvent: {}
+[6.038416] (-) TimerEvent: {}
+[6.139094] (-) TimerEvent: {}
+[6.239754] (-) TimerEvent: {}
+[6.340424] (-) TimerEvent: {}
+[6.441065] (-) TimerEvent: {}
+[6.541708] (-) TimerEvent: {}
+[6.642607] (-) TimerEvent: {}
+[6.743459] (-) TimerEvent: {}
+[6.844129] (-) TimerEvent: {}
+[6.944779] (-) TimerEvent: {}
+[7.045645] (-) TimerEvent: {}
+[7.146294] (-) TimerEvent: {}
+[7.246974] (-) TimerEvent: {}
+[7.347643] (-) TimerEvent: {}
+[7.448296] (-) TimerEvent: {}
+[7.548964] (-) TimerEvent: {}
+[7.649627] (-) TimerEvent: {}
+[7.750286] (-) TimerEvent: {}
+[7.850970] (-) TimerEvent: {}
+[7.951609] (-) TimerEvent: {}
+[8.052249] (-) TimerEvent: {}
+[8.152904] (-) TimerEvent: {}
+[8.253549] (-) TimerEvent: {}
+[8.354178] (-) TimerEvent: {}
+[8.454829] (-) TimerEvent: {}
+[8.555466] (-) TimerEvent: {}
+[8.656116] (-) TimerEvent: {}
+[8.756769] (-) TimerEvent: {}
+[8.857453] (-) TimerEvent: {}
+[8.958105] (-) TimerEvent: {}
+[9.058739] (-) TimerEvent: {}
+[9.159352] (-) TimerEvent: {}
+[9.260040] (-) TimerEvent: {}
+[9.360860] (-) TimerEvent: {}
+[9.461632] (-) TimerEvent: {}
+[9.562489] (-) TimerEvent: {}
+[9.663311] (-) TimerEvent: {}
+[9.764132] (-) TimerEvent: {}
+[9.864953] (-) TimerEvent: {}
+[9.965736] (-) TimerEvent: {}
+[10.066560] (-) TimerEvent: {}
+[10.167347] (-) TimerEvent: {}
+[10.268136] (-) TimerEvent: {}
+[10.368922] (-) TimerEvent: {}
+[10.469702] (-) TimerEvent: {}
+[10.570504] (-) TimerEvent: {}
+[10.671280] (-) TimerEvent: {}
+[10.772071] (-) TimerEvent: {}
+[10.872866] (-) TimerEvent: {}
+[10.973648] (-) TimerEvent: {}
+[11.074461] (-) TimerEvent: {}
+[11.175251] (-) TimerEvent: {}
+[11.276018] (-) TimerEvent: {}
+[11.376804] (-) TimerEvent: {}
+[11.477584] (-) TimerEvent: {}
+[11.578341] (-) TimerEvent: {}
+[11.679130] (-) TimerEvent: {}
+[11.779932] (-) TimerEvent: {}
+[11.880750] (-) TimerEvent: {}
+[11.981569] (-) TimerEvent: {}
+[12.082394] (-) TimerEvent: {}
+[12.183224] (-) TimerEvent: {}
+[12.284023] (-) TimerEvent: {}
+[12.384834] (-) TimerEvent: {}
+[12.485657] (-) TimerEvent: {}
+[12.586466] (-) TimerEvent: {}
+[12.687239] (-) TimerEvent: {}
+[12.788036] (-) TimerEvent: {}
+[12.888859] (-) TimerEvent: {}
+[12.989705] (-) TimerEvent: {}
+[13.090571] (-) TimerEvent: {}
+[13.191425] (-) TimerEvent: {}
+[13.292296] (-) TimerEvent: {}
+[13.393148] (-) TimerEvent: {}
+[13.494089] (-) TimerEvent: {}
+[13.500916] (cpp_subcontroller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable navigator\x1b[0m\n'}
+[13.594233] (-) TimerEvent: {}
+[13.695058] (-) TimerEvent: {}
+[13.795907] (-) TimerEvent: {}
+[13.896768] (-) TimerEvent: {}
+[13.997597] (-) TimerEvent: {}
+[14.098474] (-) TimerEvent: {}
+[14.146302] (cpp_subcontroller) StdoutLine: {'line': b'[100%] Built target navigator\n'}
+[14.173436] (cpp_subcontroller) CommandEnded: {'returncode': 0}
+[14.175947] (cpp_subcontroller) JobProgress: {'identifier': 'cpp_subcontroller', 'progress': 'install'}
+[14.197281] (cpp_subcontroller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller'], 'cwd': '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robocats'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/robocats'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2206'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aabbe98719b9afc774c7b1c868497dc6'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'robocats'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1423123021241'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robocats'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/robocats/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux-x86_64/bin'), ('SESSION_MANAGER', 'local/robocatsorin:@/tmp/.ICE-unix/2206,unix/robocatsorin:/tmp/.ICE-unix/2206'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7cd0bf1d_1fb8_4e14_aa12_f64c133f535a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aabbe98719b9afc774c7b1c868497dc6'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/robocats/Desktop/developmentEnvironment/robotCode/competitionCode2024/ros2_ws/venv/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[14.199902] (-) TimerEvent: {}
+[14.215024] (cpp_subcontroller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.215416] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/motion_director\n'}
+[14.216025] (cpp_subcontroller) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/navigator\n'}
+[14.226050] (cpp_subcontroller) StdoutLine: {'line': b'-- Set runtime path of "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/navigator" to ""\n'}
+[14.226401] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/package_run_dependencies/cpp_subcontroller\n'}
+[14.226820] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/parent_prefix_path/cpp_subcontroller\n'}
+[14.227194] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/ament_prefix_path.sh\n'}
+[14.227409] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/ament_prefix_path.dsv\n'}
+[14.227671] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/path.sh\n'}
+[14.228007] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/path.dsv\n'}
+[14.228255] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.bash\n'}
+[14.228460] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.sh\n'}
+[14.228657] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.zsh\n'}
+[14.228861] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/local_setup.dsv\n'}
+[14.229077] (cpp_subcontroller) StdoutLine: {'line': b'-- Installing: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/package.dsv\n'}
+[14.229283] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/packages/cpp_subcontroller\n'}
+[14.229525] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/cmake/cpp_subcontrollerConfig.cmake\n'}
+[14.229734] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/cmake/cpp_subcontrollerConfig-version.cmake\n'}
+[14.229947] (cpp_subcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/package.xml\n'}
+[14.233535] (cpp_subcontroller) CommandEnded: {'returncode': 0}
+[14.298470] (cpp_subcontroller) JobEnded: {'identifier': 'cpp_subcontroller', 'rc': 0}
+[14.301900] (-) TimerEvent: {}
+[14.302262] (-) EventReactorShutdown: {}
