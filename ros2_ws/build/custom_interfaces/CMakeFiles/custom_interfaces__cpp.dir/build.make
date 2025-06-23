@@ -86,6 +86,11 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/de
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__traits.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__type_support.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -107,6 +112,7 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_i
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/DepthReport.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MotionGoal.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MotorCommand.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/BoundingBox.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -227,8 +233,28 @@ rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__traits.hpp: ros
 rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp
 
+rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__type_support.hpp
+
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/depth_report.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/depth_report__builder.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/depth_report__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/depth_report__traits.hpp

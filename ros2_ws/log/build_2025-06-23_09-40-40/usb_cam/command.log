@@ -1,0 +1,1 @@
+Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam -- -j12 -l12

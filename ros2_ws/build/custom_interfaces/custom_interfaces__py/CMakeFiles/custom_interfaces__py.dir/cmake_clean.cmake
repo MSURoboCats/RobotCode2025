@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/custom_interfaces/msg/__init__.py"
+  "../rosidl_generator_py/custom_interfaces/msg/_bounding_box.py"
+  "../rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_depth_report.py"
   "../rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_imu_data.py"

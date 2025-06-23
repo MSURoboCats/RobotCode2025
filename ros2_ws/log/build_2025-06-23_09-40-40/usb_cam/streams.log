@@ -1,0 +1,8 @@
+[0.470s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam -- -j12 -l12
+[0.557s] [ 42%] Built target gtest_main
+[0.557s] [ 42%] Built target usb_cam
+[0.558s] [ 42%] Built target gtest
+[0.559s] [ 57%] Built target usb_cam_node_exe
+[0.597s] [ 71%] Built target test_usb_cam_utils
+[0.598s] [ 85%] Built target test_pixel_formats
+[0.604s] [100%] Built target usb_cam_node

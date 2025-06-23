@@ -81,6 +81,7 @@ rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_da
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: rosidl_adapter/custom_interfaces/msg/DepthReport.idl
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: rosidl_adapter/custom_interfaces/msg/MotionGoal.idl
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: rosidl_adapter/custom_interfaces/msg/MotorCommand.idl
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: rosidl_adapter/custom_interfaces/msg/BoundingBox.idl
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -165,6 +166,12 @@ rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
 
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
@@ -221,12 +228,27 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesup
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.s
 
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o -MF CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o.d -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o -c /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp > CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.i
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.s
+
 # Object files for target custom_interfaces__rosidl_typesupport_fastrtps_cpp
 custom_interfaces__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/depth_report__type_support.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motion_goal__type_support.cpp.o" \
-"CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o"
+"CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o" \
+"CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o"
 
 # External object files for target custom_interfaces__rosidl_typesupport_fastrtps_cpp
 custom_interfaces__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
@@ -235,6 +257,7 @@ libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_inte
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/depth_report__type_support.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motion_goal__type_support.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o
+libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -245,7 +268,7 @@ libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/li
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,6 +279,8 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/clean
 
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/depth_report__type_support.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motion_goal__type_support.cpp

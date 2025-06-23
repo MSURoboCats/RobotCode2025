@@ -1,0 +1,25 @@
+[1.006s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/py_objectdetection': CMAKE_PREFIX_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_objectdetection build --build-base /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build install --record /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log --single-version-externally-managed install_data
+[1.388s] running egg_info
+[1.389s] writing ../../build/py_objectdetection/py_objectdetection.egg-info/PKG-INFO
+[1.389s] writing dependency_links to ../../build/py_objectdetection/py_objectdetection.egg-info/dependency_links.txt
+[1.390s] writing entry points to ../../build/py_objectdetection/py_objectdetection.egg-info/entry_points.txt
+[1.390s] writing requirements to ../../build/py_objectdetection/py_objectdetection.egg-info/requires.txt
+[1.390s] writing top-level names to ../../build/py_objectdetection/py_objectdetection.egg-info/top_level.txt
+[1.393s] reading manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+[1.393s] adding license file 'LICENSE'
+[1.394s] writing manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+[1.394s] running build
+[1.395s] running build_py
+[1.395s] copying py_objectdetection/detection_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection
+[1.395s] running install
+[1.395s] running install_lib
+[1.399s] copying /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection/detection_publisher.py -> /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection
+[1.400s] byte-compiling /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/detection_publisher.py to detection_publisher.cpython-310.pyc
+[1.401s] running install_data
+[1.401s] running install_egg_info
+[1.404s] removing '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info' (and everything under it)
+[1.404s] Copying ../../build/py_objectdetection/py_objectdetection.egg-info to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info
+[1.406s] running install_scripts
+[1.436s] Installing detector script to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+[1.437s] writing list of installed files to '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log'
+[1.497s] Invoked command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/py_objectdetection' returned '0': CMAKE_PREFIX_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_objectdetection build --build-base /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build install --record /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log --single-version-externally-managed install_data

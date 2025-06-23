@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_interfaces/action/DetectionAction.action
+// generated code does not contain a copyright notice
+
+#include "custom_interfaces/msg/BoundingBox.idl"
+
+module custom_interfaces {
+  module action {
+    struct DetectionAction_Goal {
+      string obj_type;
+    };
+    struct DetectionAction_Result {
+      sequence<custom_interfaces::msg::BoundingBox> bboxes;
+    };
+    struct DetectionAction_Feedback {
+      boolean bbox_exists;
+
+      custom_interfaces::msg::BoundingBox current_detection;
+    };
+  };
+};

@@ -73,11 +73,13 @@ custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/cust
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_depth_report.py
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_motion_goal.py
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_motor_command.py
+custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_bounding_box.py
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/__init__.py
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_imu_data_s.c
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_motion_goal_s.c
 custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c
+custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c
 
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -96,6 +98,7 @@ rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/msg/DepthReport.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/msg/MotionGoal.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/msg/MotorCommand.idl
+rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/msg/BoundingBox.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -177,6 +180,9 @@ rosidl_generator_py/custom_interfaces/msg/_motion_goal.py: rosidl_generator_py/c
 rosidl_generator_py/custom_interfaces/msg/_motor_command.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/_motor_command.py
 
+rosidl_generator_py/custom_interfaces/msg/_bounding_box.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/_bounding_box.py
+
 rosidl_generator_py/custom_interfaces/msg/__init__.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/__init__.py
 
@@ -192,11 +198,16 @@ rosidl_generator_py/custom_interfaces/msg/_motion_goal_s.c: rosidl_generator_py/
 rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c
 
+rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c
+
 custom_interfaces__py: custom_interfaces__py/CMakeFiles/custom_interfaces__py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/__init__.py
+custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_bounding_box.py
+custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_depth_report.py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_imu_data.py

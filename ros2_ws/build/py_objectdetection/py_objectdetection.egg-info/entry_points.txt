@@ -1,0 +1,3 @@
+[console_scripts]
+detector = py_objectdetection.detection_publisher:main
+

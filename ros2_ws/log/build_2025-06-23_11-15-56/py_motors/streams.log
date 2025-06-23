@@ -1,0 +1,23 @@
+[1.948s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/py_motors': CMAKE_PREFIX_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_motors build --build-base /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/build install --record /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/install.log --single-version-externally-managed install_data
+[2.333s] running egg_info
+[2.334s] writing ../../build/py_motors/py_motors.egg-info/PKG-INFO
+[2.335s] writing dependency_links to ../../build/py_motors/py_motors.egg-info/dependency_links.txt
+[2.336s] writing entry points to ../../build/py_motors/py_motors.egg-info/entry_points.txt
+[2.336s] writing requirements to ../../build/py_motors/py_motors.egg-info/requires.txt
+[2.336s] writing top-level names to ../../build/py_motors/py_motors.egg-info/top_level.txt
+[2.339s] reading manifest file '../../build/py_motors/py_motors.egg-info/SOURCES.txt'
+[2.339s] adding license file 'LICENSE'
+[2.340s] writing manifest file '../../build/py_motors/py_motors.egg-info/SOURCES.txt'
+[2.340s] running build
+[2.340s] running build_py
+[2.341s] running install
+[2.342s] running install_lib
+[2.346s] running install_data
+[2.347s] running install_egg_info
+[2.349s] removing '/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors-0.0.0-py3.10.egg-info' (and everything under it)
+[2.350s] Copying ../../build/py_motors/py_motors.egg-info to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors-0.0.0-py3.10.egg-info
+[2.352s] running install_scripts
+[2.384s] Installing motor_conductor script to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/py_motors
+[2.384s] Installing motor_controller script to /home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/py_motors
+[2.385s] writing list of installed files to '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/install.log'
+[2.454s] Invoked command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/src/py_motors' returned '0': CMAKE_PREFIX_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_motors build --build-base /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/build install --record /home/robocats/Desktop/RobotCode2025/ros2_ws/build/py_motors/install.log --single-version-externally-managed install_data

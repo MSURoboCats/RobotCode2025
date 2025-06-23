@@ -1,0 +1,6 @@
+string obj_type
+---
+BoundingBox[] bboxes
+---
+bool bbox_exists
+BoundingBox current_detection

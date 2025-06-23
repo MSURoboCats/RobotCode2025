@@ -6,7 +6,8 @@
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/ImuData.idl",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DepthReport.idl",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotionGoal.idl",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotorCommand.idl"
+    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotorCommand.idl",
+    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/BoundingBox.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -88,6 +89,7 @@
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DepthReport.idl",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/MotionGoal.idl",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/MotorCommand.idl",
+    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/BoundingBox.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

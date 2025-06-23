@@ -8,6 +8,17 @@ At a high level, the main robot director, a theoretical action client node, send
 
 <!-- This method doesnt really work as the only method we have of determining absolute positon is IMU data from the BNO055, unfortunatly, this data is very innacurate for linear acceleration, and so we might have to instead rely on heuristics . -->
 
+    
+
+## THE DISTANCE PROBLEM
+
+### Overview
+
+In order to determine the distance to a "known object" we must first be able to: 
+1. Get image from camera with object
+2. Detect said object
+3. Get the pixel width of said object
+4. Perform the distance calclation fn 
 
 
 
@@ -28,9 +39,7 @@ For inter-task navigation we can use [1] to determine our distance from a specif
 ### Intra-Task Navigation
 For intra-trask navigation, we will rely more on [2] and [3] but still use [1]. Thankfully all tasks have known objects that we can use to navigate within them.
 
-
----
-### Tasks
+### TASKS
 
 #### [Coin Flip](https://robonation.gitbook.io/robosub-resources/section-3-autonomy-challenge/3.2-task-descriptions#id-3.2.1-heading-out-coin-flip)
 

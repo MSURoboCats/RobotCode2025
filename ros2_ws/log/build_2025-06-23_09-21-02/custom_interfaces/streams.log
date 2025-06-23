@@ -1,0 +1,48 @@
+[0.029s] Invoking command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces -- -j12 -l12
+[0.446s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.446s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.447s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.447s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.448s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.455s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.776s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.776s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.776s]   custom_interfaces --arguments-file
+[0.776s]   /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter__arguments__custom_interfaces.json
+[0.776s]   --output-dir
+[0.776s]   /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces
+[0.776s]   --output-file
+[0.776s]   /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces.idls)
+[0.776s]   returned error code 1:
+[0.776s] 
+[0.777s]   Traceback (most recent call last):
+[0.777s] 
+[0.777s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.777s]       return _run_code(code, main_globals, None,
+[0.777s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.777s]       exec(code, run_globals)
+[0.777s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.777s]       sys.exit(main())
+[0.777s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.777s]       abs_idl_file = convert_to_idl(
+[0.777s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl
+[0.777s]       return convert_action_to_idl(
+[0.778s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[0.778s]       action = parse_action_string(package_name, input_file.stem, content)
+[0.778s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 894, in parse_action_string
+[0.778s]       raise InvalidActionSpecification(
+[0.778s] 
+[0.778s]   rosidl_adapter.parser.InvalidActionSpecification: Number of '---'
+[0.778s]   separators nonconformant with action definition
+[0.778s] 
+[0.778s] Call Stack (most recent call first):
+[0.778s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.778s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.778s] 
+[0.779s] [0m
+[0.779s] -- Configuring incomplete, errors occurred!
+[0.779s] See also "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/CMakeOutput.log".
+[0.791s] gmake: *** [Makefile:1395: cmake_check_build_system] Error 1
+[0.796s] Invoked command in '/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble /usr/bin/cmake --build /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces -- -j12 -l12

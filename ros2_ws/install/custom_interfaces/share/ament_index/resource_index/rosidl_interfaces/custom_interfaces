@@ -1,3 +1,5 @@
+msg/BoundingBox.idl
+msg/BoundingBox.msg
 msg/DepthReport.idl
 msg/DepthReport.msg
 msg/ImuData.idl
