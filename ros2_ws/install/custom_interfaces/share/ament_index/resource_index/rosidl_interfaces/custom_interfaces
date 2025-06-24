@@ -2,6 +2,8 @@ msg/BoundingBox.idl
 msg/BoundingBox.msg
 msg/DepthReport.idl
 msg/DepthReport.msg
+msg/DetectionBuffer.idl
+msg/DetectionBuffer.msg
 msg/ImuData.idl
 msg/ImuData.msg
 msg/MotionGoal.idl

@@ -28,6 +28,8 @@ The function for such a relation would be:
 As outlined in [Notes.md](Notes.md), the only reliable method we have of transversal is through old-timey nautical navigation (aka Heuristics). 
 I need to adjust the navigation to rely on vision instead of dead reckoning.
 
+1. OBJECT DETECTION [DONE]
+2. DISTANCE CALCUATION
 
 <!-- This only works if we have a better accelerometer -->
 <!-- ### SUMMARY: 

@@ -3,3 +3,4 @@
 /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotionGoal.idl
 /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotorCommand.idl
 /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/BoundingBox.idl
+/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DetectionBuffer.idl

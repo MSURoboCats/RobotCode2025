@@ -71,6 +71,7 @@ CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/c
 CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotionGoal.msg
 CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotorCommand.msg
 CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/BoundingBox.msg
+CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DetectionBuffer.msg
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_interfaces/msg/_bounding_box_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_depth_report.py"
   "../rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c"
+  "../rosidl_generator_py/custom_interfaces/msg/_detection_buffer.py"
+  "../rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_imu_data.py"
   "../rosidl_generator_py/custom_interfaces/msg/_imu_data_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_motion_goal.py"

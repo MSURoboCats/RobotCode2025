@@ -23,6 +23,8 @@ In order to determine the distance to a "known object" we must first be able to:
 
 
 
+
+
 ## NAVIGATION 
 
 ### What we can determine from heuristics (Vision & gyro)

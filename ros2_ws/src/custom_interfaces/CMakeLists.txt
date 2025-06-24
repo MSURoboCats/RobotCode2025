@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/MotionGoal.msg"
 	"msg/MotorCommand.msg"
 	"msg/BoundingBox.msg"
+	"msg/DetectionBuffer.msg"
 	
 	DEPENDENCIES geometry_msgs
 )

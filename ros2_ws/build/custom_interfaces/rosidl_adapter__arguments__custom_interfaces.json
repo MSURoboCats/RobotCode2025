@@ -5,6 +5,7 @@
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DepthReport.msg",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotionGoal.msg",
     "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotorCommand.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/BoundingBox.msg"
+    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/BoundingBox.msg",
+    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DetectionBuffer.msg"
   ]
 }

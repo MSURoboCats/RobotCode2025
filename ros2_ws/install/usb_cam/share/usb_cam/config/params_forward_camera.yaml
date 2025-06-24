@@ -1,7 +1,7 @@
 /**:
     ros__parameters:
       video_device: "/dev/video4"
-      framerate: 15.0
+      framerate: 30.0
       io_method: "mmap"
       frame_id: "camera2"
       pixel_format: "mjpeg2rgb"
