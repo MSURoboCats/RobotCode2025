@@ -1,0 +1,53 @@
+[2.768s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/py_sensors': CMAKE_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_sensors build --build-base /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build install --record /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/install.log --single-version-externally-managed install_data
+[3.551s] running egg_info
+[3.562s] creating ../../build/py_sensors/py_sensors.egg-info
+[3.564s] writing ../../build/py_sensors/py_sensors.egg-info/PKG-INFO
+[3.564s] writing dependency_links to ../../build/py_sensors/py_sensors.egg-info/dependency_links.txt
+[3.565s] writing entry points to ../../build/py_sensors/py_sensors.egg-info/entry_points.txt
+[3.566s] writing requirements to ../../build/py_sensors/py_sensors.egg-info/requires.txt
+[3.566s] writing top-level names to ../../build/py_sensors/py_sensors.egg-info/top_level.txt
+[3.566s] writing manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'
+[3.572s] reading manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'
+[3.583s] adding license file 'LICENSE'
+[3.584s] writing manifest file '../../build/py_sensors/py_sensors.egg-info/SOURCES.txt'
+[3.585s] running build
+[3.586s] running build_py
+[3.586s] creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build
+[3.587s] creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib
+[3.587s] creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.588s] copying py_sensors/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.588s] copying py_sensors/depth_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.590s] copying py_sensors/BNO.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.590s] copying py_sensors/imu_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.590s] copying py_sensors/BAR02.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors
+[3.590s] creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837
+[3.591s] copying py_sensors/ms5837/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837
+[3.591s] copying py_sensors/ms5837/ms5837.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837
+[3.595s] running install
+[3.595s] running install_lib
+[3.627s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors
+[3.627s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837
+[3.627s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/ms5837/ms5837.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837
+[3.628s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/depth_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors
+[3.628s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/BNO.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors
+[3.629s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/imu_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors
+[3.633s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build/lib/py_sensors/BAR02.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors
+[3.638s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/__init__.py to __init__.cpython-310.pyc
+[3.639s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837/__init__.py to __init__.cpython-310.pyc
+[3.639s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/ms5837/ms5837.py to ms5837.cpython-310.pyc
+[3.643s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/depth_publisher.py to depth_publisher.cpython-310.pyc
+[3.644s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/BNO.py to BNO.cpython-310.pyc
+[3.645s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/imu_publisher.py to imu_publisher.cpython-310.pyc
+[3.655s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors/BAR02.py to BAR02.cpython-310.pyc
+[3.656s] running install_data
+[3.656s] copying resource/py_sensors -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/ament_index/resource_index/packages
+[3.657s] copying package.xml -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/share/py_sensors
+[3.657s] running install_egg_info
+[3.662s] removing '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors-0.0.0-py3.10.egg-info' (and everything under it)
+[3.662s] Copying ../../build/py_sensors/py_sensors.egg-info to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages/py_sensors-0.0.0-py3.10.egg-info
+[3.673s] running install_scripts
+[3.765s] Installing bar02 script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/py_sensors
+[3.766s] Installing camera script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/py_sensors
+[3.766s] Installing imu script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/py_sensors
+[3.767s] writing list of installed files to '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/install.log'
+[3.895s] Invoked command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/py_sensors' returned '0': CMAKE_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller LD_LIBRARY_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_sensors build --build-base /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/build install --record /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_sensors/install.log --single-version-externally-managed install_data

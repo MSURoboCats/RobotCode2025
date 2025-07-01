@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -18,8 +19,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/MotorCommand.msg"
 	"msg/BoundingBox.msg"
 	"msg/DetectionBuffer.msg"
+	"srv/DetectionService.srv"
 	
-	DEPENDENCIES geometry_msgs
+	DEPENDENCIES geometry_msgs sensor_msgs
 )
 
 

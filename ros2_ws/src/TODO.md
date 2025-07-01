@@ -22,7 +22,43 @@ A better implimentation would be to map the duty cycle as a range from -1 to 1, 
 The function for such a relation would be:
 > f(x) = delta_duty_cycle * x + duty_cycle_stop
 
-## 3 ROBOT MOVEMENT (NOT NAVIGATION)
+
+## 3 OBJECT DETECTION USING REALSENSE CAMERA
+### SUMMARY 
+Intel provides a pre-built ros2 node that interfaces with the realsense sdk [Repo](https://github.com/IntelRealSense/realsense-ros).
+The node can be configured with a bunch of parameters. 
+
+The basic run command goes as follows: 
+ros2 run realsense2_camera realsense2_camera_node
+
+To have the depth image be aligned to the color image by setting the parameter "align_depth.enable" to "True" from which a new topic is created called "aligned_depth_to_color/image_raw" which can be subscribed to
+
+### NOTES
+The default node publishes imu data as well as color, depth, and infrared images
+
+aligning the depth image to the color image means that they share the same vectorspace, meaning no matrix multiplication is required to translate between the two spaces
+
+Determining distance from a object using this camera can be boiled down into individual steps:
+#### Pre-req steps
+1. Have Point Streaming Enabled
+2. Align depth and color cameras
+
+#### Algorithm
+Inputs = Bounding boxes (Detection Buffer), Depth Image (either depth/image_compressed or depth/image_raw)
+
+Outputs = 3d AABB (AABB array) 
+1. Detect object in image stream using yolo, and get its screen-space bbox
+2. Get depth image, convert it to an array, and get pixels within bbox
+3. Convert 2d depth values into 3d points and construct AABB (see book: Real Time Collision Detection)
+4. Store AABB in memory as object, update as needed using collision detection 
+
+#### Links / Helpful Resources
+1. [OpenCV::rgbd::depthTo3d(image, k, out 3dPoints, optional mask = noArray())](https://docs.opencv.org/4.x/d2/d3a/group__rgbd.html#ga403eeb581b09684f7e24f7c157086dd6)
+	- Helpful function found in the contrib module rgbd, takes in the depth image, the camera calibration matrix (found in depth/camera_info.k, and a output array of 3d points, optionally you can specify a mask of points to consider)
+
+
+
+## 4 ROBOT MOVEMENT (NOT NAVIGATION)
 
 ### SUMMARY
 As outlined in [Notes.md](Notes.md), the only reliable method we have of transversal is through old-timey nautical navigation (aka Heuristics). 

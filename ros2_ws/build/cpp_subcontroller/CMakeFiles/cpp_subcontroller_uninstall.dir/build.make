@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
 
 # Utility rule file for cpp_subcontroller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cpp_subcontroller_uninstall.dir/compiler_depend.make
 include CMakeFiles/cpp_subcontroller_uninstall.dir/progress.make
 
 CMakeFiles/cpp_subcontroller_uninstall:
-	/usr/bin/cmake -P /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 cpp_subcontroller_uninstall: CMakeFiles/cpp_subcontroller_uninstall
 cpp_subcontroller_uninstall: CMakeFiles/cpp_subcontroller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cpp_subcontroller_uninstall.dir/clean:
 .PHONY : CMakeFiles/cpp_subcontroller_uninstall.dir/clean
 
 CMakeFiles/cpp_subcontroller_uninstall.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/cpp_subcontroller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/cpp_subcontroller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpp_subcontroller_uninstall.dir/depend
 

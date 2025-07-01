@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/py_objectdetection/py_objectdetection.egg-info
+writing ../../build/py_objectdetection/py_objectdetection.egg-info/PKG-INFO
+writing dependency_links to ../../build/py_objectdetection/py_objectdetection.egg-info/dependency_links.txt
+writing entry points to ../../build/py_objectdetection/py_objectdetection.egg-info/entry_points.txt
+writing requirements to ../../build/py_objectdetection/py_objectdetection.egg-info/requires.txt
+writing top-level names to ../../build/py_objectdetection/py_objectdetection.egg-info/top_level.txt
+writing manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+reading manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build
+creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib
+creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection
+copying py_objectdetection/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection
+copying py_objectdetection/detection_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection
+running install
+running install_lib
+copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection/__init__.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection
+copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection/detection_publisher.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection
+running install_data
+copying resource/py_objectdetection -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/ament_index/resource_index/packages
+copying package.xml -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/py_objectdetection
+running install_egg_info
+removing '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/py_objectdetection/py_objectdetection.egg-info to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detector script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+writing list of installed files to '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log'

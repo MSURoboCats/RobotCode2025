@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
 
 # Utility rule file for custom_interfaces__cpp.
 
@@ -96,6 +96,11 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/de
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__traits.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -119,6 +124,7 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_i
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MotorCommand.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/BoundingBox.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/DetectionBuffer.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -179,8 +185,38 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/s
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp__arguments.json
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/CompressedImage.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/FluidPressure.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Illuminance.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Image.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Imu.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/JointState.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Joy.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/JoyFeedback.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/JoyFeedbackArray.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/LaserEcho.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/LaserScan.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/MagneticField.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/MultiDOFJointState.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/MultiEchoLaserScan.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/NavSatFix.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/NavSatStatus.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/PointCloud.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/PointCloud2.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/PointField.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Range.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/RegionOfInterest.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/RelativeHumidity.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/Temperature.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/msg/TimeReference.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/sensor_msgs/srv/SetCameraInfo.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__builder.hpp
@@ -269,6 +305,21 @@ rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__traits.hpp: 
 rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.hpp
 
+rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp
+
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/depth_report.hpp
@@ -300,6 +351,11 @@ custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detection_buf
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/motion_goal.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/motor_command.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp.dir/build.make
 .PHONY : custom_interfaces__cpp
 
@@ -312,6 +368,6 @@ CMakeFiles/custom_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_interfaces__cpp.dir/clean
 
 CMakeFiles/custom_interfaces__cpp.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interfaces__cpp.dir/depend
 

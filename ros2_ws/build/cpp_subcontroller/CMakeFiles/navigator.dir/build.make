@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
 
 # Include any dependencies generated for this target.
 include CMakeFiles/navigator.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/navigator.dir/progress.make
 include CMakeFiles/navigator.dir/flags.make
 
 CMakeFiles/navigator.dir/src/Navigator.cpp.o: CMakeFiles/navigator.dir/flags.make
-CMakeFiles/navigator.dir/src/Navigator.cpp.o: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp
+CMakeFiles/navigator.dir/src/Navigator.cpp.o: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp
 CMakeFiles/navigator.dir/src/Navigator.cpp.o: CMakeFiles/navigator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/navigator.dir/src/Navigator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/navigator.dir/src/Navigator.cpp.o -MF CMakeFiles/navigator.dir/src/Navigator.cpp.o.d -o CMakeFiles/navigator.dir/src/Navigator.cpp.o -c /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/navigator.dir/src/Navigator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/navigator.dir/src/Navigator.cpp.o -MF CMakeFiles/navigator.dir/src/Navigator.cpp.o.d -o CMakeFiles/navigator.dir/src/Navigator.cpp.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp
 
 CMakeFiles/navigator.dir/src/Navigator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/navigator.dir/src/Navigator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp > CMakeFiles/navigator.dir/src/Navigator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp > CMakeFiles/navigator.dir/src/Navigator.cpp.i
 
 CMakeFiles/navigator.dir/src/Navigator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/navigator.dir/src/Navigator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp -o CMakeFiles/navigator.dir/src/Navigator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp -o CMakeFiles/navigator.dir/src/Navigator.cpp.s
 
 # Object files for target navigator
 navigator_OBJECTS = \
@@ -93,12 +93,12 @@ navigator_EXTERNAL_OBJECTS =
 navigator: CMakeFiles/navigator.dir/src/Navigator.cpp.o
 navigator: CMakeFiles/navigator.dir/build.make
 navigator: /opt/ros/humble/lib/librclcpp.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
 navigator: /opt/ros/humble/lib/liblibstatistics_collector.so
 navigator: /opt/ros/humble/lib/librcl.so
 navigator: /opt/ros/humble/lib/librmw_implementation.so
@@ -132,30 +132,38 @@ navigator: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 navigator: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 navigator: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 navigator: /opt/ros/humble/lib/libtracetools.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 navigator: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 navigator: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 navigator: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 navigator: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 navigator: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 navigator: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 navigator: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 navigator: /opt/ros/humble/lib/librmw.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 navigator: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 navigator: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 navigator: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 navigator: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 navigator: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 navigator: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 navigator: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 navigator: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 navigator: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
-navigator: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+navigator: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+navigator: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 navigator: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
@@ -171,7 +179,7 @@ navigator: /opt/ros/humble/lib/librosidl_runtime_c.so
 navigator: /opt/ros/humble/lib/librcutils.so
 navigator: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 navigator: CMakeFiles/navigator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable navigator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable navigator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/navigator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +191,6 @@ CMakeFiles/navigator.dir/clean:
 .PHONY : CMakeFiles/navigator.dir/clean
 
 CMakeFiles/navigator.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/navigator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/navigator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/navigator.dir/depend
 

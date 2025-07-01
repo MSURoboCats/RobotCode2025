@@ -15,6 +15,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_interfaces/msg/_motion_goal_s.c"
   "../rosidl_generator_py/custom_interfaces/msg/_motor_command.py"
   "../rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c"
+  "../rosidl_generator_py/custom_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_detection_service.py"
+  "../rosidl_generator_py/custom_interfaces/srv/_detection_service_s.c"
   "CMakeFiles/custom_interfaces__py"
 )
 

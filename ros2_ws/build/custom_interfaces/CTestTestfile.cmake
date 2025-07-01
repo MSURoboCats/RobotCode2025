@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
-# Build directory: /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
+# Source directory: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
+# Build directory: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

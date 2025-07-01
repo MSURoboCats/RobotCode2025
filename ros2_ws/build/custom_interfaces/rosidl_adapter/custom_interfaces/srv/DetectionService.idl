@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/DetectionService.srv
+// generated code does not contain a copyright notice
+
+#include "custom_interfaces/msg/DetectionBuffer.idl"
+#include "geometry_msgs/msg/Polygon.idl"
+#include "sensor_msgs/msg/CameraInfo.idl"
+#include "sensor_msgs/msg/Image.idl"
+
+module custom_interfaces {
+  module srv {
+    struct DetectionService_Request {
+      sensor_msgs::msg::Image depth_image;
+
+      sensor_msgs::msg::CameraInfo camera_info;
+
+      custom_interfaces::msg::DetectionBuffer detections;
+    };
+    struct DetectionService_Response {
+      sequence<geometry_msgs::msg::Polygon> meshes;
+    };
+  };
+};

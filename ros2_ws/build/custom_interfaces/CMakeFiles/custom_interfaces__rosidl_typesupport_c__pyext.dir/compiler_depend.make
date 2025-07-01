@@ -260,8 +260,13 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__struct.h \
-  rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__functions.h
+  rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.h
 
+
+rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__functions.h:
 
@@ -407,6 +412,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h:
 
 /usr/include/stdio.h:
 
+rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h:
+
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
 /usr/include/aarch64-linux-gnu/bits/uio_lim.h:
@@ -550,6 +557,8 @@ rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.
 /usr/include/python3.10/bltinmodule.h:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_stat.h:
 

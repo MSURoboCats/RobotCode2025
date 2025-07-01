@@ -10,3 +10,7 @@ msg/MotionGoal.idl
 msg/MotionGoal.msg
 msg/MotorCommand.idl
 msg/MotorCommand.msg
+srv/DetectionService.idl
+srv/DetectionService.srv
+srv/DetectionService_Request.msg
+srv/DetectionService_Response.msg

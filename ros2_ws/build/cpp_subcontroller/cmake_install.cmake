@@ -1,8 +1,8 @@
-# Install script for directory: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
+# Install script for directory: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robocats/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller")
+  set(CMAKE_INSTALL_PREFIX "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/motion_director"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller" TYPE EXECUTABLE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/motion_director")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller" TYPE EXECUTABLE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/motion_director")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/motion_director" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/motion_director")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/motion_director"
-         OLD_RPATH "/opt/ros/humble/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/motion_director")
@@ -69,12 +69,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/navigator"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller" TYPE EXECUTABLE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/navigator")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller" TYPE EXECUTABLE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/navigator")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/navigator" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/navigator")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/navigator"
-         OLD_RPATH "/opt/ros/humble/lib:/home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_subcontroller/navigator")
@@ -83,11 +83,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cpp_subcontroller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cpp_subcontroller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cpp_subcontroller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cpp_subcontroller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -95,7 +95,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller/environment" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller/environment" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -103,42 +103,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller/environment" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller/environment" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/packages/cpp_subcontroller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_index/share/ament_index/resource_index/packages/cpp_subcontroller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller/cmake" TYPE FILE FILES
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_core/cpp_subcontrollerConfig.cmake"
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_core/cpp_subcontrollerConfig-version.cmake"
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_core/cpp_subcontrollerConfig.cmake"
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/ament_cmake_core/cpp_subcontrollerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_subcontroller" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -149,5 +149,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

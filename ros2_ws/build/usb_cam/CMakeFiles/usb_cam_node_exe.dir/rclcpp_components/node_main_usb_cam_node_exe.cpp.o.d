@@ -1,5 +1,5 @@
 CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o: \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam/rclcpp_components/node_main_usb_cam_node_exe.cpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam/rclcpp_components/node_main_usb_cam_node_exe.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \

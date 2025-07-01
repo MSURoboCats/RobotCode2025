@@ -10,6 +10,7 @@ setup.py
 ../../build/py_objectdetection/py_objectdetection.egg-info/top_level.txt
 ../../build/py_objectdetection/py_objectdetection.egg-info/zip-safe
 py_objectdetection/__init__.py
+py_objectdetection/depth_image_filterer.py
 py_objectdetection/detection_publisher.py
 resource/py_objectdetection
 test/test_copyright.py

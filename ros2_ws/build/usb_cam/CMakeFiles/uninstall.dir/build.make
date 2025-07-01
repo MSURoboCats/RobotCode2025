@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/usb_cam
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/usb_cam /home/robocats/Desktop/RobotCode2025/ros2_ws/src/usb_cam /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
 
 # Utility rule file for custom_interfaces.
 
@@ -66,12 +66,15 @@ include CMakeFiles/custom_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/custom_interfaces.dir/progress.make
 
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/ImuData.msg
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DepthReport.msg
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotionGoal.msg
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotorCommand.msg
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/BoundingBox.msg
-CMakeFiles/custom_interfaces: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DetectionBuffer.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/ImuData.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DepthReport.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotionGoal.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotorCommand.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/BoundingBox.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DetectionBuffer.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/DetectionService.srv
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Request.msg
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Response.msg
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -102,6 +105,34 @@ CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Vector3Sta
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/CompressedImage.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/FluidPressure.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Illuminance.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Image.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Imu.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/JointState.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Joy.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/JoyFeedback.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/JoyFeedbackArray.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/LaserEcho.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/LaserScan.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/MagneticField.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/MultiDOFJointState.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/MultiEchoLaserScan.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/NavSatFix.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/NavSatStatus.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/PointCloud.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/PointCloud2.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/PointField.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Range.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/RegionOfInterest.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/RelativeHumidity.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Temperature.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/TimeReference.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/srv/SetCameraInfo.idl
 
 custom_interfaces: CMakeFiles/custom_interfaces
 custom_interfaces: CMakeFiles/custom_interfaces.dir/build.make
@@ -116,6 +147,6 @@ CMakeFiles/custom_interfaces.dir/clean:
 .PHONY : CMakeFiles/custom_interfaces.dir/clean
 
 CMakeFiles/custom_interfaces.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocats/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interfaces.dir/depend
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp" "CMakeFiles/navigator.dir/src/Navigator.cpp.o" "gcc" "CMakeFiles/navigator.dir/src/Navigator.cpp.o.d"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp" "CMakeFiles/navigator.dir/src/Navigator.cpp.o" "gcc" "CMakeFiles/navigator.dir/src/Navigator.cpp.o.d"
   )
 
 # Targets to which this target links.

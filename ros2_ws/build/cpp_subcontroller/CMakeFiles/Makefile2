@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/navigator.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/cpp_subcontroller_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -111,14 +111,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/cpp_subcontroller_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_subcontroller_uninstall.dir/build.make CMakeFiles/cpp_subcontroller_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_subcontroller_uninstall.dir/build.make CMakeFiles/cpp_subcontroller_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num= "Built target cpp_subcontroller_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num= "Built target cpp_subcontroller_uninstall"
 .PHONY : CMakeFiles/cpp_subcontroller_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp_subcontroller_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp_subcontroller_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 .PHONY : CMakeFiles/cpp_subcontroller_uninstall.dir/rule
 
 # Convenience name for target.
@@ -137,14 +137,14 @@ CMakeFiles/cpp_subcontroller_uninstall.dir/clean:
 CMakeFiles/motion_director.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_director.dir/build.make CMakeFiles/motion_director.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_director.dir/build.make CMakeFiles/motion_director.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=1,2 "Built target motion_director"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=1,2 "Built target motion_director"
 .PHONY : CMakeFiles/motion_director.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motion_director.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motion_director.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 .PHONY : CMakeFiles/motion_director.dir/rule
 
 # Convenience name for target.
@@ -163,14 +163,14 @@ CMakeFiles/motion_director.dir/clean:
 CMakeFiles/navigator.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=3,4 "Built target navigator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=3,4 "Built target navigator"
 .PHONY : CMakeFiles/navigator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/navigator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/navigator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles 0
 .PHONY : CMakeFiles/navigator.dir/rule
 
 # Convenience name for target.

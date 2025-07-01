@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
+CMAKE_SOURCE_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
+CMAKE_BINARY_DIR = /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motion_director.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/motion_director.dir/progress.make
 include CMakeFiles/motion_director.dir/flags.make
 
 CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o: CMakeFiles/motion_director.dir/flags.make
-CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o: /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp
+CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp
 CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o: CMakeFiles/motion_director.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o -MF CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o.d -o CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o -c /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o -MF CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o.d -o CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp
 
 CMakeFiles/motion_director.dir/src/MotionDirector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motion_director.dir/src/MotionDirector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp > CMakeFiles/motion_director.dir/src/MotionDirector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp > CMakeFiles/motion_director.dir/src/MotionDirector.cpp.i
 
 CMakeFiles/motion_director.dir/src/MotionDirector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motion_director.dir/src/MotionDirector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp -o CMakeFiles/motion_director.dir/src/MotionDirector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/MotionDirector.cpp -o CMakeFiles/motion_director.dir/src/MotionDirector.cpp.s
 
 # Object files for target motion_director
 motion_director_OBJECTS = \
@@ -93,12 +93,12 @@ motion_director_EXTERNAL_OBJECTS =
 motion_director: CMakeFiles/motion_director.dir/src/MotionDirector.cpp.o
 motion_director: CMakeFiles/motion_director.dir/build.make
 motion_director: /opt/ros/humble/lib/librclcpp.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
 motion_director: /opt/ros/humble/lib/liblibstatistics_collector.so
 motion_director: /opt/ros/humble/lib/librcl.so
 motion_director: /opt/ros/humble/lib/librmw_implementation.so
@@ -132,30 +132,38 @@ motion_director: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 motion_director: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 motion_director: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 motion_director: /opt/ros/humble/lib/libtracetools.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 motion_director: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 motion_director: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 motion_director: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 motion_director: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 motion_director: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 motion_director: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 motion_director: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 motion_director: /opt/ros/humble/lib/librmw.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 motion_director: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 motion_director: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 motion_director: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 motion_director: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 motion_director: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 motion_director: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 motion_director: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 motion_director: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 motion_director: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
-motion_director: /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+motion_director: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+motion_director: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 motion_director: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
@@ -171,7 +179,7 @@ motion_director: /opt/ros/humble/lib/librosidl_runtime_c.so
 motion_director: /opt/ros/humble/lib/librcutils.so
 motion_director: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 motion_director: CMakeFiles/motion_director.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable motion_director"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable motion_director"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motion_director.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +191,6 @@ CMakeFiles/motion_director.dir/clean:
 .PHONY : CMakeFiles/motion_director.dir/clean
 
 CMakeFiles/motion_director.dir/depend:
-	cd /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocats/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/motion_director.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/cpp_subcontroller/CMakeFiles/motion_director.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motion_director.dir/depend
 

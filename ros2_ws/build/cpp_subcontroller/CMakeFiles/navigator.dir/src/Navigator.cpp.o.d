@@ -1,5 +1,5 @@
 CMakeFiles/navigator.dir/src/Navigator.cpp.o: \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/cpp_subcontroller/src/Navigator.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -631,16 +631,16 @@ CMakeFiles/navigator.dir/src/Navigator.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/imu_data.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__struct.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/imu_data.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__builder.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__traits.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__builder.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.hpp \
- /home/robocats/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/imu_data__type_support.hpp \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \

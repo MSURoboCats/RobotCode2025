@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__functions.c.o.d"
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.o"
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.o.d"
   "libcustom_interfaces__rosidl_generator_c.pdb"
   "libcustom_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/custom_interfaces/msg/bounding_box.h"
@@ -43,6 +45,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/custom_interfaces/msg/imu_data.h"
   "rosidl_generator_c/custom_interfaces/msg/motion_goal.h"
   "rosidl_generator_c/custom_interfaces/msg/motor_command.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c"
+  "rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/detection_service__struct.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h"
+  "rosidl_generator_c/custom_interfaces/srv/detection_service.h"
 )
 
 # Per-language clean rules from dependency scanning.

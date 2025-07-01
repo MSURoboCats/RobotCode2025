@@ -1,11 +1,12 @@
 {
   "package_name": "custom_interfaces",
   "non_idl_tuples": [
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/ImuData.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DepthReport.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotionGoal.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotorCommand.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/BoundingBox.msg",
-    "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DetectionBuffer.msg"
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/ImuData.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DepthReport.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotionGoal.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MotorCommand.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/BoundingBox.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DetectionBuffer.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:srv/DetectionService.srv"
   ]
 }

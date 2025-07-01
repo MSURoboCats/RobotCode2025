@@ -1,0 +1,5 @@
+[0.037s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_sensors:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors:/opt/ros/humble /usr/bin/cmake --build /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam -- -j8 -l8
+[0.050s] [0mCMake Error: The current CMakeCache.txt directory /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam/CMakeCache.txt is different than the directory /home/robocats/Desktop/RobotCode2025/ros2_ws/build/usb_cam where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.071s] [0mCMake Error: The source directory "/home/robocats/Desktop/RobotCode2025/ros2_ws/src/usb_cam" does not exist.
+[0.071s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.076s] gmake: *** [Makefile:459: cmake_check_build_system] Error 1

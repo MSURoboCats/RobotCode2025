@@ -54,18 +54,21 @@ class DetectionPublisher(Node):
     _model          : YOLO
     _path           : str
     _task           : str
-    _filter     : str
+    _topic          : str
+    _filter         : str
     _cvBridge       : CvBridge
     _frameNumber    : int
     def __init__(self):
         super().__init__('detection_publisher')
         self.declare_parameter("model_path", "ultralyticsplus/yolov8s.pt")
         self.declare_parameter("task", "detect")
+        self.declare_parameter("topic","usb_cam_0/image_raw")
         self.declare_parameter("filter", "all")
 
 
         self._path = self.get_parameter("model_path").get_parameter_value().string_value
         self._task = self.get_parameter("task").get_parameter_value().string_value
+        self._topic = self.get_parameter("topic").get_parameter_value().string_value
         self._filter = self.get_parameter("filter").get_parameter_value().string_value
 
 
@@ -77,12 +80,15 @@ class DetectionPublisher(Node):
         
         self.publisher_ = self.create_publisher(DetectionBuffer,'DetectionBuffer',1)
 
-        self.subscription_ = self.create_subscription(ros2_img,'usb_cam_0/image_raw',self.publisher_callback,5)
+        self.subscription_ = self.create_subscription(ros2_img,self._topic,self.publisher_callback,5)
 
         self._frameNumber = 0
         
         cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
         cv2.resizeWindow("detection_publisher",640,480)
+        
+        
+
 
 
 

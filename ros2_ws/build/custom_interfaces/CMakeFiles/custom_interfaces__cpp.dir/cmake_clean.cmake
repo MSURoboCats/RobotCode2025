@@ -30,6 +30,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/motion_goal.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/motor_command.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp"
 )
 
 # Per-language clean rules from dependency scanning.
