@@ -1,3 +1,1 @@
-sensor_msgs/Image depth_image
-sensor_msgs/CameraInfo camera_info
-DetectionBuffer detections
+

@@ -1,3 +1,7 @@
+action/DetectionAction.action
+action/DetectionAction.idl
+msg/AABB.idl
+msg/AABB.msg
 msg/BoundingBox.idl
 msg/BoundingBox.msg
 msg/DepthReport.idl
@@ -10,7 +14,13 @@ msg/MotionGoal.idl
 msg/MotionGoal.msg
 msg/MotorCommand.idl
 msg/MotorCommand.msg
+msg/WorldMap.idl
+msg/WorldMap.msg
 srv/DetectionService.idl
 srv/DetectionService.srv
 srv/DetectionService_Request.msg
 srv/DetectionService_Response.msg
+srv/GenerateWorldMap.idl
+srv/GenerateWorldMap.srv
+srv/GenerateWorldMap_Request.msg
+srv/GenerateWorldMap_Response.msg

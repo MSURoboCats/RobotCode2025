@@ -34,50 +34,8 @@ extern "C"
 {
 #endif
 
-#include "custom_interfaces/msg/detail/detection_buffer__functions.h"  // detections
-#include "sensor_msgs/msg/detail/camera_info__functions.h"  // camera_info
-#include "sensor_msgs/msg/detail/image__functions.h"  // depth_image
 
 // forward declare type support functions
-size_t get_serialized_size_custom_interfaces__msg__DetectionBuffer(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-size_t max_serialized_size_custom_interfaces__msg__DetectionBuffer(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer)();
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t get_serialized_size_sensor_msgs__msg__CameraInfo(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t max_serialized_size_sensor_msgs__msg__CameraInfo(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_msgs, msg, CameraInfo)();
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t get_serialized_size_sensor_msgs__msg__Image(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t max_serialized_size_sensor_msgs__msg__Image(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_msgs, msg, Image)();
 
 
 using _DetectionService_Request__ros_msg_type = custom_interfaces__srv__DetectionService_Request;
@@ -91,46 +49,9 @@ static bool _DetectionService_Request__cdr_serialize(
     return false;
   }
   const _DetectionService_Request__ros_msg_type * ros_message = static_cast<const _DetectionService_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: depth_image
+  // Field name: structure_needs_at_least_one_member
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, Image
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->depth_image, cdr))
-    {
-      return false;
-    }
-  }
-
-  // Field name: camera_info
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, CameraInfo
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->camera_info, cdr))
-    {
-      return false;
-    }
-  }
-
-  // Field name: detections
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->detections, cdr))
-    {
-      return false;
-    }
+    cdr << ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -145,46 +66,9 @@ static bool _DetectionService_Request__cdr_deserialize(
     return false;
   }
   _DetectionService_Request__ros_msg_type * ros_message = static_cast<_DetectionService_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: depth_image
+  // Field name: structure_needs_at_least_one_member
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, Image
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->depth_image))
-    {
-      return false;
-    }
-  }
-
-  // Field name: camera_info
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, CameraInfo
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->camera_info))
-    {
-      return false;
-    }
-  }
-
-  // Field name: detections
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->detections))
-    {
-      return false;
-    }
+    cdr >> ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -204,18 +88,12 @@ size_t get_serialized_size_custom_interfaces__srv__DetectionService_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name depth_image
-
-  current_alignment += get_serialized_size_sensor_msgs__msg__Image(
-    &(ros_message->depth_image), current_alignment);
-  // field.name camera_info
-
-  current_alignment += get_serialized_size_sensor_msgs__msg__CameraInfo(
-    &(ros_message->camera_info), current_alignment);
-  // field.name detections
-
-  current_alignment += get_serialized_size_custom_interfaces__msg__DetectionBuffer(
-    &(ros_message->detections), current_alignment);
+  // field.name structure_needs_at_least_one_member
+  {
+    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -245,62 +123,12 @@ size_t max_serialized_size_custom_interfaces__srv__DetectionService_Request(
   full_bounded = true;
   is_plain = true;
 
-  // member: depth_image
+  // member: structure_needs_at_least_one_member
   {
     size_t array_size = 1;
 
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_sensor_msgs__msg__Image(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-  // member: camera_info
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_sensor_msgs__msg__CameraInfo(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-  // member: detections
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_custom_interfaces__msg__DetectionBuffer(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -311,7 +139,7 @@ size_t max_serialized_size_custom_interfaces__srv__DetectionService_Request(
     using DataType = custom_interfaces__srv__DetectionService_Request;
     is_plain =
       (
-      offsetof(DataType, detections) +
+      offsetof(DataType, structure_needs_at_least_one_member) +
       last_member_size
       ) == ret_val;
   }
@@ -399,23 +227,20 @@ extern "C"
 {
 #endif
 
-#include "geometry_msgs/msg/detail/polygon__functions.h"  // meshes
+#include "custom_interfaces/msg/detail/detection_buffer__functions.h"  // detections
 
 // forward declare type support functions
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t get_serialized_size_geometry_msgs__msg__Polygon(
+size_t get_serialized_size_custom_interfaces__msg__DetectionBuffer(
   const void * untyped_ros_message,
   size_t current_alignment);
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t max_serialized_size_geometry_msgs__msg__Polygon(
+size_t max_serialized_size_custom_interfaces__msg__DetectionBuffer(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
 const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon)();
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer)();
 
 
 using _DetectionService_Response__ros_msg_type = custom_interfaces__srv__DetectionService_Response;
@@ -429,22 +254,17 @@ static bool _DetectionService_Response__cdr_serialize(
     return false;
   }
   const _DetectionService_Response__ros_msg_type * ros_message = static_cast<const _DetectionService_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: meshes
+  // Field name: detections
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon
+        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer
       )()->data);
-    size_t size = ros_message->meshes.size;
-    auto array_ptr = ros_message->meshes.data;
-    cdr << static_cast<uint32_t>(size);
-    for (size_t i = 0; i < size; ++i) {
-      if (!callbacks->cdr_serialize(
-          &array_ptr[i], cdr))
-      {
-        return false;
-      }
+    if (!callbacks->cdr_serialize(
+        &ros_message->detections, cdr))
+    {
+      return false;
     }
   }
 
@@ -460,30 +280,17 @@ static bool _DetectionService_Response__cdr_deserialize(
     return false;
   }
   _DetectionService_Response__ros_msg_type * ros_message = static_cast<_DetectionService_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: meshes
+  // Field name: detections
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon
+        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, DetectionBuffer
       )()->data);
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->meshes.data) {
-      geometry_msgs__msg__Polygon__Sequence__fini(&ros_message->meshes);
-    }
-    if (!geometry_msgs__msg__Polygon__Sequence__init(&ros_message->meshes, size)) {
-      fprintf(stderr, "failed to create array for field 'meshes'");
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->detections))
+    {
       return false;
-    }
-    auto array_ptr = ros_message->meshes.data;
-    for (size_t i = 0; i < size; ++i) {
-      if (!callbacks->cdr_deserialize(
-          cdr, &array_ptr[i]))
-      {
-        return false;
-      }
     }
   }
 
@@ -504,18 +311,10 @@ size_t get_serialized_size_custom_interfaces__srv__DetectionService_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name meshes
-  {
-    size_t array_size = ros_message->meshes.size;
-    auto array_ptr = ros_message->meshes.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+  // field.name detections
 
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += get_serialized_size_geometry_msgs__msg__Polygon(
-        &array_ptr[index], current_alignment);
-    }
-  }
+  current_alignment += get_serialized_size_custom_interfaces__msg__DetectionBuffer(
+    &(ros_message->detections), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -545,13 +344,9 @@ size_t max_serialized_size_custom_interfaces__srv__DetectionService_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: meshes
+  // member: detections
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
 
     last_member_size = 0;
@@ -560,7 +355,7 @@ size_t max_serialized_size_custom_interfaces__srv__DetectionService_Response(
       bool inner_is_plain;
       size_t inner_size;
       inner_size =
-        max_serialized_size_geometry_msgs__msg__Polygon(
+        max_serialized_size_custom_interfaces__msg__DetectionBuffer(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;
@@ -577,7 +372,7 @@ size_t max_serialized_size_custom_interfaces__srv__DetectionService_Response(
     using DataType = custom_interfaces__srv__DetectionService_Response;
     is_plain =
       (
-      offsetof(DataType, meshes) +
+      offsetof(DataType, detections) +
       last_member_size
       ) == ret_val;
   }

@@ -15,14 +15,6 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
-// Include directives for member types
-// Member 'depth_image'
-#include "sensor_msgs/msg/detail/image__struct.hpp"
-// Member 'camera_info'
-#include "sensor_msgs/msg/detail/camera_info__struct.hpp"
-// Member 'detections'
-#include "custom_interfaces/msg/detail/detection_buffer__struct.hpp"
-
 #ifndef _WIN32
 # define DEPRECATED__custom_interfaces__srv__DetectionService_Request __attribute__((deprecated))
 #else
@@ -42,51 +34,29 @@ struct DetectionService_Request_
   using Type = DetectionService_Request_<ContainerAllocator>;
 
   explicit DetectionService_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : depth_image(_init),
-    camera_info(_init),
-    detections(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   explicit DetectionService_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : depth_image(_alloc, _init),
-    camera_info(_alloc, _init),
-    detections(_alloc, _init)
   {
-    (void)_init;
+    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   // field types and members
-  using _depth_image_type =
-    sensor_msgs::msg::Image_<ContainerAllocator>;
-  _depth_image_type depth_image;
-  using _camera_info_type =
-    sensor_msgs::msg::CameraInfo_<ContainerAllocator>;
-  _camera_info_type camera_info;
-  using _detections_type =
-    custom_interfaces::msg::DetectionBuffer_<ContainerAllocator>;
-  _detections_type detections;
+  using _structure_needs_at_least_one_member_type =
+    uint8_t;
+  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
 
-  // setters for named parameter idiom
-  Type & set__depth_image(
-    const sensor_msgs::msg::Image_<ContainerAllocator> & _arg)
-  {
-    this->depth_image = _arg;
-    return *this;
-  }
-  Type & set__camera_info(
-    const sensor_msgs::msg::CameraInfo_<ContainerAllocator> & _arg)
-  {
-    this->camera_info = _arg;
-    return *this;
-  }
-  Type & set__detections(
-    const custom_interfaces::msg::DetectionBuffer_<ContainerAllocator> & _arg)
-  {
-    this->detections = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -130,13 +100,7 @@ struct DetectionService_Request_
   // comparison operators
   bool operator==(const DetectionService_Request_ & other) const
   {
-    if (this->depth_image != other.depth_image) {
-      return false;
-    }
-    if (this->camera_info != other.camera_info) {
-      return false;
-    }
-    if (this->detections != other.detections) {
+    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
       return false;
     }
     return true;
@@ -159,8 +123,8 @@ using DetectionService_Request =
 
 
 // Include directives for member types
-// Member 'meshes'
-#include "geometry_msgs/msg/detail/polygon__struct.hpp"
+// Member 'detections'
+#include "custom_interfaces/msg/detail/detection_buffer__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__custom_interfaces__srv__DetectionService_Response __attribute__((deprecated))
@@ -181,26 +145,27 @@ struct DetectionService_Response_
   using Type = DetectionService_Response_<ContainerAllocator>;
 
   explicit DetectionService_Response_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : detections(_init)
   {
     (void)_init;
   }
 
   explicit DetectionService_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : detections(_alloc, _init)
   {
     (void)_init;
-    (void)_alloc;
   }
 
   // field types and members
-  using _meshes_type =
-    std::vector<geometry_msgs::msg::Polygon_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Polygon_<ContainerAllocator>>>;
-  _meshes_type meshes;
+  using _detections_type =
+    custom_interfaces::msg::DetectionBuffer_<ContainerAllocator>;
+  _detections_type detections;
 
   // setters for named parameter idiom
-  Type & set__meshes(
-    const std::vector<geometry_msgs::msg::Polygon_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Polygon_<ContainerAllocator>>> & _arg)
+  Type & set__detections(
+    const custom_interfaces::msg::DetectionBuffer_<ContainerAllocator> & _arg)
   {
-    this->meshes = _arg;
+    this->detections = _arg;
     return *this;
   }
 
@@ -246,7 +211,7 @@ struct DetectionService_Response_
   // comparison operators
   bool operator==(const DetectionService_Response_ & other) const
   {
-    if (this->meshes != other.meshes) {
+    if (this->detections != other.detections) {
       return false;
     }
     return true;

@@ -9,7 +9,11 @@
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MotorCommand.idl",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/BoundingBox.idl",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/DetectionBuffer.idl",
-    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/DetectionService.idl"
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/AABB.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/WorldMap.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/GenerateWorldMap.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/DetectionService.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:action/DetectionAction.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -101,7 +105,12 @@
     "sensor_msgs:/opt/ros/humble/share/sensor_msgs/msg/TimeReference.idl",
     "sensor_msgs:/opt/ros/humble/share/sensor_msgs/srv/SetCameraInfo.idl",
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
-    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -123,7 +132,11 @@
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/MotorCommand.idl",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/BoundingBox.idl",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/DetectionBuffer.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/AABB.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/WorldMap.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/DetectionService.idl",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/action/DetectionAction.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",
@@ -213,6 +226,11 @@
     "/opt/ros/humble/share/sensor_msgs/msg/TimeReference.idl",
     "/opt/ros/humble/share/sensor_msgs/srv/SetCameraInfo.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
-    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

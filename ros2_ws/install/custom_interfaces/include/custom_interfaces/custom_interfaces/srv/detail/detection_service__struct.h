@@ -17,20 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'depth_image'
-#include "sensor_msgs/msg/detail/image__struct.h"
-// Member 'camera_info'
-#include "sensor_msgs/msg/detail/camera_info__struct.h"
-// Member 'detections'
-#include "custom_interfaces/msg/detail/detection_buffer__struct.h"
-
 /// Struct defined in srv/DetectionService in the package custom_interfaces.
 typedef struct custom_interfaces__srv__DetectionService_Request
 {
-  sensor_msgs__msg__Image depth_image;
-  sensor_msgs__msg__CameraInfo camera_info;
-  custom_interfaces__msg__DetectionBuffer detections;
+  uint8_t structure_needs_at_least_one_member;
 } custom_interfaces__srv__DetectionService_Request;
 
 // Struct for a sequence of custom_interfaces__srv__DetectionService_Request.
@@ -47,13 +37,13 @@ typedef struct custom_interfaces__srv__DetectionService_Request__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'meshes'
-#include "geometry_msgs/msg/detail/polygon__struct.h"
+// Member 'detections'
+#include "custom_interfaces/msg/detail/detection_buffer__struct.h"
 
 /// Struct defined in srv/DetectionService in the package custom_interfaces.
 typedef struct custom_interfaces__srv__DetectionService_Response
 {
-  geometry_msgs__msg__Polygon__Sequence meshes;
+  custom_interfaces__msg__DetectionBuffer detections;
 } custom_interfaces__srv__DetectionService_Response;
 
 // Struct for a sequence of custom_interfaces__srv__DetectionService_Response.

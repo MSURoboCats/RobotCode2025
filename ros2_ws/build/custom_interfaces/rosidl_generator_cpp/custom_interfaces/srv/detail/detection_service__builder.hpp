@@ -18,58 +18,6 @@ namespace custom_interfaces
 namespace srv
 {
 
-namespace builder
-{
-
-class Init_DetectionService_Request_detections
-{
-public:
-  explicit Init_DetectionService_Request_detections(::custom_interfaces::srv::DetectionService_Request & msg)
-  : msg_(msg)
-  {}
-  ::custom_interfaces::srv::DetectionService_Request detections(::custom_interfaces::srv::DetectionService_Request::_detections_type arg)
-  {
-    msg_.detections = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::custom_interfaces::srv::DetectionService_Request msg_;
-};
-
-class Init_DetectionService_Request_camera_info
-{
-public:
-  explicit Init_DetectionService_Request_camera_info(::custom_interfaces::srv::DetectionService_Request & msg)
-  : msg_(msg)
-  {}
-  Init_DetectionService_Request_detections camera_info(::custom_interfaces::srv::DetectionService_Request::_camera_info_type arg)
-  {
-    msg_.camera_info = std::move(arg);
-    return Init_DetectionService_Request_detections(msg_);
-  }
-
-private:
-  ::custom_interfaces::srv::DetectionService_Request msg_;
-};
-
-class Init_DetectionService_Request_depth_image
-{
-public:
-  Init_DetectionService_Request_depth_image()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_DetectionService_Request_camera_info depth_image(::custom_interfaces::srv::DetectionService_Request::_depth_image_type arg)
-  {
-    msg_.depth_image = std::move(arg);
-    return Init_DetectionService_Request_camera_info(msg_);
-  }
-
-private:
-  ::custom_interfaces::srv::DetectionService_Request msg_;
-};
-
-}  // namespace builder
 
 }  // namespace srv
 
@@ -80,7 +28,7 @@ template<>
 inline
 auto build<::custom_interfaces::srv::DetectionService_Request>()
 {
-  return custom_interfaces::srv::builder::Init_DetectionService_Request_depth_image();
+  return ::custom_interfaces::srv::DetectionService_Request(rosidl_runtime_cpp::MessageInitialization::ZERO);
 }
 
 }  // namespace custom_interfaces
@@ -95,15 +43,15 @@ namespace srv
 namespace builder
 {
 
-class Init_DetectionService_Response_meshes
+class Init_DetectionService_Response_detections
 {
 public:
-  Init_DetectionService_Response_meshes()
+  Init_DetectionService_Response_detections()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::custom_interfaces::srv::DetectionService_Response meshes(::custom_interfaces::srv::DetectionService_Response::_meshes_type arg)
+  ::custom_interfaces::srv::DetectionService_Response detections(::custom_interfaces::srv::DetectionService_Response::_detections_type arg)
   {
-    msg_.meshes = std::move(arg);
+    msg_.detections = std::move(arg);
     return std::move(msg_);
   }
 
@@ -122,7 +70,7 @@ template<>
 inline
 auto build<::custom_interfaces::srv::DetectionService_Response>()
 {
-  return custom_interfaces::srv::builder::Init_DetectionService_Response_meshes();
+  return custom_interfaces::srv::builder::Init_DetectionService_Response_detections();
 }
 
 }  // namespace custom_interfaces

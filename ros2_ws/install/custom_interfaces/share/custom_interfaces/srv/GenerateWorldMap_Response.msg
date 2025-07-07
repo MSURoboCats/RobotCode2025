@@ -1,0 +1,3 @@
+
+WorldMap out_map
+bool success

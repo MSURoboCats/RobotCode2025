@@ -33,6 +33,10 @@ ros2 run realsense2_camera realsense2_camera_node
 
 To have the depth image be aligned to the color image by setting the parameter "align_depth.enable" to "True" from which a new topic is created called "aligned_depth_to_color/image_raw" which can be subscribed to
 
+### TODO
+1. Find out how to make depth_image gathering asynchronous from the service stuff, or find a way to ensure that depth_image data is gathered before calling the service stuff
+	- Possibly make depth_image gatheringh a seperate service, which can then be found in the chain-link style found int DItM_tester.py
+
 ### NOTES
 The default node publishes imu data as well as color, depth, and infrared images
 

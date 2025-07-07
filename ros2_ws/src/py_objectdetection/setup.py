@@ -21,6 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'detector = py_objectdetection.detection_publisher:main',
+            'mapper = py_objectdetection.depth_image_to_map:main',
+            'tester = py_objectdetection.DItM_tester:main'
         ],
     },
 )

@@ -380,7 +380,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/msg" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/AABB.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/msg" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/WorldMap.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/DetectionService.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/action" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/action/DetectionAction.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -408,6 +424,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/msg" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/AABB.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/msg" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/WorldMap.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/GenerateWorldMap.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/GenerateWorldMap_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/GenerateWorldMap_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/DetectionService.srv")
 endif()
 
@@ -417,6 +453,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/DetectionService_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/action" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/DetectionAction.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

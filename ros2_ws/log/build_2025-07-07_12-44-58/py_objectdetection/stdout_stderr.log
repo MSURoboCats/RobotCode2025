@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing py_objectdetection.egg-info/PKG-INFO
+writing dependency_links to py_objectdetection.egg-info/dependency_links.txt
+writing entry points to py_objectdetection.egg-info/entry_points.txt
+writing requirements to py_objectdetection.egg-info/requires.txt
+writing top-level names to py_objectdetection.egg-info/top_level.txt
+reading manifest file 'py_objectdetection.egg-info/SOURCES.txt'
+writing manifest file 'py_objectdetection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py-objectdetection.egg-link (link to .)
+Installing detector script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+Installing mapper script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+Installing tester script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+
+Installed /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection
+running symlink_data
+symbolically linking /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/resource/py_objectdetection -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/ament_index/resource_index/packages
+symbolically linking /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/package.xml -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/py_objectdetection

@@ -1,9 +1,11 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/detection_publisher.py
-/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/depth_image_filterer.py
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/depth_image_to_map.py
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/pipeline_tester.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__pycache__/__init__.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__pycache__/detection_publisher.cpython-310.pyc
-/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__pycache__/depth_image_filterer.cpython-310.pyc
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__pycache__/depth_image_to_map.cpython-310.pyc
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/__pycache__/pipeline_tester.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/ament_index/resource_index/packages/py_objectdetection
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/share/py_objectdetection/package.xml
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info/dependency_links.txt
@@ -14,3 +16,5 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info/requires.txt
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info/zip-safe
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection/detector
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection/mapper
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection/tester

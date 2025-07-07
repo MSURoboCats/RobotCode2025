@@ -10,35 +10,13 @@
 
 #include "rcutils/allocator.h"
 
-// Include directives for member types
-// Member `depth_image`
-#include "sensor_msgs/msg/detail/image__functions.h"
-// Member `camera_info`
-#include "sensor_msgs/msg/detail/camera_info__functions.h"
-// Member `detections`
-#include "custom_interfaces/msg/detail/detection_buffer__functions.h"
-
 bool
 custom_interfaces__srv__DetectionService_Request__init(custom_interfaces__srv__DetectionService_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // depth_image
-  if (!sensor_msgs__msg__Image__init(&msg->depth_image)) {
-    custom_interfaces__srv__DetectionService_Request__fini(msg);
-    return false;
-  }
-  // camera_info
-  if (!sensor_msgs__msg__CameraInfo__init(&msg->camera_info)) {
-    custom_interfaces__srv__DetectionService_Request__fini(msg);
-    return false;
-  }
-  // detections
-  if (!custom_interfaces__msg__DetectionBuffer__init(&msg->detections)) {
-    custom_interfaces__srv__DetectionService_Request__fini(msg);
-    return false;
-  }
+  // structure_needs_at_least_one_member
   return true;
 }
 
@@ -48,12 +26,7 @@ custom_interfaces__srv__DetectionService_Request__fini(custom_interfaces__srv__D
   if (!msg) {
     return;
   }
-  // depth_image
-  sensor_msgs__msg__Image__fini(&msg->depth_image);
-  // camera_info
-  sensor_msgs__msg__CameraInfo__fini(&msg->camera_info);
-  // detections
-  custom_interfaces__msg__DetectionBuffer__fini(&msg->detections);
+  // structure_needs_at_least_one_member
 }
 
 bool
@@ -62,22 +35,8 @@ custom_interfaces__srv__DetectionService_Request__are_equal(const custom_interfa
   if (!lhs || !rhs) {
     return false;
   }
-  // depth_image
-  if (!sensor_msgs__msg__Image__are_equal(
-      &(lhs->depth_image), &(rhs->depth_image)))
-  {
-    return false;
-  }
-  // camera_info
-  if (!sensor_msgs__msg__CameraInfo__are_equal(
-      &(lhs->camera_info), &(rhs->camera_info)))
-  {
-    return false;
-  }
-  // detections
-  if (!custom_interfaces__msg__DetectionBuffer__are_equal(
-      &(lhs->detections), &(rhs->detections)))
-  {
+  // structure_needs_at_least_one_member
+  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
     return false;
   }
   return true;
@@ -91,24 +50,8 @@ custom_interfaces__srv__DetectionService_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // depth_image
-  if (!sensor_msgs__msg__Image__copy(
-      &(input->depth_image), &(output->depth_image)))
-  {
-    return false;
-  }
-  // camera_info
-  if (!sensor_msgs__msg__CameraInfo__copy(
-      &(input->camera_info), &(output->camera_info)))
-  {
-    return false;
-  }
-  // detections
-  if (!custom_interfaces__msg__DetectionBuffer__copy(
-      &(input->detections), &(output->detections)))
-  {
-    return false;
-  }
+  // structure_needs_at_least_one_member
+  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
   return true;
 }
 
@@ -293,8 +236,8 @@ custom_interfaces__srv__DetectionService_Request__Sequence__copy(
 
 
 // Include directives for member types
-// Member `meshes`
-#include "geometry_msgs/msg/detail/polygon__functions.h"
+// Member `detections`
+#include "custom_interfaces/msg/detail/detection_buffer__functions.h"
 
 bool
 custom_interfaces__srv__DetectionService_Response__init(custom_interfaces__srv__DetectionService_Response * msg)
@@ -302,8 +245,8 @@ custom_interfaces__srv__DetectionService_Response__init(custom_interfaces__srv__
   if (!msg) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__init(&msg->meshes, 0)) {
+  // detections
+  if (!custom_interfaces__msg__DetectionBuffer__init(&msg->detections)) {
     custom_interfaces__srv__DetectionService_Response__fini(msg);
     return false;
   }
@@ -316,8 +259,8 @@ custom_interfaces__srv__DetectionService_Response__fini(custom_interfaces__srv__
   if (!msg) {
     return;
   }
-  // meshes
-  geometry_msgs__msg__Polygon__Sequence__fini(&msg->meshes);
+  // detections
+  custom_interfaces__msg__DetectionBuffer__fini(&msg->detections);
 }
 
 bool
@@ -326,9 +269,9 @@ custom_interfaces__srv__DetectionService_Response__are_equal(const custom_interf
   if (!lhs || !rhs) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__are_equal(
-      &(lhs->meshes), &(rhs->meshes)))
+  // detections
+  if (!custom_interfaces__msg__DetectionBuffer__are_equal(
+      &(lhs->detections), &(rhs->detections)))
   {
     return false;
   }
@@ -343,9 +286,9 @@ custom_interfaces__srv__DetectionService_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__copy(
-      &(input->meshes), &(output->meshes)))
+  // detections
+  if (!custom_interfaces__msg__DetectionBuffer__copy(
+      &(input->detections), &(output->detections)))
   {
     return false;
   }

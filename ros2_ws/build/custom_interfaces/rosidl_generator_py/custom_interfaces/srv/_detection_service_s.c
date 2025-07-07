@@ -16,16 +16,6 @@
 #include "custom_interfaces/srv/detail/detection_service__struct.h"
 #include "custom_interfaces/srv/detail/detection_service__functions.h"
 
-ROSIDL_GENERATOR_C_IMPORT
-bool sensor_msgs__msg__image__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * sensor_msgs__msg__image__convert_to_py(void * raw_ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-bool sensor_msgs__msg__camera_info__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * sensor_msgs__msg__camera_info__convert_to_py(void * raw_ros_message);
-bool custom_interfaces__msg__detection_buffer__convert_from_py(PyObject * _pymsg, void * _ros_message);
-PyObject * custom_interfaces__msg__detection_buffer__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_interfaces__srv__detection_service__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -60,39 +50,7 @@ bool custom_interfaces__srv__detection_service__request__convert_from_py(PyObjec
     assert(strncmp("custom_interfaces.srv._detection_service.DetectionService_Request", full_classname_dest, 65) == 0);
   }
   custom_interfaces__srv__DetectionService_Request * ros_message = _ros_message;
-  {  // depth_image
-    PyObject * field = PyObject_GetAttrString(_pymsg, "depth_image");
-    if (!field) {
-      return false;
-    }
-    if (!sensor_msgs__msg__image__convert_from_py(field, &ros_message->depth_image)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
-  {  // camera_info
-    PyObject * field = PyObject_GetAttrString(_pymsg, "camera_info");
-    if (!field) {
-      return false;
-    }
-    if (!sensor_msgs__msg__camera_info__convert_from_py(field, &ros_message->camera_info)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
-  {  // detections
-    PyObject * field = PyObject_GetAttrString(_pymsg, "detections");
-    if (!field) {
-      return false;
-    }
-    if (!custom_interfaces__msg__detection_buffer__convert_from_py(field, &ros_message->detections)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
+  ros_message->structure_needs_at_least_one_member = 0;
 
   return true;
 }
@@ -114,49 +72,7 @@ PyObject * custom_interfaces__srv__detection_service__request__convert_to_py(voi
       return NULL;
     }
   }
-  custom_interfaces__srv__DetectionService_Request * ros_message = (custom_interfaces__srv__DetectionService_Request *)raw_ros_message;
-  {  // depth_image
-    PyObject * field = NULL;
-    field = sensor_msgs__msg__image__convert_to_py(&ros_message->depth_image);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "depth_image", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // camera_info
-    PyObject * field = NULL;
-    field = sensor_msgs__msg__camera_info__convert_to_py(&ros_message->camera_info);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "camera_info", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // detections
-    PyObject * field = NULL;
-    field = custom_interfaces__msg__detection_buffer__convert_to_py(&ros_message->detections);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "detections", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
+  (void)raw_ros_message;
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;
@@ -176,16 +92,8 @@ PyObject * custom_interfaces__srv__detection_service__request__convert_to_py(voi
 // already included above
 // #include "custom_interfaces/srv/detail/detection_service__functions.h"
 
-#include "rosidl_runtime_c/primitives_sequence.h"
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
-
-// Nested array functions includes
-#include "geometry_msgs/msg/detail/polygon__functions.h"
-// end nested array functions include
-ROSIDL_GENERATOR_C_IMPORT
-bool geometry_msgs__msg__polygon__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * geometry_msgs__msg__polygon__convert_to_py(void * raw_ros_message);
+bool custom_interfaces__msg__detection_buffer__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * custom_interfaces__msg__detection_buffer__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_interfaces__srv__detection_service__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -220,37 +128,15 @@ bool custom_interfaces__srv__detection_service__response__convert_from_py(PyObje
     assert(strncmp("custom_interfaces.srv._detection_service.DetectionService_Response", full_classname_dest, 66) == 0);
   }
   custom_interfaces__srv__DetectionService_Response * ros_message = _ros_message;
-  {  // meshes
-    PyObject * field = PyObject_GetAttrString(_pymsg, "meshes");
+  {  // detections
+    PyObject * field = PyObject_GetAttrString(_pymsg, "detections");
     if (!field) {
       return false;
     }
-    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'meshes'");
-    if (!seq_field) {
+    if (!custom_interfaces__msg__detection_buffer__convert_from_py(field, &ros_message->detections)) {
       Py_DECREF(field);
       return false;
     }
-    Py_ssize_t size = PySequence_Size(field);
-    if (-1 == size) {
-      Py_DECREF(seq_field);
-      Py_DECREF(field);
-      return false;
-    }
-    if (!geometry_msgs__msg__Polygon__Sequence__init(&(ros_message->meshes), size)) {
-      PyErr_SetString(PyExc_RuntimeError, "unable to create geometry_msgs__msg__Polygon__Sequence ros_message");
-      Py_DECREF(seq_field);
-      Py_DECREF(field);
-      return false;
-    }
-    geometry_msgs__msg__Polygon * dest = ros_message->meshes.data;
-    for (Py_ssize_t i = 0; i < size; ++i) {
-      if (!geometry_msgs__msg__polygon__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
-        Py_DECREF(seq_field);
-        Py_DECREF(field);
-        return false;
-      }
-    }
-    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
 
@@ -275,28 +161,14 @@ PyObject * custom_interfaces__srv__detection_service__response__convert_to_py(vo
     }
   }
   custom_interfaces__srv__DetectionService_Response * ros_message = (custom_interfaces__srv__DetectionService_Response *)raw_ros_message;
-  {  // meshes
+  {  // detections
     PyObject * field = NULL;
-    size_t size = ros_message->meshes.size;
-    field = PyList_New(size);
+    field = custom_interfaces__msg__detection_buffer__convert_to_py(&ros_message->detections);
     if (!field) {
       return NULL;
     }
-    geometry_msgs__msg__Polygon * item;
-    for (size_t i = 0; i < size; ++i) {
-      item = &(ros_message->meshes.data[i]);
-      PyObject * pyitem = geometry_msgs__msg__polygon__convert_to_py(item);
-      if (!pyitem) {
-        Py_DECREF(field);
-        return NULL;
-      }
-      int rc = PyList_SetItem(field, i, pyitem);
-      (void)rc;
-      assert(rc == 0);
-    }
-    assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "meshes", field);
+      int rc = PyObject_SetAttrString(_pymessage, "detections", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

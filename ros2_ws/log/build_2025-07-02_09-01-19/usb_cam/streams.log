@@ -1,0 +1,138 @@
+[0.026s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam
+[0.144s] -- The C compiler identification is GNU 11.4.0
+[0.257s] -- The CXX compiler identification is GNU 11.4.0
+[0.271s] -- Detecting C compiler ABI info
+[0.428s] -- Detecting C compiler ABI info - done
+[0.439s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.439s] -- Detecting C compile features
+[0.440s] -- Detecting C compile features - done
+[0.446s] -- Detecting CXX compiler ABI info
+[0.605s] -- Detecting CXX compiler ABI info - done
+[0.617s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.618s] -- Detecting CXX compile features
+[0.619s] -- Detecting CXX compile features - done
+[0.623s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.939s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.323s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.331s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.344s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.366s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.392s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.467s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.471s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.628s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.675s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.748s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.761s] -- Looking for pthread.h
+[1.906s] -- Looking for pthread.h - found
+[1.906s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.042s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.045s] -- Found Threads: TRUE  
+[2.402s] -- Found OpenCV: /usr (found version "4.8.0") 
+[2.410s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.412s] -- Checking for module 'libavcodec'
+[2.438s] --   Found libavcodec, version 58.134.100
+[2.496s] -- Checking for module 'libavutil'
+[2.523s] --   Found libavutil, version 56.70.100
+[2.586s] -- Checking for module 'libswscale'
+[2.612s] --   Found libswscale, version 5.9.100
+[2.687s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.717s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.737s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.742s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.742s] -- Configured cppcheck include dirs: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam/include
+[2.742s] -- Configured cppcheck exclude dirs and/or files: 
+[2.747s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.747s] -- Configured cpplint exclude dirs and/or files: 
+[2.748s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.750s] -- Added test 'lint_cmake' to check CMake code style
+[2.751s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.755s] -- Added test 'uncrustify' to check C / C++ code style
+[2.756s] -- Configured uncrustify additional arguments: 
+[2.757s] -- Added test 'xmllint' to check XML markup files
+[2.762s] -- Configuring done
+[2.815s] -- Generating done
+[2.834s] -- Build files have been written to: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam
+[2.872s] Invoked command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam
+[2.875s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam -- -j8 -l8
+[2.969s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.969s] [ 21%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[2.970s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.970s] [ 28%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[4.893s] [ 35%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.963s] [ 35%] Built target gtest_main
+[8.122s] [ 42%] [32m[1mLinking CXX shared library libusb_cam.so[0m
+[8.583s] [ 42%] Built target usb_cam
+[8.688s] [ 50%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[14.156s] [ 57%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[14.181s] [ 64%] [32m[1mLinking CXX static library libgtest.a[0m
+[15.656s] [ 64%] Built target gtest
+[15.700s] [ 71%] [32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o[0m
+[15.702s] [ 78%] [32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o[0m
+[18.470s] [ 85%] [32m[1mLinking CXX executable test_usb_cam_utils[0m
+[18.501s] [ 85%] Built target usb_cam_node_exe
+[18.881s] [ 85%] Built target test_usb_cam_utils
+[19.646s] [ 92%] [32m[1mLinking CXX executable test_pixel_formats[0m
+[20.019s] [ 92%] Built target test_pixel_formats
+[27.864s] [100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[28.690s] [100%] Built target usb_cam_node
+[28.713s] Invoked command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam -- -j8 -l8
+[28.716s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam
+[28.730s] -- Install configuration: ""
+[28.730s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.sh
+[28.731s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[28.731s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[28.732s] -- Set runtime path of "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+[28.732s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/usb_cam/show_image.py
+[28.733s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/libusb_cam.so
+[28.735s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[28.745s] -- Set runtime path of "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/libusb_cam_node.so" to ""
+[28.745s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include
+[28.745s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam
+[28.745s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/usb_cam.hpp
+[28.746s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/utils.hpp
+[28.746s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/conversions.hpp
+[28.746s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[28.746s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/constants.hpp
+[28.746s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats
+[28.747s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[28.747s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[28.747s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/utils.hpp
+[28.747s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[28.747s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[28.748s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/mono.hpp
+[28.748s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[28.748s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[28.748s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/include/usb_cam/formats/m420.hpp
+[28.749s] -- Up-to-date: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[28.749s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/launch
+[28.749s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/launch/__init__.py
+[28.749s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/launch/camera_config.py
+[28.750s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[28.750s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config
+[28.750s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/params.yaml
+[28.751s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[28.751s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/params_forward_camera.yaml
+[28.752s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/params_realsense_camera_1.yaml
+[28.752s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/params_bottom_camera.yaml
+[28.752s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/config/params_realsense_camera_2.yaml
+[28.753s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[28.754s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[28.754s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[28.754s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[28.754s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/path.sh
+[28.755s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/environment/path.dsv
+[28.755s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/local_setup.bash
+[28.755s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/local_setup.sh
+[28.755s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/local_setup.zsh
+[28.755s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/local_setup.dsv
+[28.756s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/package.dsv
+[28.756s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[28.756s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[28.757s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[28.757s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.757s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.757s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[28.758s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[28.758s] -- Installing: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/usb_cam/share/usb_cam/package.xml
+[28.763s] Invoked command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/usb_cam

@@ -8,6 +8,7 @@ import cv_bridge
 from rclpy.node import Node
 from custom_interfaces.msg import BoundingBox
 from custom_interfaces.msg import DetectionBuffer
+from custom_interfaces.srv import DetectionService
 from sensor_msgs.msg import Image as ros2_img
 
 from ultralytics import YOLO
@@ -51,13 +52,14 @@ def buildmodel(path : str, task : str) -> YOLO:
 
 
 class DetectionPublisher(Node):
-    _model          : YOLO
-    _path           : str
-    _task           : str
-    _topic          : str
-    _filter         : str
-    _cvBridge       : CvBridge
-    _frameNumber    : int
+    _model              : YOLO
+    _path               : str
+    _task               : str
+    _topic              : str
+    _filter             : str
+    _cvBridge           : CvBridge
+    _frameNumber        : int
+    _lastFrameCapture   : DetectionBuffer
     def __init__(self):
         super().__init__('detection_publisher')
         self.declare_parameter("model_path", "ultralyticsplus/yolov8s.pt")
@@ -83,10 +85,17 @@ class DetectionPublisher(Node):
         self.subscription_ = self.create_subscription(ros2_img,self._topic,self.publisher_callback,5)
 
         self._frameNumber = 0
+
+        self._service = self.create_service(DetectionService,'detection_service',self.get_current_detection_buffer)
         
         cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
         cv2.resizeWindow("detection_publisher",640,480)
-        
+
+    def get_current_detection_buffer(self, request, response):
+        response.detections = self._lastFrameCapture
+        self.get_logger().info("Detection_Publisher::detection_service() : returning last frame capture")
+
+        return response
         
 
 
@@ -96,7 +105,7 @@ class DetectionPublisher(Node):
     def publisher_callback(self, image : ros2_img):
 
         cv_image = self._cvBridge.imgmsg_to_cv2(image)
-        cv_image = cv2.flip(cv_image,0)
+        # cv_image = cv2.flip(cv_image,0)
         cv_image = cv2.cvtColor(cv_image,cv2.COLOR_BGR2RGB)
 
         results = self._model(cv_image)
@@ -141,6 +150,8 @@ class DetectionPublisher(Node):
         out.detections = bboxes
 
         self.publisher_.publish(out)
+
+        self._lastFrameCapture = out
 
         self.get_logger().info("publishing bounding box buffer",)
 

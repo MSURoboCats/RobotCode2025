@@ -1,0 +1,203 @@
+'''
+DItM_tester.py.backup
+Backup of a previous version of pre-existing node 
+"Depth Image to Map tester", does as the name implies
+
+Ideally, this would be a part of a larger state machine / decision making algorithm
+
+
+'''
+
+import rclpy
+from rclpy.node import Node
+from rclpy import Future
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
+from rclpy.executors import MultiThreadedExecutor, ExternalShutdownException
+
+import cv2
+from cv_bridge import CvBridge
+
+from custom_interfaces.srv import DetectionService, GenerateWorldMap
+from custom_interfaces.msg import DetectionBuffer, WorldMap, AABB
+
+from sensor_msgs.msg import Image
+
+
+
+class DITMTester(Node):
+    _depth_image : Image
+    _fHasDepthImage : bool
+    _cv_bridge : CvBridge
+
+    def __init__(self):
+        super().__init__('ditm_tester')
+
+        self.declare_parameter('depth_image_topic','camera/camera/aligned_depth_to_color/image_raw')
+        
+        self._depth_image = None
+        self._fHasDepthImage = False
+        self._cv_bridge = CvBridge()
+
+        self.parallel_group = ReentrantCallbackGroup()
+        self.in_line_group = MutuallyExclusiveCallbackGroup()
+
+        # subscribe to depth image stream and put subscription on parallel thread (avoids invalid data)
+        self.depth_image_sub = self.create_subscription(
+            Image,
+            self.get_parameter('depth_image_topic').get_parameter_value().string_value,
+            self.depth_image_callback,
+            5,
+            callback_group= self.in_line_group
+        )
+
+        self.detection_client = self.create_client(DetectionService, 'detection_service')
+        self.map_client = self.create_client(GenerateWorldMap, 'generate_world_map')
+        self.ds_req = DetectionService.Request()
+        self.gwm_req = GenerateWorldMap.Request()
+
+
+        # cv2.namedWindow("current_img",cv2.WINDOW_AUTOSIZE)
+        # cv2.namedWindow("initial_img",cv2.WINDOW_AUTOSIZE)
+
+        """
+            THERE IS AN ISSUE WHERE THE DEPTH IMAGE ISNT GATHERED BEFORE BEGIN CALL SERVICES IS CALLED,
+            THIS MAKES THE DEPTH IMAGE ALWAYS NULL
+            SOLUTION:
+                FIND A WAY TO MAKE DEPTH IMAGE GATHERING ASYNCHRONOUS FROM SERVICE STUFF
+        """
+
+        
+        
+
+        while not self.detection_client.wait_for_service(timeout_sec=2.5):
+            self.get_logger().info("Waiting for detection_service service server...")
+        while not self.map_client.wait_for_service(timeout_sec=2.5):
+            self.get_logger().info("Waiting for generate_world_map service server...")
+
+
+
+
+
+        
+       
+        
+
+    #watch for a depth image, if a depth image is found for the first time, begin generating a map (and destroy the timer)
+    # def watch_depth_image(self):
+    #     self.get_logger().info("watching depth img...")
+    #     if (not (self._depth_image == None)) and (self._fHasDepthImage == False):
+    #         self.get_logger().info("Depth Image has been found! Destroying timer...")
+    #         self._fHasDepthImage = True
+    #         self.begin_call_services()
+    #         img = self._cv_bridge.imgmsg_to_cv2(self._depth_image)
+    #         cv2.imshow("initial_img", img)
+    #         cv2.waitKey(1)
+    #         if not self.destroy_timer(self.depth_image_watch) : 
+    #             self.get_logger().error("ERROR: Failed to destroy timer!")
+            
+
+            
+    def try_again_callback(self):
+        self.begin_call_services()
+
+
+
+    def depth_image_callback(self, msg):
+        self.get_logger().info("depth_image_callback")
+        self._depth_image = msg
+        # img = self._cv_bridge.imgmsg_to_cv2(msg)
+        # cv2.imshow("current_img",img)
+        # cv2.waitKey(1)
+        if(self._fHasDepthImage == False):
+            self._fHasDepthImage = True
+            self.begin_call_services()
+       
+
+
+    def get_detection_buffer(self):
+        return self.detection_client.call_async(self.ds_req)
+
+    def begin_call_services(self):
+        # first get the detection buffer
+        self.get_logger().info("running detection buffer service")
+        ds_future = self.get_detection_buffer()
+
+        # generate the map once the det. buffer is retreived
+        ds_future.add_done_callback(self.try_generate_map)
+    
+    def try_generate_map(self, future : Future):
+        self.get_logger().info("detection buffer service successful, trying to generate map")
+
+        try:
+            response = future.result()
+            detections : DetectionBuffer = response.detections 
+
+            if self._depth_image == None:
+                self.get_logger().warn("DITMTester::try_generate_map() : Warning! No depth image received!")
+                self.create_timer
+                return
+
+            # generate the map via service
+            self.gwm_req.detections = detections
+            self.gwm_req.depth_image = self._depth_image
+
+            map_future = self.map_client.call_async(self.gwm_req)
+            map_future.add_done_callback(self.map_service_callback)     
+
+        
+        except Exception as e:
+            self.get_logger().error(f"DITMTester::try_generate_map() : ERROR, service call failed : {e}")
+
+    def map_service_callback(self, future : Future):
+        try:
+            response = future.result()
+
+            if response.success:
+                self.get_logger().info("Successfully generated 3d map")
+            else:
+                self.get_logger().warn("Could not successfuly generate map")
+        except Exception as e:
+            self.get_logger().error(f"DITMTester::map_service_callback() : ERROR, callback failed : {e}")
+
+
+def main():
+    rclpy.init(args=None)
+    node = DITMTester()
+    executor = MultiThreadedExecutor()
+    try:
+        
+        executor.add_node(node)
+        executor.spin()
+
+       
+    except (KeyboardInterrupt,ExternalShutdownException):
+        node.destroy_node()
+        executor.shutdown()
+        rclpy.shutdown()
+
+   
+
+    # node = DITMTester()
+
+    # rclpy.spin(node)
+
+    # node.destroy_node()
+    
+    # rclpy.shutdown()  
+
+if __name__ == '__main__':
+    main() 
+
+
+
+
+
+
+    
+
+      
+
+
+
+
+

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/GenerateWorldMap.srv
+// generated code does not contain a copyright notice
+
+#include "custom_interfaces/msg/WorldMap.idl"
+
+module custom_interfaces {
+  module srv {
+    struct GenerateWorldMap_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GenerateWorldMap_Response {
+      custom_interfaces::msg::WorldMap out_map;
+
+      boolean success;
+    };
+  };
+};

@@ -72,9 +72,15 @@ CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/s
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotorCommand.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/BoundingBox.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DetectionBuffer.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/AABB.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/WorldMap.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/GenerateWorldMap.srv
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/GenerateWorldMap_Request.msg
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/GenerateWorldMap_Response.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/DetectionService.srv
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Request.msg
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Response.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/DetectionAction.action
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -133,6 +139,10 @@ CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/RelativeHumi
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/Temperature.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/msg/TimeReference.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/sensor_msgs/srv/SetCameraInfo.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+CMakeFiles/custom_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 
 custom_interfaces: CMakeFiles/custom_interfaces
 custom_interfaces: CMakeFiles/custom_interfaces.dir/build.make

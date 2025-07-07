@@ -25,17 +25,10 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
  /usr/include/aarch64-linux-gnu/bits/wchar.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \

@@ -19,7 +19,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/MotorCommand.msg"
 	"msg/BoundingBox.msg"
 	"msg/DetectionBuffer.msg"
+	"msg/AABB.msg"
+	"msg/WorldMap.msg"
+	"srv/GenerateWorldMap.srv"
 	"srv/DetectionService.srv"
+	"action/DetectionAction.action"
 	
 	DEPENDENCIES geometry_msgs sensor_msgs
 )

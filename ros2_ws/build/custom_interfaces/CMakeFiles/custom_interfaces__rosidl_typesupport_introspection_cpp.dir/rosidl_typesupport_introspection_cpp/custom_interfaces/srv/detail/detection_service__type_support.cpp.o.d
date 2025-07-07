@@ -177,15 +177,8 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_ty
  /usr/include/c++/11/stdexcept \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__struct.hpp \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/field_types.hpp \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/identifier.hpp \

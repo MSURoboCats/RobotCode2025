@@ -1,0 +1,138 @@
+import rclpy
+from rclpy.node import Node
+
+import cv2
+from cv_bridge import CvBridge
+
+import numpy as np
+
+from custom_interfaces.msg import AABB, WorldMap, BoundingBox, DetectionBuffer
+from custom_interfaces.srv import GenerateWorldMap
+
+from sensor_msgs.msg import Image, CameraInfo
+from geometry_msgs.msg import Point as ros2_pt
+from geometry_msgs.msg import Vector3 as ros2_v3
+
+
+class Mesh:
+    name   : str
+    points : list[ros2_pt] = list()
+
+    def __init__(self, points : list[ros2_pt] = list(), name : str = ""):
+        self.points = points
+        self.name = name
+
+
+class DepthImageToMapNode(Node):
+    _camera_info : CameraInfo
+    _cv_bridge   : CvBridge
+    def __init__(self):
+        super().__init__('depth_image_to_map')
+        self.declare_parameter('camera_info_topic','camera/camera/aligned_depth_to_color/camera_info')
+        
+        self.camera_info_subscription = self.create_subscription(
+            CameraInfo,
+            self.get_parameter('camera_info_topic').get_parameter_value().string_value,
+            self.camera_info_subscription,
+            5
+        )
+        cv2.namedWindow("depth_image",cv2.WINDOW_AUTOSIZE)
+        self.camera_info_subscription
+        self._cv_bridge = CvBridge()
+        self._service = self.create_service(GenerateWorldMap,'generate_world_map',self.generate_new_map)
+
+    def generate_mesh(self, img) -> Mesh:
+        k_raw = self._camera_info.k
+        print("img og values")
+        print(img)
+
+        img = img.astype(np.float32)
+
+        print("img new values")
+        print(img)
+        
+
+        print("Image dtype: ")
+        print(img.dtype)
+        print("raw k matrix:")
+        print(k_raw)
+        fx = self._camera_info.k[0]
+        cx = self._camera_info.k[2]
+        fy = self._camera_info.k[4]
+        cy = self._camera_info.k[5]
+        np_k_matrix = np.array([[fx, 0, cx],
+                                [0, fy, cy], 
+                                [0, 0, 1]], dtype=np.float64)
+
+        print("np_k_matrix")
+        print(np_k_matrix)
+
+        mesh_points = cv2.rgbd.depthTo3d(img,np_k_matrix)
+        print("mesh points:")
+        print(mesh_points)
+
+        return None
+
+
+
+
+    def camera_info_subscription(self, msg):
+        self._camera_info = msg
+
+    def generate_new_map(self, request : GenerateWorldMap.Request, response : GenerateWorldMap.Response):
+        m_iDepth = request.depth_image
+        m_db = request.detections
+        
+
+        # convert ros2_img to opencv_img and generate empty mask 
+       
+        depth_image = self._cv_bridge.imgmsg_to_cv2(m_iDepth,m_iDepth.encoding)
+
+        print(depth_image)
+
+        mask = np.zeros((depth_image.shape[0],depth_image.shape[1]), dtype=np.uint8)
+        cv2.imshow("depth_image",depth_image)
+        cv2.waitKey(0)
+
+        
+        meshList : list[Mesh] = list()
+
+        # isolate each detected object and generate mesh
+
+        # for bbox in m_db.detections:
+        #     print(bbox)
+        #     p1 = (int(bbox.center_x - bbox.width/2),int(bbox.center_y - bbox.height/2))
+        #     p2 = (int(bbox.center_x + bbox.width/2),int(bbox.center_y + bbox.height/2))
+            
+        #     color = (255,255,255)
+        #     isolationMask = cv2.rectangle(mask,p1,p2,color,-1)
+        #     print(isolationMask.shape)
+        #     print(depth_image.shape)
+        #     isolated = cv2.bitwise_and(depth_image,depth_image,mask=isolationMask)
+        #     cv2.imshow(bbox.name,isolated)
+        #     cv2.waitKey(0)
+        #     result = self.generate_mesh(isolated) 
+
+        self.generate_mesh(depth_image)
+     
+
+        self.get_logger().warn("Warning! response.success is always true!")
+        response.success = True   
+        return response    
+
+
+            
+def main():
+    rclpy.init()
+
+    node = DepthImageToMapNode()
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+    
+
+if __name__ == '__main__':
+    main()
+    
+

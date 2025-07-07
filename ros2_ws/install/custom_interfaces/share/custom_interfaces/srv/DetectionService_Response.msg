@@ -1,2 +1,2 @@
 
-geometry_msgs/Polygon[] meshes 
+DetectionBuffer detections
