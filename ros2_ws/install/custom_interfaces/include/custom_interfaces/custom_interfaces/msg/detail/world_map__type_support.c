@@ -13,10 +13,14 @@
 
 
 // Include directives for member types
-// Member `meshes`
-#include "geometry_msgs/msg/polygon.h"
-// Member `meshes`
-#include "geometry_msgs/msg/detail/polygon__rosidl_typesupport_introspection_c.h"
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+// Member `objects`
+#include "custom_interfaces/msg/map_object.h"
+// Member `objects`
+#include "custom_interfaces/msg/detail/map_object__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -37,85 +41,102 @@ void custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__World
   custom_interfaces__msg__WorldMap__fini(message_memory);
 }
 
-size_t custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__size_function__WorldMap__meshes(
+size_t custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__size_function__WorldMap__objects(
   const void * untyped_member)
 {
-  const geometry_msgs__msg__Polygon__Sequence * member =
-    (const geometry_msgs__msg__Polygon__Sequence *)(untyped_member);
+  const custom_interfaces__msg__MapObject__Sequence * member =
+    (const custom_interfaces__msg__MapObject__Sequence *)(untyped_member);
   return member->size;
 }
 
-const void * custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__meshes(
+const void * custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__objects(
   const void * untyped_member, size_t index)
 {
-  const geometry_msgs__msg__Polygon__Sequence * member =
-    (const geometry_msgs__msg__Polygon__Sequence *)(untyped_member);
+  const custom_interfaces__msg__MapObject__Sequence * member =
+    (const custom_interfaces__msg__MapObject__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
-void * custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__meshes(
+void * custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__objects(
   void * untyped_member, size_t index)
 {
-  geometry_msgs__msg__Polygon__Sequence * member =
-    (geometry_msgs__msg__Polygon__Sequence *)(untyped_member);
+  custom_interfaces__msg__MapObject__Sequence * member =
+    (custom_interfaces__msg__MapObject__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
-void custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__fetch_function__WorldMap__meshes(
+void custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__fetch_function__WorldMap__objects(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const geometry_msgs__msg__Polygon * item =
-    ((const geometry_msgs__msg__Polygon *)
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__meshes(untyped_member, index));
-  geometry_msgs__msg__Polygon * value =
-    (geometry_msgs__msg__Polygon *)(untyped_value);
+  const custom_interfaces__msg__MapObject * item =
+    ((const custom_interfaces__msg__MapObject *)
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__objects(untyped_member, index));
+  custom_interfaces__msg__MapObject * value =
+    (custom_interfaces__msg__MapObject *)(untyped_value);
   *value = *item;
 }
 
-void custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__assign_function__WorldMap__meshes(
+void custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__assign_function__WorldMap__objects(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  geometry_msgs__msg__Polygon * item =
-    ((geometry_msgs__msg__Polygon *)
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__meshes(untyped_member, index));
-  const geometry_msgs__msg__Polygon * value =
-    (const geometry_msgs__msg__Polygon *)(untyped_value);
+  custom_interfaces__msg__MapObject * item =
+    ((custom_interfaces__msg__MapObject *)
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__objects(untyped_member, index));
+  const custom_interfaces__msg__MapObject * value =
+    (const custom_interfaces__msg__MapObject *)(untyped_value);
   *item = *value;
 }
 
-bool custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__resize_function__WorldMap__meshes(
+bool custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__resize_function__WorldMap__objects(
   void * untyped_member, size_t size)
 {
-  geometry_msgs__msg__Polygon__Sequence * member =
-    (geometry_msgs__msg__Polygon__Sequence *)(untyped_member);
-  geometry_msgs__msg__Polygon__Sequence__fini(member);
-  return geometry_msgs__msg__Polygon__Sequence__init(member, size);
+  custom_interfaces__msg__MapObject__Sequence * member =
+    (custom_interfaces__msg__MapObject__Sequence *)(untyped_member);
+  custom_interfaces__msg__MapObject__Sequence__fini(member);
+  return custom_interfaces__msg__MapObject__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_member_array[2] = {
   {
-    "meshes",  // name
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__WorldMap, header),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "objects",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces__msg__WorldMap, meshes),  // bytes offset in struct
+    offsetof(custom_interfaces__msg__WorldMap, objects),  // bytes offset in struct
     NULL,  // default value
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__size_function__WorldMap__meshes,  // size() function pointer
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__meshes,  // get_const(index) function pointer
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__meshes,  // get(index) function pointer
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__fetch_function__WorldMap__meshes,  // fetch(index, &value) function pointer
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__assign_function__WorldMap__meshes,  // assign(index, value) function pointer
-    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__resize_function__WorldMap__meshes  // resize(index) function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__size_function__WorldMap__objects,  // size() function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_const_function__WorldMap__objects,  // get_const(index) function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__get_function__WorldMap__objects,  // get(index) function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__fetch_function__WorldMap__objects,  // fetch(index, &value) function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__assign_function__WorldMap__objects,  // assign(index, value) function pointer
+    custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__resize_function__WorldMap__objects  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_members = {
   "custom_interfaces__msg",  // message namespace
   "WorldMap",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(custom_interfaces__msg__WorldMap),
   custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_member_array,  // message members
   custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -134,7 +155,9 @@ ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_custom_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_interfaces, msg, WorldMap)() {
   custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_member_array[0].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Polygon)();
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
+  custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_interfaces, msg, MapObject)();
   if (!custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_type_support_handle.typesupport_identifier) {
     custom_interfaces__msg__WorldMap__rosidl_typesupport_introspection_c__WorldMap_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

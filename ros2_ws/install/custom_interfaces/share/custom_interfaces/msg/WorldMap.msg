@@ -1,1 +1,2 @@
-geometry_msgs/Polygon[] meshes
+std_msgs/Header header
+MapObject[] objects

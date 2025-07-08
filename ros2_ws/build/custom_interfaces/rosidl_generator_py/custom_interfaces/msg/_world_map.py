@@ -42,9 +42,13 @@ class Metaclass_WorldMap(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__world_map
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__world_map
 
-            from geometry_msgs.msg import Polygon
-            if Polygon.__class__._TYPE_SUPPORT is None:
-                Polygon.__class__.__import_type_support__()
+            from custom_interfaces.msg import MapObject
+            if MapObject.__class__._TYPE_SUPPORT is None:
+                MapObject.__class__.__import_type_support__()
+
+            from std_msgs.msg import Header
+            if Header.__class__._TYPE_SUPPORT is None:
+                Header.__class__.__import_type_support__()
 
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
@@ -59,22 +63,27 @@ class WorldMap(metaclass=Metaclass_WorldMap):
     """Message class 'WorldMap'."""
 
     __slots__ = [
-        '_meshes',
+        '_header',
+        '_objects',
     ]
 
     _fields_and_field_types = {
-        'meshes': 'sequence<geometry_msgs/Polygon>',
+        'header': 'std_msgs/Header',
+        'objects': 'sequence<custom_interfaces/MapObject>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Polygon')),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['custom_interfaces', 'msg'], 'MapObject')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.meshes = kwargs.get('meshes', [])
+        from std_msgs.msg import Header
+        self.header = kwargs.get('header', Header())
+        self.objects = kwargs.get('objects', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -105,7 +114,9 @@ class WorldMap(metaclass=Metaclass_WorldMap):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.meshes != other.meshes:
+        if self.header != other.header:
+            return False
+        if self.objects != other.objects:
             return False
         return True
 
@@ -115,14 +126,28 @@ class WorldMap(metaclass=Metaclass_WorldMap):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def meshes(self):
-        """Message field 'meshes'."""
-        return self._meshes
+    def header(self):
+        """Message field 'header'."""
+        return self._header
 
-    @meshes.setter
-    def meshes(self, value):
+    @header.setter
+    def header(self, value):
         if __debug__:
-            from geometry_msgs.msg import Polygon
+            from std_msgs.msg import Header
+            assert \
+                isinstance(value, Header), \
+                "The 'header' field must be a sub message of type 'Header'"
+        self._header = value
+
+    @builtins.property
+    def objects(self):
+        """Message field 'objects'."""
+        return self._objects
+
+    @objects.setter
+    def objects(self, value):
+        if __debug__:
+            from custom_interfaces.msg import MapObject
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -133,7 +158,7 @@ class WorldMap(metaclass=Metaclass_WorldMap):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, Polygon) for v in value) and
+                 all(isinstance(v, MapObject) for v in value) and
                  True), \
-                "The 'meshes' field must be a set or sequence and each value of type 'Polygon'"
-        self._meshes = value
+                "The 'objects' field must be a set or sequence and each value of type 'MapObject'"
+        self._objects = value

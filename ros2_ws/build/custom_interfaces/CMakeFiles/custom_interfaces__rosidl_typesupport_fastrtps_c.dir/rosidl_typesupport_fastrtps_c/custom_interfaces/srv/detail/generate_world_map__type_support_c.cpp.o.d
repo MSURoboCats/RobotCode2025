@@ -186,8 +186,15 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/aabb__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \

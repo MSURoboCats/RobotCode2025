@@ -4,6 +4,12 @@
 ## ROBOT ARCHETECTURE
 At a high level, the main robot director, a theoretical action client node, sends a action goal to the robot state machine (e.g. find_gate, do_gate_task,etc).
 
+the state machine internalizes this goal and fires off a series of commands to relevant subsystem nodes (eg navigator)
+
+
+## RUNDOWN OF TASK STUFF
+
+
 <!-- This goal is internalized and acted upon. If the task requires movement, the navigator node can take the destination point and plot a course to that point. This can be done a variety of ways, one of the most promising methods is to create a 3d map of the course, overlay a graph onto this map, and prune any verticies that collide with obsticals on the map. Transversing this map could then be done via A*, Dijkstra's or other graph transversal algorithms. -->
 
 <!-- This method doesnt really work as the only method we have of determining absolute positon is IMU data from the BNO055, unfortunatly, this data is very innacurate for linear acceleration, and so we might have to instead rely on heuristics . -->
@@ -23,9 +29,8 @@ In order to determine the distance to a "known object" we must first be able to:
 
 
 
-
-
 ## NAVIGATION 
+
 
 ### What we can determine from heuristics (Vision & gyro)
 1. Distance to "known objects" (objects with known dimensions) [Reddit Post](https://www.reddit.com/r/computervision/comments/1ciot5j/is_it_possible_to_calculate_the_distance_of_an/)

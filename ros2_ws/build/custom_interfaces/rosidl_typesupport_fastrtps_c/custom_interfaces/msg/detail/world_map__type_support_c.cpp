@@ -34,23 +34,35 @@ extern "C"
 {
 #endif
 
-#include "geometry_msgs/msg/detail/polygon__functions.h"  // meshes
+#include "custom_interfaces/msg/detail/map_object__functions.h"  // objects
+#include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
+size_t get_serialized_size_custom_interfaces__msg__MapObject(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_custom_interfaces__msg__MapObject(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, custom_interfaces, msg, MapObject)();
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t get_serialized_size_geometry_msgs__msg__Polygon(
+size_t get_serialized_size_std_msgs__msg__Header(
   const void * untyped_ros_message,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
-size_t max_serialized_size_geometry_msgs__msg__Polygon(
+size_t max_serialized_size_std_msgs__msg__Header(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
 const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon)();
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header)();
 
 
 using _WorldMap__ros_msg_type = custom_interfaces__msg__WorldMap;
@@ -64,15 +76,29 @@ static bool _WorldMap__cdr_serialize(
     return false;
   }
   const _WorldMap__ros_msg_type * ros_message = static_cast<const _WorldMap__ros_msg_type *>(untyped_ros_message);
-  // Field name: meshes
+  // Field name: header
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
       )()->data);
-    size_t size = ros_message->meshes.size;
-    auto array_ptr = ros_message->meshes.data;
+    if (!callbacks->cdr_serialize(
+        &ros_message->header, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: objects
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, MapObject
+      )()->data);
+    size_t size = ros_message->objects.size;
+    auto array_ptr = ros_message->objects.data;
     cdr << static_cast<uint32_t>(size);
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_serialize(
@@ -95,24 +121,38 @@ static bool _WorldMap__cdr_deserialize(
     return false;
   }
   _WorldMap__ros_msg_type * ros_message = static_cast<_WorldMap__ros_msg_type *>(untyped_ros_message);
-  // Field name: meshes
+  // Field name: header
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Polygon
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->header))
+    {
+      return false;
+    }
+  }
+
+  // Field name: objects
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, custom_interfaces, msg, MapObject
       )()->data);
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->meshes.data) {
-      geometry_msgs__msg__Polygon__Sequence__fini(&ros_message->meshes);
+    if (ros_message->objects.data) {
+      custom_interfaces__msg__MapObject__Sequence__fini(&ros_message->objects);
     }
-    if (!geometry_msgs__msg__Polygon__Sequence__init(&ros_message->meshes, size)) {
-      fprintf(stderr, "failed to create array for field 'meshes'");
+    if (!custom_interfaces__msg__MapObject__Sequence__init(&ros_message->objects, size)) {
+      fprintf(stderr, "failed to create array for field 'objects'");
       return false;
     }
-    auto array_ptr = ros_message->meshes.data;
+    auto array_ptr = ros_message->objects.data;
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_deserialize(
           cdr, &array_ptr[i]))
@@ -139,15 +179,19 @@ size_t get_serialized_size_custom_interfaces__msg__WorldMap(
   (void)padding;
   (void)wchar_size;
 
-  // field.name meshes
+  // field.name header
+
+  current_alignment += get_serialized_size_std_msgs__msg__Header(
+    &(ros_message->header), current_alignment);
+  // field.name objects
   {
-    size_t array_size = ros_message->meshes.size;
-    auto array_ptr = ros_message->meshes.data;
+    size_t array_size = ros_message->objects.size;
+    auto array_ptr = ros_message->objects.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += get_serialized_size_geometry_msgs__msg__Polygon(
+      current_alignment += get_serialized_size_custom_interfaces__msg__MapObject(
         &array_ptr[index], current_alignment);
     }
   }
@@ -180,7 +224,26 @@ size_t max_serialized_size_custom_interfaces__msg__WorldMap(
   full_bounded = true;
   is_plain = true;
 
-  // member: meshes
+  // member: header
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_std_msgs__msg__Header(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: objects
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -195,7 +258,7 @@ size_t max_serialized_size_custom_interfaces__msg__WorldMap(
       bool inner_is_plain;
       size_t inner_size;
       inner_size =
-        max_serialized_size_geometry_msgs__msg__Polygon(
+        max_serialized_size_custom_interfaces__msg__MapObject(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;
@@ -212,7 +275,7 @@ size_t max_serialized_size_custom_interfaces__msg__WorldMap(
     using DataType = custom_interfaces__msg__WorldMap;
     is_plain =
       (
-      offsetof(DataType, meshes) +
+      offsetof(DataType, objects) +
       last_member_size
       ) == ret_val;
   }

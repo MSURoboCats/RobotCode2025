@@ -16,8 +16,10 @@
 
 
 // Include directives for member types
-// Member 'meshes'
-#include "geometry_msgs/msg/detail/polygon__struct.hpp"
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.hpp"
+// Member 'objects'
+#include "custom_interfaces/msg/detail/map_object__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__custom_interfaces__msg__WorldMap __attribute__((deprecated))
@@ -38,26 +40,36 @@ struct WorldMap_
   using Type = WorldMap_<ContainerAllocator>;
 
   explicit WorldMap_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_init)
   {
     (void)_init;
   }
 
   explicit WorldMap_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_alloc, _init)
   {
     (void)_init;
-    (void)_alloc;
   }
 
   // field types and members
-  using _meshes_type =
-    std::vector<geometry_msgs::msg::Polygon_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Polygon_<ContainerAllocator>>>;
-  _meshes_type meshes;
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
+  using _objects_type =
+    std::vector<custom_interfaces::msg::MapObject_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<custom_interfaces::msg::MapObject_<ContainerAllocator>>>;
+  _objects_type objects;
 
   // setters for named parameter idiom
-  Type & set__meshes(
-    const std::vector<geometry_msgs::msg::Polygon_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Polygon_<ContainerAllocator>>> & _arg)
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
   {
-    this->meshes = _arg;
+    this->header = _arg;
+    return *this;
+  }
+  Type & set__objects(
+    const std::vector<custom_interfaces::msg::MapObject_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<custom_interfaces::msg::MapObject_<ContainerAllocator>>> & _arg)
+  {
+    this->objects = _arg;
     return *this;
   }
 
@@ -103,7 +115,10 @@ struct WorldMap_
   // comparison operators
   bool operator==(const WorldMap_ & other) const
   {
-    if (this->meshes != other.meshes) {
+    if (this->header != other.header) {
+      return false;
+    }
+    if (this->objects != other.objects) {
       return false;
     }
     return true;

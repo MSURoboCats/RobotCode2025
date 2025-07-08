@@ -18,13 +18,16 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'meshes'
-#include "geometry_msgs/msg/detail/polygon__struct.h"
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.h"
+// Member 'objects'
+#include "custom_interfaces/msg/detail/map_object__struct.h"
 
 /// Struct defined in msg/WorldMap in the package custom_interfaces.
 typedef struct custom_interfaces__msg__WorldMap
 {
-  geometry_msgs__msg__Polygon__Sequence meshes;
+  std_msgs__msg__Header header;
+  custom_interfaces__msg__MapObject__Sequence objects;
 } custom_interfaces__msg__WorldMap;
 
 // Struct for a sequence of custom_interfaces__msg__WorldMap.

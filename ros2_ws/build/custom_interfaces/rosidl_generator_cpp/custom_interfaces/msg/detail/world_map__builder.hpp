@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
-class Init_WorldMap_meshes
+class Init_WorldMap_objects
 {
 public:
-  Init_WorldMap_meshes()
+  explicit Init_WorldMap_objects(::custom_interfaces::msg::WorldMap & msg)
+  : msg_(msg)
+  {}
+  ::custom_interfaces::msg::WorldMap objects(::custom_interfaces::msg::WorldMap::_objects_type arg)
+  {
+    msg_.objects = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_interfaces::msg::WorldMap msg_;
+};
+
+class Init_WorldMap_header
+{
+public:
+  Init_WorldMap_header()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::custom_interfaces::msg::WorldMap meshes(::custom_interfaces::msg::WorldMap::_meshes_type arg)
+  Init_WorldMap_objects header(::custom_interfaces::msg::WorldMap::_header_type arg)
   {
-    msg_.meshes = std::move(arg);
-    return std::move(msg_);
+    msg_.header = std::move(arg);
+    return Init_WorldMap_objects(msg_);
   }
 
 private:
@@ -48,7 +64,7 @@ template<>
 inline
 auto build<::custom_interfaces::msg::WorldMap>()
 {
-  return custom_interfaces::msg::builder::Init_WorldMap_meshes();
+  return custom_interfaces::msg::builder::Init_WorldMap_header();
 }
 
 }  // namespace custom_interfaces

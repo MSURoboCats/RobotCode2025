@@ -10,9 +10,8 @@ setup.py
 ../../build/py_objectdetection/py_objectdetection.egg-info/top_level.txt
 ../../build/py_objectdetection/py_objectdetection.egg-info/zip-safe
 py_objectdetection/__init__.py
-py_objectdetection/depth_image_to_map.py
+py_objectdetection/depth_image_to_map_o3d.py
 py_objectdetection/detection_publisher.py
-py_objectdetection/pipeline_tester.py
 resource/py_objectdetection
 test/test_copyright.py
 test/test_flake8.py

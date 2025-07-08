@@ -57,11 +57,23 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__functions.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__type_support.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__rosidl_typesupport_introspection_c.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/aabb__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/map_object.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__type_support.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/map_object__rosidl_typesupport_introspection_c.h

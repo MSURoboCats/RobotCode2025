@@ -9,6 +9,7 @@
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/DetectionBuffer.msg",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/AABB.msg",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/WorldMap.msg",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MapObject.msg",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:srv/GenerateWorldMap.srv",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:srv/DetectionService.srv",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:action/DetectionAction.action"

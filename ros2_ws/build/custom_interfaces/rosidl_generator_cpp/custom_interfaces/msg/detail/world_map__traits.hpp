@@ -15,8 +15,10 @@
 #include "rosidl_runtime_cpp/traits.hpp"
 
 // Include directives for member types
-// Member 'meshes'
-#include "geometry_msgs/msg/detail/polygon__traits.hpp"
+// Member 'header'
+#include "std_msgs/msg/detail/header__traits.hpp"
+// Member 'objects'
+#include "custom_interfaces/msg/detail/map_object__traits.hpp"
 
 namespace custom_interfaces
 {
@@ -29,14 +31,21 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: meshes
+  // member: header
   {
-    if (msg.meshes.size() == 0) {
-      out << "meshes: []";
+    out << "header: ";
+    to_flow_style_yaml(msg.header, out);
+    out << ", ";
+  }
+
+  // member: objects
+  {
+    if (msg.objects.size() == 0) {
+      out << "objects: []";
     } else {
-      out << "meshes: [";
-      size_t pending_items = msg.meshes.size();
-      for (auto item : msg.meshes) {
+      out << "objects: [";
+      size_t pending_items = msg.objects.size();
+      for (auto item : msg.objects) {
         to_flow_style_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -52,16 +61,25 @@ inline void to_block_style_yaml(
   const WorldMap & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: meshes
+  // member: header
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.meshes.size() == 0) {
-      out << "meshes: []\n";
+    out << "header:\n";
+    to_block_style_yaml(msg.header, out, indentation + 2);
+  }
+
+  // member: objects
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.objects.size() == 0) {
+      out << "objects: []\n";
     } else {
-      out << "meshes:\n";
-      for (auto item : msg.meshes) {
+      out << "objects:\n";
+      for (auto item : msg.objects) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

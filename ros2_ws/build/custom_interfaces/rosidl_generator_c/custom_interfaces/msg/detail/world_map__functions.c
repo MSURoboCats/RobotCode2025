@@ -12,8 +12,10 @@
 
 
 // Include directives for member types
-// Member `meshes`
-#include "geometry_msgs/msg/detail/polygon__functions.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__functions.h"
+// Member `objects`
+#include "custom_interfaces/msg/detail/map_object__functions.h"
 
 bool
 custom_interfaces__msg__WorldMap__init(custom_interfaces__msg__WorldMap * msg)
@@ -21,8 +23,13 @@ custom_interfaces__msg__WorldMap__init(custom_interfaces__msg__WorldMap * msg)
   if (!msg) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__init(&msg->meshes, 0)) {
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
+    custom_interfaces__msg__WorldMap__fini(msg);
+    return false;
+  }
+  // objects
+  if (!custom_interfaces__msg__MapObject__Sequence__init(&msg->objects, 0)) {
     custom_interfaces__msg__WorldMap__fini(msg);
     return false;
   }
@@ -35,8 +42,10 @@ custom_interfaces__msg__WorldMap__fini(custom_interfaces__msg__WorldMap * msg)
   if (!msg) {
     return;
   }
-  // meshes
-  geometry_msgs__msg__Polygon__Sequence__fini(&msg->meshes);
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
+  // objects
+  custom_interfaces__msg__MapObject__Sequence__fini(&msg->objects);
 }
 
 bool
@@ -45,9 +54,15 @@ custom_interfaces__msg__WorldMap__are_equal(const custom_interfaces__msg__WorldM
   if (!lhs || !rhs) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__are_equal(
-      &(lhs->meshes), &(rhs->meshes)))
+  // header
+  if (!std_msgs__msg__Header__are_equal(
+      &(lhs->header), &(rhs->header)))
+  {
+    return false;
+  }
+  // objects
+  if (!custom_interfaces__msg__MapObject__Sequence__are_equal(
+      &(lhs->objects), &(rhs->objects)))
   {
     return false;
   }
@@ -62,9 +77,15 @@ custom_interfaces__msg__WorldMap__copy(
   if (!input || !output) {
     return false;
   }
-  // meshes
-  if (!geometry_msgs__msg__Polygon__Sequence__copy(
-      &(input->meshes), &(output->meshes)))
+  // header
+  if (!std_msgs__msg__Header__copy(
+      &(input->header), &(output->header)))
+  {
+    return false;
+  }
+  // objects
+  if (!custom_interfaces__msg__MapObject__Sequence__copy(
+      &(input->objects), &(output->objects)))
   {
     return false;
   }

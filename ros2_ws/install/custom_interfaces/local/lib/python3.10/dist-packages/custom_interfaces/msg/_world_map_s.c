@@ -20,12 +20,14 @@
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 // Nested array functions includes
-#include "geometry_msgs/msg/detail/polygon__functions.h"
+#include "custom_interfaces/msg/detail/map_object__functions.h"
 // end nested array functions include
 ROSIDL_GENERATOR_C_IMPORT
-bool geometry_msgs__msg__polygon__convert_from_py(PyObject * _pymsg, void * _ros_message);
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * geometry_msgs__msg__polygon__convert_to_py(void * raw_ros_message);
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
+bool custom_interfaces__msg__map_object__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * custom_interfaces__msg__map_object__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_interfaces__msg__world_map__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -60,12 +62,23 @@ bool custom_interfaces__msg__world_map__convert_from_py(PyObject * _pymsg, void 
     assert(strncmp("custom_interfaces.msg._world_map.WorldMap", full_classname_dest, 41) == 0);
   }
   custom_interfaces__msg__WorldMap * ros_message = _ros_message;
-  {  // meshes
-    PyObject * field = PyObject_GetAttrString(_pymsg, "meshes");
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
     if (!field) {
       return false;
     }
-    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'meshes'");
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // objects
+    PyObject * field = PyObject_GetAttrString(_pymsg, "objects");
+    if (!field) {
+      return false;
+    }
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'objects'");
     if (!seq_field) {
       Py_DECREF(field);
       return false;
@@ -76,15 +89,15 @@ bool custom_interfaces__msg__world_map__convert_from_py(PyObject * _pymsg, void 
       Py_DECREF(field);
       return false;
     }
-    if (!geometry_msgs__msg__Polygon__Sequence__init(&(ros_message->meshes), size)) {
-      PyErr_SetString(PyExc_RuntimeError, "unable to create geometry_msgs__msg__Polygon__Sequence ros_message");
+    if (!custom_interfaces__msg__MapObject__Sequence__init(&(ros_message->objects), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create custom_interfaces__msg__MapObject__Sequence ros_message");
       Py_DECREF(seq_field);
       Py_DECREF(field);
       return false;
     }
-    geometry_msgs__msg__Polygon * dest = ros_message->meshes.data;
+    custom_interfaces__msg__MapObject * dest = ros_message->objects.data;
     for (Py_ssize_t i = 0; i < size; ++i) {
-      if (!geometry_msgs__msg__polygon__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
+      if (!custom_interfaces__msg__map_object__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
@@ -115,17 +128,31 @@ PyObject * custom_interfaces__msg__world_map__convert_to_py(void * raw_ros_messa
     }
   }
   custom_interfaces__msg__WorldMap * ros_message = (custom_interfaces__msg__WorldMap *)raw_ros_message;
-  {  // meshes
+  {  // header
     PyObject * field = NULL;
-    size_t size = ros_message->meshes.size;
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // objects
+    PyObject * field = NULL;
+    size_t size = ros_message->objects.size;
     field = PyList_New(size);
     if (!field) {
       return NULL;
     }
-    geometry_msgs__msg__Polygon * item;
+    custom_interfaces__msg__MapObject * item;
     for (size_t i = 0; i < size; ++i) {
-      item = &(ros_message->meshes.data[i]);
-      PyObject * pyitem = geometry_msgs__msg__polygon__convert_to_py(item);
+      item = &(ros_message->objects.data[i]);
+      PyObject * pyitem = custom_interfaces__msg__map_object__convert_to_py(item);
       if (!pyitem) {
         Py_DECREF(field);
         return NULL;
@@ -136,7 +163,7 @@ PyObject * custom_interfaces__msg__world_map__convert_to_py(void * raw_ros_messa
     }
     assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "meshes", field);
+      int rc = PyObject_SetAttrString(_pymessage, "objects", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

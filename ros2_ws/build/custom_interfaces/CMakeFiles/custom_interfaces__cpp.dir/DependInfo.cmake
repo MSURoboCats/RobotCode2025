@@ -40,6 +40,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__struct.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__traits.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__type_support.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/map_object__builder.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/map_object__struct.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/map_object__traits.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/map_object__type_support.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/motion_goal__builder.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/motion_goal__struct.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/motion_goal__traits.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
@@ -53,6 +57,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__traits.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__type_support.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detection_buffer.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/map_object.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/motion_goal.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/motor_command.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/world_map.hpp" "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
@@ -69,8 +74,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   )
 
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

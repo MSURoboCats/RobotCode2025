@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/cmake_install.cmake",
+		"/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

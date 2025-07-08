@@ -37,75 +37,92 @@ void WorldMap_fini_function(void * message_memory)
   typed_message->~WorldMap();
 }
 
-size_t size_function__WorldMap__meshes(const void * untyped_member)
+size_t size_function__WorldMap__objects(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<geometry_msgs::msg::Polygon> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<custom_interfaces::msg::MapObject> *>(untyped_member);
   return member->size();
 }
 
-const void * get_const_function__WorldMap__meshes(const void * untyped_member, size_t index)
+const void * get_const_function__WorldMap__objects(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<geometry_msgs::msg::Polygon> *>(untyped_member);
+    *reinterpret_cast<const std::vector<custom_interfaces::msg::MapObject> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__WorldMap__meshes(void * untyped_member, size_t index)
+void * get_function__WorldMap__objects(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<geometry_msgs::msg::Polygon> *>(untyped_member);
+    *reinterpret_cast<std::vector<custom_interfaces::msg::MapObject> *>(untyped_member);
   return &member[index];
 }
 
-void fetch_function__WorldMap__meshes(
+void fetch_function__WorldMap__objects(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const auto & item = *reinterpret_cast<const geometry_msgs::msg::Polygon *>(
-    get_const_function__WorldMap__meshes(untyped_member, index));
-  auto & value = *reinterpret_cast<geometry_msgs::msg::Polygon *>(untyped_value);
+  const auto & item = *reinterpret_cast<const custom_interfaces::msg::MapObject *>(
+    get_const_function__WorldMap__objects(untyped_member, index));
+  auto & value = *reinterpret_cast<custom_interfaces::msg::MapObject *>(untyped_value);
   value = item;
 }
 
-void assign_function__WorldMap__meshes(
+void assign_function__WorldMap__objects(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  auto & item = *reinterpret_cast<geometry_msgs::msg::Polygon *>(
-    get_function__WorldMap__meshes(untyped_member, index));
-  const auto & value = *reinterpret_cast<const geometry_msgs::msg::Polygon *>(untyped_value);
+  auto & item = *reinterpret_cast<custom_interfaces::msg::MapObject *>(
+    get_function__WorldMap__objects(untyped_member, index));
+  const auto & value = *reinterpret_cast<const custom_interfaces::msg::MapObject *>(untyped_value);
   item = value;
 }
 
-void resize_function__WorldMap__meshes(void * untyped_member, size_t size)
+void resize_function__WorldMap__objects(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<geometry_msgs::msg::Polygon> *>(untyped_member);
+    reinterpret_cast<std::vector<custom_interfaces::msg::MapObject> *>(untyped_member);
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember WorldMap_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember WorldMap_message_member_array[2] = {
   {
-    "meshes",  // name
+    "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Polygon>(),  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Header>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces::msg::WorldMap, header),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "objects",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<custom_interfaces::msg::MapObject>(),  // members of sub message
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(custom_interfaces::msg::WorldMap, meshes),  // bytes offset in struct
+    offsetof(custom_interfaces::msg::WorldMap, objects),  // bytes offset in struct
     nullptr,  // default value
-    size_function__WorldMap__meshes,  // size() function pointer
-    get_const_function__WorldMap__meshes,  // get_const(index) function pointer
-    get_function__WorldMap__meshes,  // get(index) function pointer
-    fetch_function__WorldMap__meshes,  // fetch(index, &value) function pointer
-    assign_function__WorldMap__meshes,  // assign(index, value) function pointer
-    resize_function__WorldMap__meshes  // resize(index) function pointer
+    size_function__WorldMap__objects,  // size() function pointer
+    get_const_function__WorldMap__objects,  // get_const(index) function pointer
+    get_function__WorldMap__objects,  // get(index) function pointer
+    fetch_function__WorldMap__objects,  // fetch(index, &value) function pointer
+    assign_function__WorldMap__objects,  // assign(index, value) function pointer
+    resize_function__WorldMap__objects  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers WorldMap_message_members = {
   "custom_interfaces::msg",  // message namespace
   "WorldMap",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(custom_interfaces::msg::WorldMap),
   WorldMap_message_member_array,  // message members
   WorldMap_init_function,  // function to initialize message memory (memory has to be allocated)

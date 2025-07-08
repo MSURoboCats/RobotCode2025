@@ -1,6 +1,13 @@
 # TODO.MD
 
 
+- Test image-to-map pipeline to see if it outputs correct data
+	- make subscriber that takes 3d map and turns it into a readable file
+	- have a script read that file and plot the points using some 3d graphics library (raylib, pyvista, open3d, etc)
+- impliment some sort of mesh pruning, as there might be a problem with invalid meshes (meshes that are too small)
+
+
+
 ## 1 PY_SENSORS
 1. IMU data [DONE]
 2. Depth data [DONE]
@@ -59,6 +66,8 @@ Outputs = 3d AABB (AABB array)
 #### Links / Helpful Resources
 1. [OpenCV::rgbd::depthTo3d(image, k, out 3dPoints, optional mask = noArray())](https://docs.opencv.org/4.x/d2/d3a/group__rgbd.html#ga403eeb581b09684f7e24f7c157086dd6)
 	- Helpful function found in the contrib module rgbd, takes in the depth image, the camera calibration matrix (found in depth/camera_info.k, and a output array of 3d points, optionally you can specify a mask of points to consider)
+2. [Open3D](https://www.open3d.org/docs/0.18.0/getting_started.html)
+	- 3d vision library that I used for creating the 3d map
 
 
 

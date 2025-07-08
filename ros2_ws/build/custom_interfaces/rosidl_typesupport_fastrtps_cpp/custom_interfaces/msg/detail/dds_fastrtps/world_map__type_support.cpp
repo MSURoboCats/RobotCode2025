@@ -16,29 +16,53 @@
 
 
 // forward declaration of message dependencies and their conversion functions
-namespace geometry_msgs
+namespace std_msgs
 {
 namespace msg
 {
 namespace typesupport_fastrtps_cpp
 {
 bool cdr_serialize(
-  const geometry_msgs::msg::Polygon &,
+  const std_msgs::msg::Header &,
   eprosima::fastcdr::Cdr &);
 bool cdr_deserialize(
   eprosima::fastcdr::Cdr &,
-  geometry_msgs::msg::Polygon &);
+  std_msgs::msg::Header &);
 size_t get_serialized_size(
-  const geometry_msgs::msg::Polygon &,
+  const std_msgs::msg::Header &,
   size_t current_alignment);
 size_t
-max_serialized_size_Polygon(
+max_serialized_size_Header(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
-}  // namespace geometry_msgs
+}  // namespace std_msgs
+
+namespace custom_interfaces
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const custom_interfaces::msg::MapObject &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  custom_interfaces::msg::MapObject &);
+size_t get_serialized_size(
+  const custom_interfaces::msg::MapObject &,
+  size_t current_alignment);
+size_t
+max_serialized_size_MapObject(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace custom_interfaces
 
 
 namespace custom_interfaces
@@ -56,13 +80,17 @@ cdr_serialize(
   const custom_interfaces::msg::WorldMap & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: meshes
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.header,
+    cdr);
+  // Member: objects
   {
-    size_t size = ros_message.meshes.size();
+    size_t size = ros_message.objects.size();
     cdr << static_cast<uint32_t>(size);
     for (size_t i = 0; i < size; i++) {
-      geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-        ros_message.meshes[i],
+      custom_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.objects[i],
         cdr);
     }
   }
@@ -75,15 +103,19 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   custom_interfaces::msg::WorldMap & ros_message)
 {
-  // Member: meshes
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.header);
+
+  // Member: objects
   {
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    ros_message.meshes.resize(size);
+    ros_message.objects.resize(size);
     for (size_t i = 0; i < size; i++) {
-      geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-        cdr, ros_message.meshes[i]);
+      custom_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.objects[i]);
     }
   }
 
@@ -103,17 +135,22 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: meshes
+  // Member: header
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.header, current_alignment);
+  // Member: objects
   {
-    size_t array_size = ros_message.meshes.size();
+    size_t array_size = ros_message.objects.size();
 
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
-        geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-        ros_message.meshes[index], current_alignment);
+        custom_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.objects[index], current_alignment);
     }
   }
 
@@ -140,7 +177,26 @@ max_serialized_size_WorldMap(
   is_plain = true;
 
 
-  // Member: meshes
+  // Member: header
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Header(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: objects
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -154,7 +210,7 @@ max_serialized_size_WorldMap(
       bool inner_full_bounded;
       bool inner_is_plain;
       size_t inner_size =
-        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Polygon(
+        custom_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_MapObject(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;
@@ -171,7 +227,7 @@ max_serialized_size_WorldMap(
     using DataType = custom_interfaces::msg::WorldMap;
     is_plain =
       (
-      offsetof(DataType, meshes) +
+      offsetof(DataType, objects) +
       last_member_size
       ) == ret_val;
   }

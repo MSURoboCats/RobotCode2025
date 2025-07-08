@@ -10,6 +10,8 @@ msg/DetectionBuffer.idl
 msg/DetectionBuffer.msg
 msg/ImuData.idl
 msg/ImuData.msg
+msg/MapObject.idl
+msg/MapObject.msg
 msg/MotionGoal.idl
 msg/MotionGoal.msg
 msg/MotorCommand.idl

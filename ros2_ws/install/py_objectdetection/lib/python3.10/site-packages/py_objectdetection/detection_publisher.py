@@ -117,7 +117,7 @@ class DetectionPublisher(Node):
         for i in range(len(results)):
             for box in results[i].boxes :
                 #print(str(box))
-                if(float(box.conf) < 0.4): 
+                if(float(box.conf) < 0.75): 
                     continue
 
                

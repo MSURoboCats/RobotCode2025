@@ -230,9 +230,14 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/aabb__functions.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/world_map__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__type_support.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.h \
@@ -242,8 +247,6 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/detection_action__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/detection_action__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \

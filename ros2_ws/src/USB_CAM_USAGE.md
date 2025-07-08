@@ -14,8 +14,8 @@ You can view the image output of the cameras by using rqt_image_view:
 
 You can launch multiple camera nodes by remapping the namespace, the following commands launch nodes that read from seperate cameras:
 
-ros2 run usb_cam usb_cam_node_exe --ros-args --remap __ns:=/usb_cam_0 --params-file <path_to_colcon_ws>/src/usb_cam/config/params_forward_camera.yaml
-ros2 run usb_cam usb_cam_node_exe --ros-args --remap __ns:=/usb_cam_1 --params-file <path_to_colcon_ws>/src/usb_cam/config/params_bottom_camera.yaml
+ros2 run usb_cam usb_cam_node_exe --ros-args --remap __ns:=/usb_cam_0 --params-file <path_to_colcon_ws>/camera_params/config/params_forward_camera.yaml
+ros2 run usb_cam usb_cam_node_exe --ros-args --remap __ns:=/usb_cam_1 --params-file <path_to_colcon_ws>/camera_params/config/params_bottom_camera.yaml
 
 remapping the nodes like this changes the topics that they output to (image_raw is split into usb_cam_0/image_raw & usb_cam_1/image_raw)
 
