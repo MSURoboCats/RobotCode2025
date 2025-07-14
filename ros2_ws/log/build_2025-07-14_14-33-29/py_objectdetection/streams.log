@@ -1,0 +1,27 @@
+[5.415s] Invoking command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/py_objectdetection': AMENT_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces LD_LIBRARY_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_objectdetection build --build-base /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build install --record /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log --single-version-externally-managed install_data
+[5.924s] running egg_info
+[5.926s] writing ../../build/py_objectdetection/py_objectdetection.egg-info/PKG-INFO
+[5.926s] writing dependency_links to ../../build/py_objectdetection/py_objectdetection.egg-info/dependency_links.txt
+[5.927s] writing entry points to ../../build/py_objectdetection/py_objectdetection.egg-info/entry_points.txt
+[5.927s] writing requirements to ../../build/py_objectdetection/py_objectdetection.egg-info/requires.txt
+[5.928s] writing top-level names to ../../build/py_objectdetection/py_objectdetection.egg-info/top_level.txt
+[5.932s] reading manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+[5.932s] adding license file 'LICENSE'
+[5.934s] writing manifest file '../../build/py_objectdetection/py_objectdetection.egg-info/SOURCES.txt'
+[5.934s] running build
+[5.934s] running build_py
+[5.935s] copying py_objectdetection/depth_image_to_map_o3d.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection
+[5.935s] running install
+[5.936s] running install_lib
+[5.938s] copying /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build/lib/py_objectdetection/depth_image_to_map_o3d.py -> /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection
+[5.939s] byte-compiling /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection/depth_image_to_map_o3d.py to depth_image_to_map_o3d.cpython-310.pyc
+[5.942s] running install_data
+[5.943s] running install_egg_info
+[5.947s] removing '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info' (and everything under it)
+[5.947s] Copying ../../build/py_objectdetection/py_objectdetection.egg-info to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages/py_objectdetection-0.0.0-py3.10.egg-info
+[5.949s] running install_scripts
+[5.992s] Installing detector script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+[5.992s] Installing mapper script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+[5.993s] Installing tester script to /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/py_objectdetection
+[5.994s] writing list of installed files to '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log'
+[6.105s] Invoked command in '/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/py_objectdetection' returned '0': AMENT_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces LD_LIBRARY_PATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_objectdetection/lib/python3.10/site-packages:/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_objectdetection build --build-base /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/build install --record /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/py_objectdetection/install.log --single-version-externally-managed install_data

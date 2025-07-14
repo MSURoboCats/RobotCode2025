@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'motor_conductor = py_motors.motor_conductor:main',
             'motor_controller = py_motors.motor_controller:main',
+            'keyboard_controller = py_motors.keyboard_input:main'
         ],
     },
 )

@@ -408,17 +408,21 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
   rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/world_map__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
   /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
   /usr/include/aarch64-linux-gnu/bits/long-double.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
@@ -493,12 +497,15 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
   rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h \
   rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__type_support.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
@@ -506,6 +513,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h \
   /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
   /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
   /usr/include/aarch64-linux-gnu/bits/long-double.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \

@@ -13,12 +13,15 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rclcpp REQUIRED)
 find_package(custom_interfaces REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 add_executable(motion_director src/MotionDirector.cpp)
 add_executable(navigator src/Navigator.cpp)
 
 ament_target_dependencies(motion_director rclcpp custom_interfaces)
-ament_target_dependencies(navigator rclcpp custom_interfaces)
+ament_target_dependencies(navigator rclcpp custom_interfaces sensor_msgs geometry_msgs std_msgs)
 
 install(TARGETS
   motion_director

@@ -1,3 +1,9 @@
+/**
+ * [DEPRECATED]
+ * Navigator.cpp, responsible for using map generated in py_objectdetection to create a navigatable path
+ */
+
+
 #include <chrono>
 #include <functional>
 #include <memory>

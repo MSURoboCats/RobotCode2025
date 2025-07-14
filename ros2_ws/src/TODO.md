@@ -1,10 +1,6 @@
 # TODO.MD
-
-
-- Test image-to-map pipeline to see if it outputs correct data
-	- make subscriber that takes 3d map and turns it into a readable file
-	- have a script read that file and plot the points using some 3d graphics library (raylib, pyvista, open3d, etc)
-- impliment some sort of mesh pruning, as there might be a problem with invalid meshes (meshes that are too small)
+- 3d navigation 
+	- figure out how to work 3d navigation, start at the pool and get the robot to move towards a target, then program more complex actions
 
 
 
@@ -39,6 +35,13 @@ The basic run command goes as follows:
 ros2 run realsense2_camera realsense2_camera_node
 
 To have the depth image be aligned to the color image by setting the parameter "align_depth.enable" to "True" from which a new topic is created called "aligned_depth_to_color/image_raw" which can be subscribed to
+
+To have the imu data be published from one topic, set the parameter unite_imu_method to one of the following:
+
+1 = copy (current gyro state followed by last acceleration state)
+2 = linear_interp (current gyro state followed by acceleration that has been linearly interped to the gyro timestamp)
+
+from this a new topic is created camera/imu
 
 ### TODO
 1. Find out how to make depth_image gathering asynchronous from the service stuff, or find a way to ensure that depth_image data is gathered before calling the service stuff
