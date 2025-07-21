@@ -223,7 +223,7 @@ CMakeFiles/custom_interfaces.dir/all: CMakeFiles/custom_interfaces__rosidl_types
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_interfaces.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 83
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 84
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_interfaces.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/custom_interfaces.dir/rule
@@ -352,12 +352,12 @@ CMakeFiles/custom_interfaces__cpp.dir/clean:
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/custom_interfaces__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74 "Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72,73,74 "Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rule
@@ -369,7 +369,7 @@ custom_interfaces__rosidl_typesupport_fastrtps_cpp: CMakeFiles/custom_interfaces
 # codegen rule for target.
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74 "Finished codegen for target custom_interfaces__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72,73,74 "Finished codegen for target custom_interfaces__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/codegen
 
 # clean rule for target.
@@ -583,7 +583,7 @@ CMakeFiles/custom_interfaces__rosidl_generator_py.dir/all: custom_interfaces__py
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 95
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_interfaces__rosidl_generator_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rule
@@ -615,7 +615,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMak
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/all: custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=62,63 "Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=62 "Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -634,7 +634,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/codegen: 
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/codegen: CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/all
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/codegen: custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=62,63 "Finished codegen for target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=62 "Finished codegen for target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/codegen
 
 # clean rule for target.
@@ -658,7 +658,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -695,7 +695,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/all: custom_interf
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 97
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rule
@@ -728,7 +728,7 @@ custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/all: CMakeFiles/custo
 
 # Build rule for subdir invocation for target.
 custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 84
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 85
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles 0
 .PHONY : custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/rule

@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"srv/GenerateWorldMap.srv"
 	"srv/DetectionService.srv"
 	"action/DetectionAction.action"
+	"action/NavigationGoal.action"
 	
 	DEPENDENCIES geometry_msgs sensor_msgs std_msgs
 )

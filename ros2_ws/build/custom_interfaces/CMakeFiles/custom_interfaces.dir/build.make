@@ -82,6 +82,7 @@ CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/s
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Request.msg
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Response.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/DetectionAction.action
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/NavigationGoal.action
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

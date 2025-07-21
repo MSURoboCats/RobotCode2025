@@ -1,0 +1,130 @@
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionServer
+from rclpy.action.server import ServerGoalHandle
+
+
+
+from custom_interfaces.action import NavigationGoal
+from custom_interfaces.msg import WorldMap, MapObject, AABB, MotionGoal
+from custom_interfaces.srv import DetectionService
+from geometry_msgs.msg import Vector3, Quaternion
+from builtin_interfaces.msg import Time
+from sensor_msgs.msg import Imu
+from std_msgs.msg import Header
+
+
+def IsNewData(original : Header, compare : Header) -> bool:
+    isOriginalInvalid = original.frame_id == "-1"
+
+    if(isOriginalInvalid): return True
+
+    hasDiffFrameID = original.frame_id != compare.frame_id
+
+    hasNewerTimestamp = (compare.stamp.sec > original.stamp.sec) or ( (compare.stamp.sec == original.stamp.sec) and compare.stamp.nanosec > original.stamp.nanosec)
+
+    return hasDiffFrameID and hasNewerTimestamp
+
+# class Navigator(Node):
+#     m_cachedIMU : Imu
+#     m_cachedMap : WorldMap
+
+#     def __init__(self):
+#         super().__init__('navigator')
+#         self.declare_parameter("imu_topic", "camera/camera/imu")
+#         self.declare_parameter("world_map_topic", "WorldMap")
+#         self.declare_parameter("action_server_name", "navigation_goal")
+#         self.declare_parameter("detection_service_name","detection_service")
+        
+#         self.m_cachedIMU = Imu()
+#         self.m_cachedMap = WorldMap()
+        
+#         self.m_cachedMap.header.frame_id = "-1"
+#         self.m_cachedIMU.header.frame_id = "-1"
+
+#         self.sub_worldMap = self.create_subscription(
+#             WorldMap,
+#             self.get_parameter("world_map_topic").get_parameter_value().string_value,
+#             self.WorldMapCallback,
+#             3
+#         )
+
+#         self.sub_imu = self.create_subscription(
+#             Imu,
+#             self.get_parameter("imu_topic").get_parameter_value().string_value,
+#             self.IMUCallback,
+#             3
+#         )
+
+#         self.detection_client = self.create_client(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value)
+
+#         self._actionServer = ActionServer(
+#             self,
+#             NavigationGoal,
+#             self.get_parameter('action_server_name').get_parameter_value().string_value,
+#             self.ExecutionCallback
+#         )
+
+#     def ExecutionCallback(self, goal_handle: ServerGoalHandle):
+#         request : str = goal_handle.request.goal; 
+
+#         self.get_logger().info(f"Goal Recieved: {request}, {type(goal_handle)}")
+
+#         result = NavigationGoal.Result()
+
+
+#         match request.lower():
+#             case 'buoy_test':
+#                 self.get_logger().info("Performing Buoy Test...")
+#                 self.DoBuoyTest(result)
+#             case _:
+#                 self.get_logger().warning(f"Navigator::ExecutionCallback() : Warning! Unrecognized Navigation Goal: {request}")
+#                 result.success = False
+
+
+
+#         return result
+
+
+#     def WorldMapCallback(self, msg : WorldMap):
+#         if (IsNewData(self.m_cachedMap.header,msg.header)) : 
+#             self.m_cachedMap = msg
+        
+#     def IMUCallback(self, msg : Imu):
+#         if(IsNewData(self.m_cachedIMU.header, msg.header)) : 
+#             self.m_cachedIMU = msg
+
+
+#     def DoBuoyTest(self, result : NavigationGoal.Result):
+#         #1 yaw left until buoy found 
+#         #2 once found align self with buoy 
+#         #3 move until lidar can be used reliably (buoy takes up certain portion of screen)
+#         #4 move to within .6 meters then spin
+
+#         if not self.detection_client.wait_for_service(timeout_sec = 1.0):
+#             self.get_logger().error(f"ERROR : Navigator::DoBuoyTest() : MISSING DETECTION SERVICE \"{self.get_parameter("detection_service_name").get_parameter_value().string_value}\"")
+#             result.success = False
+#             return
+        
+#         request = DetectionService.Request()
+
+#         future = self.detection_client.call_async(request)
+
+#         while rclpy.ok
+        
+#     def 
+        
+        
+
+class   
+
+def main():
+    rclpy.init()
+
+    navigator = Navigator()
+
+    rclpy.spin(navigator)
+
+
+if __name__ == '__main__':
+    main()

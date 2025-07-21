@@ -6,6 +6,7 @@ custom_interfaces.egg-info/dependency_links.txt
 custom_interfaces.egg-info/top_level.txt
 custom_interfaces/action/__init__.py
 custom_interfaces/action/_detection_action.py
+custom_interfaces/action/_navigation_goal.py
 custom_interfaces/msg/__init__.py
 custom_interfaces/msg/_aabb.py
 custom_interfaces/msg/_bounding_box.py

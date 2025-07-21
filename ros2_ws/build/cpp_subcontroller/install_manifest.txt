@@ -1,5 +1,4 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/motion_director
-/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/lib/cpp_subcontroller/navigator
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/package_run_dependencies/cpp_subcontroller
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/ament_index/resource_index/parent_prefix_path/cpp_subcontroller
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/cpp_subcontroller/share/cpp_subcontroller/environment/ament_prefix_path.sh

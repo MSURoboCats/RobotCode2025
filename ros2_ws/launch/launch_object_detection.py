@@ -5,14 +5,14 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-        Node(
-            package='realsense2_camera',
-            namespace='object_detection',
-            executable='realsense2_camera_node',
-            parameters=[
-                {'align_depth.enable' : True}
-            ]
-        ),
+        # Node(
+        #     package='realsense2_camera',
+        #     namespace='object_detection',
+        #     executable='realsense2_camera_node',
+        #     parameters=[
+        #         {'align_depth.enable' : True}
+        #     ]
+        # ),
     	Node(	
             package='py_objectdetection',
             namespace='object_detection',

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_interfaces/action/NavigationGoal.action
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module action {
+    struct NavigationGoal_Goal {
+      string goal;
+    };
+    struct NavigationGoal_Result {
+      boolean success;
+    };
+    struct NavigationGoal_Feedback {
+      string status;
+    };
+  };
+};

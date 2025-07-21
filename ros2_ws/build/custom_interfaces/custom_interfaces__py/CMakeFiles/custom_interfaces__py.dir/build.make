@@ -81,6 +81,7 @@ include /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/srv/_generate_world_map.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/srv/_detection_service.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_detection_action.py
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_navigation_goal.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/srv/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/__init__.py
@@ -96,6 +97,7 @@ include /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/srv/_generate_world_map_s.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/srv/_detection_service_s.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_detection_action_s.c
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c
 
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -122,6 +124,7 @@ rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
+rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -262,6 +265,9 @@ rosidl_generator_py/custom_interfaces/srv/_detection_service.py: rosidl_generato
 rosidl_generator_py/custom_interfaces/action/_detection_action.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/action/_detection_action.py
 
+rosidl_generator_py/custom_interfaces/action/_navigation_goal.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/action/_navigation_goal.py
+
 rosidl_generator_py/custom_interfaces/msg/__init__.py: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/msg/__init__.py
 
@@ -307,6 +313,9 @@ rosidl_generator_py/custom_interfaces/srv/_detection_service_s.c: rosidl_generat
 rosidl_generator_py/custom_interfaces/action/_detection_action_s.c: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/action/_detection_action_s.c
 
+rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c: rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c
+
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/codegen:
 .PHONY : /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/custom_interfaces__py/CMakeFiles/custom_interfaces__py.dir/codegen
 
@@ -317,6 +326,8 @@ custom_interfaces__py: rosidl_generator_py/custom_interfaces/_custom_interfaces_
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/__init__.py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_detection_action.py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_detection_action_s.c
+custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_navigation_goal.py
+custom_interfaces__py: rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/__init__.py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_aabb.py
 custom_interfaces__py: rosidl_generator_py/custom_interfaces/msg/_aabb_s.c

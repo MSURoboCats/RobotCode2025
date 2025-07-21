@@ -126,6 +126,11 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__traits.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/navigation_goal.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__type_support.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -155,6 +160,7 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_i
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -430,6 +436,21 @@ rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__traits.hp
 rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__type_support.hpp
 
+rosidl_generator_cpp/custom_interfaces/action/navigation_goal.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/navigation_goal.hpp
+
+rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__type_support.hpp
+
 CMakeFiles/custom_interfaces__cpp.dir/codegen:
 .PHONY : CMakeFiles/custom_interfaces__cpp.dir/codegen
 
@@ -438,7 +459,12 @@ custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/det
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__traits.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__type_support.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/navigation_goal__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detection_action.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/navigation_goal.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/aabb.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/depth_report.hpp

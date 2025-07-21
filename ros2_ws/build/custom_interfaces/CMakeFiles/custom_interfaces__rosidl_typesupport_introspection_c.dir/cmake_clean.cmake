@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__type_support.c.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__type_support.c.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/bounding_box__type_support.c.o"
@@ -27,6 +29,8 @@ file(REMOVE_RECURSE
   "libcustom_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c"
+  "rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c"
   "rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__type_support.c"
   "rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h"

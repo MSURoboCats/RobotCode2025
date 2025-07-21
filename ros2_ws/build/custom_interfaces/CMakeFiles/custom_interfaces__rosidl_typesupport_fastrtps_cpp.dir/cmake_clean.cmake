@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/detection_action__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/detection_action__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/navigation_goal__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/navigation_goal__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/aabb__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/aabb__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o"
@@ -26,7 +28,9 @@ file(REMOVE_RECURSE
   "libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/detection_action__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/navigation_goal__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/detection_action__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/aabb__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/aabb__type_support.cpp"

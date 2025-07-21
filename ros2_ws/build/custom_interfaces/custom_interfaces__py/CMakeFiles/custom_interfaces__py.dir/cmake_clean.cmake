@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/__init__.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_detection_action.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_navigation_goal.py"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/__init__.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_aabb.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_aabb_s.c"

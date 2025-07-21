@@ -12,6 +12,7 @@
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:msg/MapObject.msg",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:srv/GenerateWorldMap.srv",
     "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:srv/DetectionService.srv",
-    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:action/DetectionAction.action"
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:action/DetectionAction.action",
+    "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces:action/NavigationGoal.action"
   ]
 }

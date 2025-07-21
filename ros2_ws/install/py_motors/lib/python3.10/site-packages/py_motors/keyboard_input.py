@@ -5,6 +5,9 @@ from custom_interfaces.msg import MotorCommand
 
 from sshkeyboard import listen_keyboard
 
+
+throttle = 0.5
+
 class KeyboardMotorController(Node):
     _currentMsg = MotorCommand()
     
@@ -19,24 +22,24 @@ class KeyboardMotorController(Node):
         match key:
             ### VERTICAL
             case "q":        ## UP MEDIUM
-                throttles[1] = -0.5
-                throttles[4] = 0.5
+                throttles[1] = -throttle
+                throttles[4] = throttle
             
             case "e":        ## DOWN MEDIUM
-                throttles[1] = 0.5
-                throttles[4] = -0.5
+                throttles[1] = throttle
+                throttles[4] = -throttle
             
             case "w":        ## FORWARD MEDIUM
-                throttles[0] = 0.5
-                throttles[2] = -0.5
-                throttles[3] = -0.5
-                throttles[5] = 0.5
+                throttles[0] = throttle
+                throttles[2] = -throttle
+                throttles[3] = -throttle
+                throttles[5] = throttle
             
             case "s":        ## REVERSE MEDIUM
-                throttles[0] = -0.5
-                throttles[2] = 0.5
-                throttles[3] = 0.5
-                throttles[5] = -0.5
+                throttles[0] = -throttle
+                throttles[2] = throttle
+                throttles[3] = throttle
+                throttles[5] = -throttle
         self._currentMsg.throttles = throttles
         self._publisher.publish(self._currentMsg)
     

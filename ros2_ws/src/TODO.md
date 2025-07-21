@@ -43,6 +43,8 @@ To have the imu data be published from one topic, set the parameter unite_imu_me
 
 from this a new topic is created camera/imu
 
+all these parameters combined would look something like "ros2 run realsense2_camera realsense2_camera_node --ros-args -p align_depth.enable:=True unite_imu_method:=[1 or 2]
+
 ### TODO
 1. Find out how to make depth_image gathering asynchronous from the service stuff, or find a way to ensure that depth_image data is gathered before calling the service stuff
 	- Possibly make depth_image gatheringh a seperate service, which can then be found in the chain-link style found int DItM_tester.py

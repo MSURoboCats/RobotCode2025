@@ -15,6 +15,10 @@ from ultralytics import YOLO
 from cv_bridge import CvBridge
 
 def buildmodel(path : str, task : str) -> YOLO:
+    # check if file is valid
+    if(not os.path.isfile(path)): 
+        print(f"File path \"{path}\" does not point to a valid file! returning")
+        return None
     # check if trtmodel exists at path
     split = path.split("/")
 
@@ -67,6 +71,8 @@ class DetectionPublisher(Node):
         self.declare_parameter("topic","usb_cam_0/image_raw")
         self.declare_parameter("filter", "all")
 
+        self.declare_parameter("detection_service_name","detection_service")
+
 
         self._path = self.get_parameter("model_path").get_parameter_value().string_value
         self._task = self.get_parameter("task").get_parameter_value().string_value
@@ -86,26 +92,61 @@ class DetectionPublisher(Node):
 
         self._frameNumber = 0
 
-        self._service = self.create_service(DetectionService,'detection_service',self.get_current_detection_buffer)
-        
+        self._detection_service = self.create_service(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value,self.get_current_detection_buffer)
+
+
         cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
         cv2.resizeWindow("detection_publisher",640,480)
 
+    def __init__(self, name : str = 'detection_publisher', model_path : str ="ultralyticsplus/yolov8s.pt", image_stream_topic : str = "usb_cam_0/image_raw", task : str = "detect", filter : str = "all"):
+        super().__init__(name)
+
+        self.declare_parameter("detection_service_name","detection_service")
+
+
+        self._path = model_path
+        self._task = task
+        self._topic = image_stream_topic
+        self._filter = filter
+
+
+        self._cvBridge = CvBridge()
+
+        self._model = buildmodel(self._path,self._task) 
+
+    
+        
+        self.publisher_ = self.create_publisher(DetectionBuffer,'DetectionBuffer',1)
+
+        self.subscription_ = self.create_subscription(ros2_img,self._topic,self.publisher_callback,5)
+
+        self._frameNumber = 0
+
+        self._detection_service = self.create_service(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value,self.get_current_detection_buffer)
+
+
+        cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
+        cv2.resizeWindow("detection_publisher",640,480)
+
+
+
     def get_current_detection_buffer(self, request, response):
+
         response.detections = self._lastFrameCapture
         self.get_logger().info("Detection_Publisher::detection_service() : returning last frame capture")
 
         return response
+
         
 
 
 
 
-    # reads image from usb_cam, might need to update to reading directly from the device (/dev/video*) for performance purposes 
+    # reads image from camera source 
     def publisher_callback(self, image : ros2_img):
 
         cv_image = self._cvBridge.imgmsg_to_cv2(image)
-        # cv_image = cv2.flip(cv_image,0)
+        cv_image = cv2.flip(cv_image,0)
         cv_image = cv2.cvtColor(cv_image,cv2.COLOR_BGR2RGB)
 
         results = self._model(cv_image)
@@ -152,6 +193,8 @@ class DetectionPublisher(Node):
         self.publisher_.publish(out)
 
         self._lastFrameCapture = out
+
+
 
         self.get_logger().info("publishing bounding box buffer",)
 

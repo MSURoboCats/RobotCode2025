@@ -11,6 +11,10 @@ class MotorConductor(Node):
         self._subscription = self.create_subscription(MotionGoal,"MotionGoal",self.publisher_callback, 5)
         self._publisher = self.create_publisher(MotorCommand, "MotorCommand", 5)
     
+
+
+
+    
     ### Callback for receiving direction commands
     def publisher_callback(self, msg):
         in_msg = msg.goal
@@ -80,6 +84,19 @@ class MotorConductor(Node):
                 throttles[2] = 0.75
                 throttles[3] = 0.75
                 throttles[5] = -0.75   
+            
+            case "y_le":        ## SPIN LEFT
+                throttles[0] = 0.25
+                throttles[2] = -0.25
+                throttles[3] = 0.25
+                throttles[5] = -0.25
+            
+            case 'y_ri':        ## SPIN RIGHT
+
+                throttles[0] = -0.25
+                throttles[2] = 0.25
+                throttles[3] = -0.25
+                throttles[5] = 0.25
 
             case _: # Possibly change to continuing previous command
                 print("Unrecognized command: \"%s\" defaulting to killing all motors\n" % in_msg)             

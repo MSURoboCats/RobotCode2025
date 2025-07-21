@@ -8,6 +8,8 @@ def generate_launch_description():
         Node(
             package='realsense2_camera',
             executable='realsense2_camera_node',
+            namespace='object_detection',
+
             parameters=[
                 {'align_depth.enable' : True},
                 {'unite_imu_method' : 1}

@@ -32,6 +32,11 @@ In order to determine the distance to a "known object" we must first be able to:
 
 ## NAVIGATION 
 
+### Notes From Testing
+From testing, using lidar at a distance underwater leads to large amounts noise. As such, we must rely on object recognition via machine learning (ML) to detect targets at a distance The sub rotates until the target is found, then approaches the target until it takes up a good portion of the FOV, then the sub switches to lidar-based detection.
+
+With lidar, we can create accurate headings based on the position of other objects.
+
 
 ### What we can determine from heuristics (Vision & gyro)
 1. Distance to "known objects" (objects with known dimensions) [Reddit Post](https://www.reddit.com/r/computervision/comments/1ciot5j/is_it_possible_to_calculate_the_distance_of_an/)

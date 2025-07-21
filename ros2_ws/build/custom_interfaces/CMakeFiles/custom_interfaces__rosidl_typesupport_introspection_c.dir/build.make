@@ -89,6 +89,7 @@ rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -220,6 +221,9 @@ rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/detection_servic
 rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.c: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.c
 
@@ -255,6 +259,9 @@ rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/detection_servic
 
 rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c
+
+rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c
 
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/codegen:
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/codegen
@@ -427,6 +434,20 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c -o CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.s
 
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o: rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o -MF CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o.d -o CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c > CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.i
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c -o CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.s
+
 # Object files for target custom_interfaces__rosidl_typesupport_introspection_c
 custom_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.c.o" \
@@ -440,7 +461,8 @@ custom_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/map_object__type_support.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/generate_world_map__type_support.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/detection_service__type_support.c.o" \
-"CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.o"
+"CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.o" \
+"CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o"
 
 # External object files for target custom_interfaces__rosidl_typesupport_introspection_c
 custom_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -457,6 +479,7 @@ libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_i
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/generate_world_map__type_support.c.o
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/detection_service__type_support.c.o
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c.o
+libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c.o
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: libcustom_interfaces__rosidl_generator_c.so
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -475,7 +498,7 @@ libcustom_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -488,6 +511,8 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/action/detail/detection_action__type_support.c
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/action/detail/navigation_goal__type_support.c
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/aabb__type_support.c
 CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h

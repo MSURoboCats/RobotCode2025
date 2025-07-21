@@ -40,6 +40,8 @@ where x = throttle.
 13. d_me    = Down Medium
 14. u_fa    = Up Fast
 15. d_fa    = Down Fast 
+16. y_le    = Yaw Left 
+17. y_ri    = Yaw Right
 
 ## [OLD] MOTOR COMMANDS -- managed by motor controller
 

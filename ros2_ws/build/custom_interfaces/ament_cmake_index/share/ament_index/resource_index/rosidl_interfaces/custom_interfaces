@@ -1,5 +1,7 @@
 action/DetectionAction.action
 action/DetectionAction.idl
+action/NavigationGoal.action
+action/NavigationGoal.idl
 msg/AABB.idl
 msg/AABB.msg
 msg/BoundingBox.idl

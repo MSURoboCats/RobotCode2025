@@ -240,6 +240,20 @@ CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c -o CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c.s
 
+CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o: rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c
+CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o -MF CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o.d -o CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c
+
+CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c > CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.i
+
+CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c -o CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.s
+
 # Object files for target custom_interfaces__rosidl_generator_py
 custom_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_imu_data_s.c.o" \
@@ -253,7 +267,8 @@ custom_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_map_object_s.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_generate_world_map_s.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_detection_service_s.c.o" \
-"CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c.o"
+"CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c.o" \
+"CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o"
 
 # External object files for target custom_interfaces__rosidl_generator_py
 custom_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
@@ -270,6 +285,7 @@ rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_generate_world_map_s.c.o
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_detection_service_s.c.o
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_detection_action_s.c.o
+rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/action/_navigation_goal_s.c.o
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: libcustom_interfaces__rosidl_typesupport_c.so
@@ -296,7 +312,7 @@ rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so: CMakeFiles/custom_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,7 +6,7 @@ from cv_bridge import CvBridge
 
 import numpy as np
 import open3d as o3d
-
+import math
 
 from custom_interfaces.msg import AABB, WorldMap, BoundingBox, DetectionBuffer, MapObject 
 from custom_interfaces.srv import GenerateWorldMap
@@ -31,6 +31,7 @@ from geometry_msgs.msg import Polygon as ros2_poly
 
 #         return outpoly
 
+#cropBox = o3d.geometry.AxisAlignedBoundingBox([])
 
 class DepthImageToMapNode(Node):
     _camera_info        : CameraInfo
@@ -39,20 +40,26 @@ class DepthImageToMapNode(Node):
     _cv_bridge          : CvBridge
     _map_cache          : WorldMap
     _map_id             : int
+    _o3d_obj_list       : list
+    
 
 
     def __init__(self):
         super().__init__("depth_image_to_map")
         self.declare_parameter('camera_info_topic','camera/camera/aligned_depth_to_color/camera_info')
         self.declare_parameter('depth_image_topic','camera/camera/aligned_depth_to_color/image_raw')
+        self.declare_parameter('extrinsics_topic','camera/camera/extrinsics/depth_to_color')
         self.declare_parameter('detection_buffer_topic', 'DetectionBuffer')
         self.declare_parameter('published_topic_name', 'WorldMap')
-        self.declare_parameter('publish_rate_seconds',0.5)
+        self.declare_parameter('publish_rate_seconds',0.25) # rate at which the map is updated and published
+        self.declare_parameter('debug_enabled', False)
         
         self._camera_info = None
         self._detection_buffer = None
         self._depth_image = None
         self._map_cache = None
+        self._map_id = 0
+        self._o3d_obj_list = list()
 
         self._cv_bridge = CvBridge()
 
@@ -74,9 +81,15 @@ class DepthImageToMapNode(Node):
             self.detection_buffer_callback,
             5,
         )
-
         self._publisher = self.create_publisher(WorldMap,self.get_parameter('published_topic_name').get_parameter_value().string_value,1)
-        self.create_timer(self.get_parameter('publish_rate_seconds').get_parameter_value().double_value,self.map_publisher_callback)
+        self._publisher_timer = self.create_timer(self.get_parameter('publish_rate_seconds').get_parameter_value().double_value,self.map_publisher_callback)
+        if (self.get_parameter('debug_enabled').get_parameter_value().bool_value == True): self.create_timer(0.125,self.draw_map_callback)
+
+    def draw_map_callback(self):
+        if(self._o3d_obj_list.__len__() <= 0): return
+        else:
+            o3d.visualization.draw(self._o3d_obj_list, "Generated Map")
+
 
     def camera_info_callback(self, msg):
         self._camera_info = msg
@@ -92,12 +105,20 @@ class DepthImageToMapNode(Node):
 
 
     def map_publisher_callback(self):
-        if (self._map_cache is None):
-            self.get_logger().info("depth_image_to_map lacks cached instance of WorldMap. Generating new world map...")
-            self.generate_new_map()
-        else:
-            self._publisher.publish(self._map_cache)
-            self.get_logger().info("Publishing map info")
+        #  if (self._map_cache is None):
+        #     self.get_logger().info("depth_image_to_map lacks cached instance of WorldMap. Generating new world map...")
+           
+        # else:
+        #     self._publisher.publish(self._map_cache)
+        #     self.get_logger().info("Publishing map info")
+
+        self.generate_new_map()
+
+        if(self._map_cache is None):
+            self.get_logger().info("depth_image_to_map lacks cached instance of WorldMap! Waiting for instance to be generated...")
+            return
+        self._publisher.publish(self._map_cache)
+        self.get_logger().info("Publishing map info")
 
     def generate_new_map(self):
         if self.lacks_required_info():
@@ -107,6 +128,9 @@ class DepthImageToMapNode(Node):
         # convert depth image to cv image
         depth_image = self._cv_bridge.imgmsg_to_cv2(self._depth_image)
 
+        # flip image as camera is upside down
+        depth_image = cv2.flip(depth_image,0)
+
         # validate depth image 
         is_blank = not ((float(depth_image.max()) != 0.0 ) or (float(depth_image.min() != 0.0)))
 
@@ -114,9 +138,9 @@ class DepthImageToMapNode(Node):
             self.get_logger().warning("Warning : depth_image_to_map::generate_new_map() : depth image is invalid! Refusing to generate map...")
             return
         
-        cv2.imshow("depth_image",depth_image)
+        #cv2.imshow("depth_image",depth_image)
 
-        cv2.waitKey(1)
+        #cv2.waitKey(1)
 
         # begin masking process
 
@@ -125,6 +149,8 @@ class DepthImageToMapNode(Node):
         d_buffer = self._detection_buffer.detections
 
         object_list : list[MapObject] = list()
+
+        self._o3d_obj_list = list()
 
         for bounds in d_buffer:
             # add rectangle to mask and store result in new image
@@ -139,8 +165,12 @@ class DepthImageToMapNode(Node):
             # apply mask to image, store in seperate image, and create a mesh
 
             image_result = cv2.bitwise_and(depth_image,depth_image,mask=object_mask)
-            cv2.imshow("mask result",image_result)
-            cv2.waitKey(1)
+
+            # filter depth image 
+
+
+            #cv2.imshow("mask result",image_result)
+            #cv2.waitKey(1)
 
             mesh_result = self.generate_map_object(image_result,bounds.name)
 
@@ -164,12 +194,13 @@ class DepthImageToMapNode(Node):
         self._map_cache.header.stamp.sec = int(c_time)
         self._map_cache.header.stamp.nanosec = int((c_time - int(c_time)) *1e+9 )
 
-        self._map_cache.header._frame_id = self._map_id
+        self._map_cache.header._frame_id = f"{self._map_id}"
 
 
-        cv2.destroyWindow("mask result")
-        cv2.destroyWindow("depth_image")
+        # cv2.destroyWindow("mask result")
+        # cv2.destroyWindow("depth_image")
         self.get_logger().info("Map Generated Succesfully!")
+
     
     def generate_map_object(self, img : np.ndarray, name : str) -> MapObject:
         #1 convert opencv image to open3D image
@@ -192,17 +223,48 @@ class DepthImageToMapNode(Node):
         intrinsics.set_intrinsics(i_width,i_height,fx,fy,cx,cy)
 
         point_cloud = o3d.geometry.PointCloud.create_from_depth_image(o3d_image,intrinsics)
-        
+        point_cloud = point_cloud.voxel_down_sample(0.04)
+
+        rs2_point_list : list[ros2_pt32] = list()
+
+        tmp_point_cloud = o3d.geometry.PointCloud()
+
+        # center_pt = point_cloud.get_center()
+
+        # center_dist_sqr = float(center_pt[0] * center_pt[0] + center_pt[1] * center_pt[1] + center_pt[2] * center_pt[2])
+
+        points = point_cloud.points
+
+        for point in points:
+            
+            # dist = float(point[0] * point[0] + point[1] * point[1] + point[2] * point[2])
+
+            # if(dist >= center_dist_sqr): continue #if the distance is greater than the distance to the center of the previous point cloud, skip that point
+
+            c_point : ros2_pt32 = ros2_pt32()
+            c_point.x = float(point[0])
+            c_point.y = float(point[1])
+            c_point.z = float(point[2])
+
+            #print(f"{c_point.x}, {c_point.y}, {c_point.z}")
+
+            # tmp_point_cloud.points.extend([point])
+
+            rs2_point_list.append(c_point)
+
+        # point_cloud = tmp_point_cloud
 
         aabb : o3d.geometry.AxisAlignedBoundingBox = point_cloud.get_axis_aligned_bounding_box()
 
-        self.get_logger().info(f"Generated Bounding Box: {aabb.get_print_info()}")
+        self._o3d_obj_list.append(point_cloud)
+        self._o3d_obj_list.append(aabb)
 
-        o3d.visualization.draw([point_cloud, aabb],f"{name} before",i_width,i_height,intrinsic_matrix=intrinsics)
+        dist = math.sqrt(aabb.min_bound[0] * aabb.min_bound[0] + aabb.min_bound[1] * aabb.min_bound[1] + aabb.min_bound[2] * aabb.min_bound[2])
+
+        self.get_logger().info(f"Generated Bounding Box:\nName = {name}\nMin = {aabb.min_bound}\nMax = {aabb.max_bound}\nMinimum Distance = {dist}\n")
 
         out_object : MapObject = MapObject()
         out_mesh : ros2_poly = ros2_poly()
-        rs2_point_list : list[ros2_pt32] = list()
 
 
         aabb_center = aabb.get_center()
@@ -216,16 +278,6 @@ class DepthImageToMapNode(Node):
         out_object.aabb.extents.y = float(aabb_extents[1])
         out_object.aabb.extents.z = float(aabb_extents[2])
 
-
-        points = point_cloud.points
-
-        for point in points:
-            c_point : ros2_pt32 = ros2_pt32()
-            c_point.x = float(point[0])
-            c_point.y = float(point[1])
-            c_point.z = float(point[2])
-
-            rs2_point_list.append(c_point)
 
         out_mesh.points = rs2_point_list
 

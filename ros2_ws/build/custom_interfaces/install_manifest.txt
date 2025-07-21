@@ -1,9 +1,14 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__functions.c
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__struct.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__functions.h
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__functions.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__type_support.h
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__functions.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__struct.h
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__type_support.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detection_action.h
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/navigation_goal.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__struct.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__type_support.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/generate_world_map__functions.c
@@ -63,6 +68,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_fastrtps_c.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__rosidl_typesupport_fastrtps_c.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__rosidl_typesupport_fastrtps_c.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/generate_world_map__rosidl_typesupport_fastrtps_c.h
@@ -77,10 +83,15 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/map_object__rosidl_typesupport_fastrtps_c.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__traits.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__type_support.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__struct.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__builder.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__type_support.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__builder.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__traits.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__struct.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/navigation_goal.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detection_action.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detection_service.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__traits.hpp
@@ -139,6 +150,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/aabb.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__rosidl_typesupport_fastrtps_cpp.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_fastrtps_cpp.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/generate_world_map__rosidl_typesupport_fastrtps_cpp.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__rosidl_typesupport_fastrtps_cpp.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/depth_report__rosidl_typesupport_fastrtps_cpp.hpp
@@ -153,6 +165,8 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__type_support.c
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_c.h
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__type_support.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_c.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__type_support.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__rosidl_typesupport_introspection_c.h
@@ -179,8 +193,10 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__rosidl_typesupport_introspection_cpp.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__type_support.cpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_cpp.hpp
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/navigation_goal__type_support.cpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/detection_service__type_support.cpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/generate_world_map__rosidl_typesupport_introspection_cpp.hpp
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/generate_world_map__type_support.cpp
@@ -218,7 +234,9 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_detection_action.py
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_navigation_goal.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_detection_action_s.c
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_navigation_goal_s.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_generate_world_map_s.c
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_detection_service_s.c
@@ -262,6 +280,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/GenerateWorldMap.idl
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/DetectionService.idl
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/DetectionAction.idl
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/NavigationGoal.idl
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/ImuData.msg
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/DepthReport.msg
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/MotionGoal.msg
@@ -278,6 +297,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/DetectionService_Request.msg
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/DetectionService_Response.msg
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/DetectionAction.action
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/NavigationGoal.action
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh
