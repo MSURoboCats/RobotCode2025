@@ -64,7 +64,7 @@ class DetectionPublisher(Node):
     _cvBridge           : CvBridge
     _frameNumber        : int
     _lastFrameCapture   : DetectionBuffer
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__('detection_publisher')
         self.declare_parameter("model_path", "ultralyticsplus/yolov8s.pt")
         self.declare_parameter("task", "detect")
@@ -98,35 +98,35 @@ class DetectionPublisher(Node):
         cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
         cv2.resizeWindow("detection_publisher",640,480)
 
-    def __init__(self, name : str = 'detection_publisher', model_path : str ="ultralyticsplus/yolov8s.pt", image_stream_topic : str = "usb_cam_0/image_raw", task : str = "detect", filter : str = "all"):
-        super().__init__(name)
+    # def __init__(self, name : str = 'detection_publisher', model_path : str ="ultralyticsplus/yolov8s.pt", image_stream_topic : str = "usb_cam_0/image_raw", task : str = "detect", filter : str = "all"):
+    #     super().__init__(name)
 
-        self.declare_parameter("detection_service_name","detection_service")
-
-
-        self._path = model_path
-        self._task = task
-        self._topic = image_stream_topic
-        self._filter = filter
+    #     self.declare_parameter("detection_service_name","detection_service")
 
 
-        self._cvBridge = CvBridge()
+    #     self._path = model_path
+    #     self._task = task
+    #     self._topic = image_stream_topic
+    #     self._filter = filter
 
-        self._model = buildmodel(self._path,self._task) 
+
+    #     self._cvBridge = CvBridge()
+
+    #     self._model = buildmodel(self._path,self._task) 
 
     
         
-        self.publisher_ = self.create_publisher(DetectionBuffer,'DetectionBuffer',1)
+    #     self.publisher_ = self.create_publisher(DetectionBuffer,'DetectionBuffer',1)
 
-        self.subscription_ = self.create_subscription(ros2_img,self._topic,self.publisher_callback,5)
+    #     self.subscription_ = self.create_subscription(ros2_img,self._topic,self.publisher_callback,5)
 
-        self._frameNumber = 0
+    #     self._frameNumber = 0
 
-        self._detection_service = self.create_service(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value,self.get_current_detection_buffer)
+    #     self._detection_service = self.create_service(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value,self.get_current_detection_buffer)
 
 
-        cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
-        cv2.resizeWindow("detection_publisher",640,480)
+    #     cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
+    #     cv2.resizeWindow("detection_publisher",640,480)
 
 
 
@@ -172,6 +172,7 @@ class DetectionPublisher(Node):
                     bbox.height     = int(xywh[0][3])
                     bbox.center_x   = int(xywh[0][0])
                     bbox.center_y   = int(xywh[0][1])
+                    bbox.conf       = float(box.conf)
                     bboxes.append(bbox) 
 
 
@@ -181,7 +182,7 @@ class DetectionPublisher(Node):
                 p1 = (int(xywh[0][0] - xywh[0][2] * 0.5), int(xywh[0][1] - xywh[0][3] * 0.5))
                 p2 = (int(xywh[0][0] + xywh[0][2] * 0.5), int(xywh[0][1] + xywh[0][3] * 0.5))
                 cv_image = cv2.rectangle(cv_image,p1,p2,(255,0,0),2)
-                cv_image = cv2.putText(cv_image, name + " confidence: " + str(float(box.conf)),p1,cv2.FONT_HERSHEY_PLAIN,1,(255,0,0),1)
+                cv_image = cv2.putText(cv_image, f"{bbox.name}, conf: {bbox.conf:.2f}\n wxh: {bbox.width}x{bbox.height}",p1,cv2.FONT_HERSHEY_PLAIN,1,(255,0,0),1)
                 
                 # print("########\n")
             # print("------\n")

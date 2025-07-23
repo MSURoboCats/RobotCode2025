@@ -24,7 +24,7 @@ def SetFluidDensity(density = ms5837.DENSITY_FRESHWATER):
     global _sensor
     _sensor.setFluidDensity(density)
 
-# returns tuple (pressure, depth temperature), -1 for all values means that read was unsuccessful
+# returns tuple (pressure, depth (meters), temperature), -1 for all values means that read was unsuccessful
 def ReadSensor() -> tuple[float,float,float]:
     global _sensor
     global _sensor_units

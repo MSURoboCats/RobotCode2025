@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.o.d"
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.c.o"
   "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.c.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o"
+  "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o.d"
   "libcustom_interfaces__rosidl_generator_c.pdb"
   "libcustom_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c"
@@ -90,8 +92,13 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.h"
   "rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h"
   "rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__type_support.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c"
+  "rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h"
+  "rosidl_generator_c/custom_interfaces/srv/detail/set_depth__type_support.h"
   "rosidl_generator_c/custom_interfaces/srv/detection_service.h"
   "rosidl_generator_c/custom_interfaces/srv/generate_world_map.h"
+  "rosidl_generator_c/custom_interfaces/srv/set_depth.h"
 )
 
 # Per-language clean rules from dependency scanning.

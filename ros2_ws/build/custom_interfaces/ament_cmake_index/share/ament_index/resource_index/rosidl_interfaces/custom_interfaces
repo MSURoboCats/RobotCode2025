@@ -28,3 +28,7 @@ srv/GenerateWorldMap.idl
 srv/GenerateWorldMap.srv
 srv/GenerateWorldMap_Request.msg
 srv/GenerateWorldMap_Response.msg
+srv/SetDepth.idl
+srv/SetDepth.srv
+srv/SetDepth_Request.msg
+srv/SetDepth_Response.msg

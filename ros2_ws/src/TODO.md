@@ -1,6 +1,5 @@
 # TODO.MD
-- 3d navigation 
-	- figure out how to work 3d navigation, start at the pool and get the robot to move towards a target, then program more complex actions
+
 
 
 
@@ -95,6 +94,17 @@ We need a controller that can somehow calculate the required duty cycle to bring
 
 [TODO]: Look into PID Controllers
 https://gamzeyilan1.medium.com/pid-controller-for-absolute-beginners-4a49c58c8098  -->
+
+
+## 5 PID TESTING
+### SUMMARY
+- Modify kd, ki, and kp values to have the depth PID controller produce valid motor values 
+	- you can manually set the depth via CLI with:
+		ros2 service call /set_depth custom_interfaces/srv/SetDepth "{depth: [depth]}"
+- Impliment noise filtering into depth sensor (if needed )
+	
+
+
 
 
 ## ADDITIONAL PROBLEMS

@@ -3,20 +3,38 @@ import rclpy
 from rclpy.node import Node
 from custom_interfaces.msg import MotorCommand
 from custom_interfaces.msg import MotionGoal
-
+from custom_interfaces.msg import DepthReport
+from std_msgs.msg import Float64
 
 class MotorConductor(Node):
     def __init__(self):
         super().__init__('motor_conductor')
-        self._subscription = self.create_subscription(MotionGoal,"MotionGoal",self.publisher_callback, 5)
+        self._commandSubscription = self.create_subscription(MotionGoal,"MotionGoal",self.command_callback, 5)
+        self._altitudeSubscription = self.create_subscription(Float64,"altitude_adjustment",self.altitude_adjustment_callback,5)
         self._publisher = self.create_publisher(MotorCommand, "MotorCommand", 5)
+
+    def altitude_adjustment_callback(self, msg):
+
+        power = msg.data
+
+        if(power > 1.0): power = 1.0
+        elif(power < -1.0): power = -1.0
+
+        throttles = [0.0,0.0,0.0,0.0,0.0,0.0]
+
+        throttles[1] = -power
+        throttles[4] =  power
+
+        out_msg = MotorCommand()
+
+        out_msg.throttles = throttles
+
+        self._publisher.publish(out_msg)
+ 
+
     
-
-
-
-    
-    ### Callback for receiving direction commands
-    def publisher_callback(self, msg):
+    ### Callback for receiving "verbal" commands and turning them into motor powers
+    def command_callback(self, msg):
         in_msg = msg.goal
         out_msg = MotorCommand()
 

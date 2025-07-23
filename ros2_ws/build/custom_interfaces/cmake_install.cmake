@@ -412,6 +412,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/SetDepth.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/action" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces/action/DetectionAction.idl")
 endif()
 
@@ -477,6 +481,18 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/DetectionService_Response.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/SetDepth.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/SetDepth_Request.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interfaces/srv" TYPE FILE FILES "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_cmake/srv/SetDepth_Response.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

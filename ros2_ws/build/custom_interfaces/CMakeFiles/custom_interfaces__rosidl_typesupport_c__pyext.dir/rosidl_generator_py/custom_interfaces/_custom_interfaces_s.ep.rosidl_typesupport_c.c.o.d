@@ -244,6 +244,9 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__struct.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__type_support.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h \
+ /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/detection_action__type_support.h \
  /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/detection_action__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.h \

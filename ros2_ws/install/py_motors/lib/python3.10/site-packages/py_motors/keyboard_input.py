@@ -40,6 +40,16 @@ class KeyboardMotorController(Node):
                 throttles[2] = throttle
                 throttles[3] = throttle
                 throttles[5] = -throttle
+            case "a":        ## ROTATE LEFT
+                throttles[0] = 0.25
+                throttles[2] = -0.25
+                throttles[3] = 0.25
+                throttles[5] = -0.25
+            case "d":        ## ROTATE RIGHT
+                throttles[0] = -0.25
+                throttles[2] = 0.25
+                throttles[3] = -0.25
+                throttles[5] = 0.25
         self._currentMsg.throttles = throttles
         self._publisher.publish(self._currentMsg)
     

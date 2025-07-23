@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/detection_service__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/generate_world_map__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/generate_world_map__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/set_depth__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/set_depth__type_support.cpp.o.d"
   "libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/detection_action__type_support.cpp"
@@ -51,8 +53,10 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/world_map__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/detection_service__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/generate_world_map__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/set_depth__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/detection_service__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/generate_world_map__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/set_depth__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -20,3 +20,4 @@ custom_interfaces/msg/_world_map.py
 custom_interfaces/srv/__init__.py
 custom_interfaces/srv/_detection_service.py
 custom_interfaces/srv/_generate_world_map.py
+custom_interfaces/srv/_set_depth.py

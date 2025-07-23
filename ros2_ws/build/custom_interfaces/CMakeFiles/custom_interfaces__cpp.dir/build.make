@@ -121,6 +121,11 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/de
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detection_action.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__builder.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/action/detail/detection_action__struct.hpp
@@ -159,6 +164,7 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_i
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MapObject.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/srv/SetDepth.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
@@ -421,6 +427,21 @@ rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__traits.hpp:
 rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__type_support.hpp
 
+rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp
+
 rosidl_generator_cpp/custom_interfaces/action/detection_action.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/action/detection_action.hpp
 
@@ -518,8 +539,13 @@ custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/genera
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__traits.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__type_support.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/generate_world_map.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp.dir/build.make
 .PHONY : custom_interfaces__cpp
 

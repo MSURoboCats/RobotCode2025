@@ -63,8 +63,13 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__struct.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__traits.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/generate_world_map__type_support.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__builder.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/generate_world_map.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

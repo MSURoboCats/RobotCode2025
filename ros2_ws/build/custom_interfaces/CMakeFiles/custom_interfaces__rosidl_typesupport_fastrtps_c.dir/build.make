@@ -88,6 +88,7 @@ rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_type
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/msg/MapObject.idl
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/srv/SetDepth.idl
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
@@ -250,6 +251,12 @@ rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__ro
 
 rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__rosidl_typesupport_fastrtps_c.h
@@ -420,10 +427,24 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp.s
 
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o -MF CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o.d -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp > CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.i
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.s
+
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o -MF CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o.d -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp
 
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.i: cmake_force
@@ -437,7 +458,7 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o -MF CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o.d -o CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp
 
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.i: cmake_force
@@ -461,6 +482,7 @@ custom_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/map_object__type_support_c.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/generate_world_map__type_support_c.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp.o" \
+"CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o" \
 "CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o"
 
@@ -478,6 +500,7 @@ libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interf
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/map_object__type_support_c.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/generate_world_map__type_support_c.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp.o
+libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/detection_action__type_support_c.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/navigation_goal__type_support_c.cpp.o
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
@@ -501,7 +524,7 @@ libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libu
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -538,6 +561,8 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_t
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/detection_service__type_support_c.cpp
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/generate_world_map__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/generate_world_map__type_support_c.cpp
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/set_depth__type_support_c.cpp
 	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

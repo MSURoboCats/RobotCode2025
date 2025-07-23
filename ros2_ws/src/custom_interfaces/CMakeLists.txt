@@ -25,6 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/MapObject.msg"
 	"srv/GenerateWorldMap.srv"
 	"srv/DetectionService.srv"
+	"srv/SetDepth.srv"
 	"action/DetectionAction.action"
 	"action/NavigationGoal.action"
 	

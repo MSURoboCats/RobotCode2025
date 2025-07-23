@@ -93,6 +93,7 @@ rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_inter
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/msg/MapObject.idl
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/srv/GenerateWorldMap.idl
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/srv/DetectionService.idl
+rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/srv/SetDepth.idl
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/action/DetectionAction.idl
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: rosidl_adapter/custom_interfaces/action/NavigationGoal.idl
 rosidl_generator_c/custom_interfaces/msg/imu_data.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
@@ -322,6 +323,18 @@ rosidl_generator_c/custom_interfaces/srv/detail/detection_service__struct.h: ros
 rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h
 
+rosidl_generator_c/custom_interfaces/srv/set_depth.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/set_depth.h
+
+rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.h
+
+rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h
+
+rosidl_generator_c/custom_interfaces/srv/detail/set_depth__type_support.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/set_depth__type_support.h
+
 rosidl_generator_c/custom_interfaces/action/detection_action.h: rosidl_generator_c/custom_interfaces/msg/imu_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/action/detection_action.h
 
@@ -378,6 +391,9 @@ rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.c:
 
 rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c: rosidl_generator_c/custom_interfaces/msg/imu_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c
+
+rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c: rosidl_generator_c/custom_interfaces/msg/imu_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c
 
 rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c: rosidl_generator_c/custom_interfaces/msg/imu_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c
@@ -542,10 +558,24 @@ CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c -o CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.s
 
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o: rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o -MF CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o.d -o CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c
+
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c > CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.i
+
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c -o CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.s
+
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o: rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o -MF CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o.d -o CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c
 
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.i: cmake_force
@@ -559,7 +589,7 @@ CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_i
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o: rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o -MF CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o.d -o CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o -c /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c
 
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.i: cmake_force
@@ -583,6 +613,7 @@ custom_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.o" \
+"CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o" \
 "CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o"
 
@@ -600,6 +631,7 @@ libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosid
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.c.o
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.c.o
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.c.o
+libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c.o
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/detection_action__functions.c.o
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.c.o
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make
@@ -612,7 +644,7 @@ libcustom_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_inte
 libcustom_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interfaces__rosidl_generator_c.so: CMakeFiles/custom_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C shared library libcustom_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C shared library libcustom_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -686,8 +718,13 @@ CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__functions.h
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__type_support.h
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.c
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/set_depth__functions.h
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detail/set_depth__type_support.h
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/detection_service.h
 CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/generate_world_map.h
+CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_interfaces/srv/set_depth.h
 	cd /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/CMakeFiles/custom_interfaces__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/custom_interfaces__rosidl_generator_c.dir/depend
 

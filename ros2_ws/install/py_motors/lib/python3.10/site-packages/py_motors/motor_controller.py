@@ -66,7 +66,7 @@ class MotorController(Node):
 
         wsIndex = configPath.find("ros2_ws")
 
-        configPath = configPath[0:wsIndex] + "ros2_ws/motor_config/motorconfig.csv"
+        configPath = configPath[0:wsIndex] + "ros2_ws/config/motor_config/motorconfig.csv"
 
         self._motorMap = GetMotorMap(configPath)
         self.get_logger().info(f"created motor map {self._motorMap}")
