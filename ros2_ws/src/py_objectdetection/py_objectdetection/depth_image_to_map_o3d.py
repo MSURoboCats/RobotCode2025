@@ -44,8 +44,8 @@ class DepthImageToMapNode(Node):
     
 
 
-    def __init__(self):
-        super().__init__("depth_image_to_map")
+    def __init__(self, **kwargs):
+        super().__init__("depth_image_to_map", **kwargs)
         self.declare_parameter('camera_info_topic','camera/camera/aligned_depth_to_color/camera_info')
         self.declare_parameter('depth_image_topic','camera/camera/aligned_depth_to_color/image_raw')
         self.declare_parameter('extrinsics_topic','camera/camera/extrinsics/depth_to_color')

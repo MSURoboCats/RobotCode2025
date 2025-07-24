@@ -1,3 +1,8 @@
+import os
+import time
+
+import matplotlib.pyplot as plt
+
 import rclpy
 from rclpy.node import Node
 
@@ -21,17 +26,17 @@ __ROLLING_AVERAGE = 5
 
 class DepthController(Node):
 
-    KP              : float = 1
-    KI              : float = 0
-    KD              : float = 0
+    KP              : float = 0.6
+    KI              : float = 0.1
+    KD              : float = 0.2
 
     SAMPLE_RATE     : float = DepthPublisher.TIMER_PERIOD
 
-    MAX_OUTPUT      : int = 1
+    MAX_OUTPUT      : float = 0.75
 
-    MIN_OUTPUT       : int = -1
+    MIN_OUTPUT       : float = -0.75
 
-    DEPTH_TOLERANCE : float = 0.5
+    DEPTH_TOLERANCE : float = 0.07
 
 
     desired_depth   : float
@@ -42,11 +47,14 @@ class DepthController(Node):
     last_depth      : float = 0.0
 
     hasTargetDepth  : bool
+
+    control_values : list[float] = list()
     
 
 
+
     def __init__(self, **kwargs):
-        super().__init__("depth_controller")
+        super().__init__("depth_controller", **kwargs)
 
         self.declare_parameter("depth_topic","bar02")
         self.declare_parameter("goal_reached_topic", "depth_status")
@@ -89,14 +97,25 @@ class DepthController(Node):
 
             error = self.desired_depth - current_depth
 
-            if(abs(error) <  self.DEPTH_TOLERANCE):
+            if(abs(error)  <  self.DEPTH_TOLERANCE):
                 outmsg = String()
                 outmsg.data = f"Depth Goal {self.desired_depth:.3f} reached! ({current_depth:.3f})"
                 self.goal_reached_publisher.publish(outmsg)
-                self.hasTargetDepth = False
+                powers = Float64()
+                powers.data = 0.0
+
+                self.get_logger().info(outmsg.data)
+
+                self.motor_publisher.publish(powers)
+
+                #self.hasTargetDepth = False ## stops the PID loop from continuing once it reaches the target depth 
                 return
 
-            control = self.PIDController(error,current_depth)
+            control = -self.PIDController(error,current_depth)
+
+            control_actual = control
+
+            self.control_values.append(control_actual)
 
             if control > self.MAX_OUTPUT : control = self.MAX_OUTPUT
             elif control < self.MIN_OUTPUT : control = self.MIN_OUTPUT
@@ -109,7 +128,7 @@ class DepthController(Node):
 
 
 
-            self.get_logger().info(f"PID Stats:\n kp,ki,kd = {self.KP}, {self.KI}, {self.KD}\nCurrent: {current_depth}\nTarget: {self.desired_depth}\nControl: {control}\n")
+            self.get_logger().info(f"PID Stats:\n kp,ki,kd = {self.KP}, {self.KI}, {self.KD}\nCurrent: {current_depth}\nTarget: {self.desired_depth}\nControl (Clamped): {control}\nControl (Real Value): {control_actual}")
         
 
     
@@ -137,20 +156,55 @@ class DepthController(Node):
 
         iTerm = self.KI * self.sum_of_errors * self.SAMPLE_RATE
 
-        dTerm = self.KD * ((currentDepth - self.last_depth) / self.SAMPLE_RATE)
+        dTerm = self.KD * ((error - self.last_depth) / self.SAMPLE_RATE)
 
-        self.last_depth = currentDepth
+        self.last_depth = error
 
         return pTerm + iTerm + dTerm
     
+
+
+def write_pid_info_to_file(pid_info):
+    path = os.getcwd()
+
+    control_values = pid_info[3]
+
+    wsIndex = path.find("ros2_ws")
+
+    master_path = path[0:wsIndex]
+
+    path = master_path  + "ros2_ws/testing/logs/depth_controller_log.txt"
+
+    with open(path, "w") as file:
+        text = f"Test Date: {time.asctime()}\nKD: {pid_info[0]}, KI: {pid_info[1]}, KP: {pid_info[2]}, Target Depth: {pid_info[4]}"
+        file.write(text)
+
+    plt.plot(range(len(control_values)),control_values)
+
+    plt.title(text)
+
+    plt.savefig(master_path + "ros2_ws/testing/logs/pid_graph.png")
+
+    print(f"noise data written to {path}")
+
+
+
 def main(args = None):
-    rclpy.init(args = args)
+    try:
+        rclpy.init(args = args)
 
-    depthControllerNode = DepthController()
+        depthControllerNode = DepthController()
 
-    rclpy.spin(depthControllerNode)
+        rclpy.spin(depthControllerNode)
 
-    rclpy.shutdown()
+        
+    except KeyboardInterrupt:
+      
+        pid_info = (depthControllerNode.KD, depthControllerNode.KI, depthControllerNode.KP, depthControllerNode.control_values, depthControllerNode.desired_depth)
+
+        write_pid_info_to_file(pid_info)
+    finally:
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

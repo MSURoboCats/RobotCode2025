@@ -50,37 +50,6 @@ def SetMotorSpeed(motorSpeedMagnitude : float, motorChannel: int = 0):
     duty_cycle = __speedFn(motorSpeedMagnitude)
     motorController.channels[motorChannel].duty_cycle = duty_cycle
 
-# def SetMotorState(motorState, speedSetting = MotorSpeed.SLOW, motorChannel = 0):
-#     match motorState:
-#         case MotorState.STOPPED:
-#             InvokeStopCommand(motorChannel)
-#             return
-#         case MotorState.FORWARD:
-#             InvokeForwardCommand(speedSetting, motorChannel)
-#             return
-#         case MotorState.REVERSE:
-#             InvokeReverseCommand(speedSetting,motorChannel)
-#             return
-        
-
-# def InvokeForwardCommand(speedSetting, motorChannel):
-#     spd = FORWARD_SLOW
-#     if(speedSetting == MotorSpeed.SLOW) : spd = FORWARD_SLOW
-#     elif(speedSetting == MotorSpeed.MEDIUM) : spd = FORWARD_MED
-#     elif(speedSetting == MotorSpeed.FAST) : spd = FORWARD_FAST
-
-#     motorController.channels[motorChannel].duty_cycle = spd
-
-# def InvokeStopCommand(motorChannel):
-#     motorController.channels[motorChannel].duty_cycle = DUTY_CYCLE_STP
-
-# def InvokeReverseCommand(speedSetting, motorChannel):
-#     spd = REVERSE_SLOW
-#     if(speedSetting == MotorSpeed.SLOW) : spd = REVERSE_SLOW
-#     elif(speedSetting == MotorSpeed.MEDIUM) : spd = REVERSE_MED
-#     elif(speedSetting == MotorSpeed.FAST) : spd = REVERSE_FAST
-
-#     motorController.channels[motorChannel].duty_cycle = spd
 
 def CleanupMotor():
     print("Cleaning up motor \n")

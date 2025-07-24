@@ -40,7 +40,7 @@ class DepthPublisher(Node):
         else:
             self.publisher_ = self.create_publisher(DepthReport,'bar02',5)
 
-            SetFluidDensity()
+            SetFluidDensity(ms5837.DENSITY_FRESHWATER)
 
             self.first_measurement = True
             

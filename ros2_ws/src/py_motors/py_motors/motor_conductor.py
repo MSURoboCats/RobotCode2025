@@ -12,7 +12,7 @@ class MotorConductor(Node):
         self._commandSubscription = self.create_subscription(MotionGoal,"MotionGoal",self.command_callback, 5)
         self._altitudeSubscription = self.create_subscription(Float64,"altitude_adjustment",self.altitude_adjustment_callback,5)
         self._publisher = self.create_publisher(MotorCommand, "MotorCommand", 5)
-
+        
     def altitude_adjustment_callback(self, msg):
 
         power = msg.data

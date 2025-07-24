@@ -65,7 +65,7 @@ class DetectionPublisher(Node):
     _frameNumber        : int
     _lastFrameCapture   : DetectionBuffer
     def __init__(self, **kwargs):
-        super().__init__('detection_publisher')
+        super().__init__('detection_publisher', **kwargs)
         self.declare_parameter("model_path", "ultralyticsplus/yolov8s.pt")
         self.declare_parameter("task", "detect")
         self.declare_parameter("topic","usb_cam_0/image_raw")

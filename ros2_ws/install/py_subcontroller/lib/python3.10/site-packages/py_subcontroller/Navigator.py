@@ -8,6 +8,7 @@ from rclpy.action.server import ServerGoalHandle
 
 
 from py_objectdetection.detection_publisher import DetectionPublisher
+from py_objectdetection.depth_image_to_map_o3d import DepthImageToMapNode
 from custom_interfaces.action import NavigationGoal
 from custom_interfaces.srv  import SetDepth
 from custom_interfaces.msg import WorldMap, MapObject, AABB, MotionGoal, DetectionBuffer, BoundingBox
@@ -30,18 +31,26 @@ def IsNewData(original : Header, compare : Header) -> bool:
     return hasDiffFrameID and hasNewerTimestamp
 
 class SingleBuoyTest(Node):
+
+    _BUOY_DEPTH             : int = -2
     
-    isFinished          : bool
-    
-    _stage              : int
+    isFinished              : bool
 
-    _detectionBuffer    : DetectionBuffer
+    _stage                  : int
 
-    _currentIMU         : Imu
+    _detectionBuffer        : DetectionBuffer
 
-    _currentImage       : Image
+    _currentIMU             : Imu
 
-    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str):
+    _currentImage           : Image
+
+    _reachedDepthGoal       : bool
+
+    _waitingForDepthGoal    : bool
+
+    spinMapperNode          : bool
+
+    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str):
         super().__init__("buoy_test_node")
         
         self._stage = 0
@@ -54,7 +63,17 @@ class SingleBuoyTest(Node):
         self._sub_imu = self.create_subscription(Imu,heading_topic,self.HeadingCallback,5)
         self._sub_image = self.create_subscription(Image, image_topic,self.ImageCallback,5)
 
+        self._sub_depthGoal = self.create_subscription(String,depth_goal_topic,self.DepthGoalCallback,5)
+
+        self._depth_control_client = self.create_client(SetDepth,depth_control_service)
+
+
         self.isFinished = False
+        self.spinMapperNode = False
+
+        self._reachedDepthGoal = False
+        self._waitingForDepthGoal = False
+
         self._detectionBuffer = None
         self._currentIMU = None
         self._currentImage = None
@@ -69,6 +88,14 @@ class SingleBuoyTest(Node):
         detected, bbox = self.IsBuoyDetected()
         match self._stage:
             #case -1: ## go to depth 
+            case -1: 
+                if not self._waitingForDepthGoal:
+                    req = SetDepth.Request()
+
+                    req.depth = self._BUOY_DEPTH
+                    self._depth_control_client.call_async(req)
+                    self._waitingForDepthGoal = True
+
 
             case 0: # rotate until buoy detected
                 if (not detected):
@@ -124,6 +151,7 @@ class SingleBuoyTest(Node):
 
             case 3: # do something with lidar map (eg display)
                 self.get_logger().info("Generating Lidar Map") 
+                self.spinMapperNode = True
                 pass
             case 4: # Spin for a bit
                 pass
@@ -169,6 +197,15 @@ class SingleBuoyTest(Node):
     
     def ImageCallback(self, msg):
         self._currentImage = msg
+    
+    def DepthGoalCallback(self, msg):
+        if(self._reachedDepthGoal == True): return
+
+        if(self._stage == -1):
+            self._stage = 0
+
+        self._reachedDepthGoal = True
+        pass 
 
 
 def main(args = None):
@@ -177,12 +214,16 @@ def main(args = None):
     # spin detection node for buoy, heading node is provided by realsense camera
     buoyDetector = DetectionPublisher(parameter_overrides=[rclpy.Parameter("name",value="buoy_detector"),rclpy.Parameter("model_path",value="models/dry_buoy.pt"),rclpy.Parameter("topic",value="camera/camera/color/image_raw")])
 
-    buoyTestNode = SingleBuoyTest(heading_topic="camera/camera/imu",detection_topic="DetectionBuffer",motion_goal_topic="motors/MotionGoal", image_topic="camera/camera/color/image_raw")
+    mapperNode = DepthImageToMapNode()
+
+    buoyTestNode = SingleBuoyTest(heading_topic="camera/camera/imu",detection_topic="DetectionBuffer",motion_goal_topic="pid_tuning/MotionGoal", image_topic="camera/camera/color/image_raw", depth_control_service="pid_tuning/set_depth",depth_goal_topic="pid_tuning/depth_status")
 
     while not buoyTestNode.isFinished:
         try:
             rclpy.spin_once(buoyDetector)
             rclpy.spin_once(buoyTestNode)
+            if(buoyTestNode.spinMapperNode):
+                rclpy.spin_once(mapperNode)
         except SystemExit:
             rclpy.logging.get_logger("Quitting")
             rclpy.shutdown()

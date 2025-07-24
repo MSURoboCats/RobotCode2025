@@ -100,55 +100,21 @@ class MotorController(Node):
         
         self.get_logger().info("Motor State Set...")
 
-    # old motor commands function that used the -1 thru 6 implimentation
-    # def _match_all_motorcmds(self, motor_cmds):
-    #     m_channel = 0
-    #     m_state = MotorState.STOPPED
-    #     m_speed = MotorSpeed.SLOW
-    #     for motor_cmd in motor_cmds:
-    #         match motor_cmd:
-    #             case 0:
-    #                 m_state = MotorState.STOPPED
-    #                 m_speed = MotorSpeed.SLOW
-    #             case 1:
-    #                 m_state = MotorState.FORWARD
-    #                 m_speed = MotorSpeed.SLOW
-    #             case 2:
-    #                 m_state = MotorState.REVERSE
-    #                 m_speed = MotorSpeed.SLOW
-    #             case 3:
-    #                 m_state = MotorState.FORWARD
-    #                 m_speed = MotorSpeed.MEDIUM
-    #             case 4:
-    #                 m_state = MotorState.REVERSE
-    #                 m_speed = MotorSpeed.MEDIUM
-    #             case 5:
-    #                 m_state = MotorState.FORWARD
-    #                 m_speed = MotorSpeed.FAST
-    #             case 6:
-    #                 m_state = MotorState.REVERSE
-    #                 m_speed = MotorSpeed.FAST
-    #             case _:
-    #                 m_channel += 1
-    #                 continue
-    #         SetMotorState(m_state,m_speed,m_channel)
-    #         self.get_logger().info('Published motor command (%s : %s) to motor %d' % (m_state.name, m_speed.name,m_channel))
-    #         m_channel += 1
-
-
-                
-
 
 
 def main(args = None):
-    rclpy.init(args = args)
-    motor_controller = MotorController()
+    try:
+        rclpy.init(args = args)
+        motor_controller = MotorController()
 
-    InitMotor()
-    rclpy.spin(motor_controller)
-    CleanupMotor()
-    motor_controller.destroy_node()
-    rclpy.shutdown()
+        InitMotor()
+        rclpy.spin(motor_controller)
+        
+    except KeyboardInterrupt:
+        CleanupMotor()
+    finally:
+        motor_controller.destroy_node()
+        rclpy.shutdown()
 
 
 
