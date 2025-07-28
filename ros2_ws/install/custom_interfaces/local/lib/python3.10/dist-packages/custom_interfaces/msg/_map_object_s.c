@@ -16,6 +16,9 @@
 #include "custom_interfaces/msg/detail/map_object__struct.h"
 #include "custom_interfaces/msg/detail/map_object__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 ROSIDL_GENERATOR_C_IMPORT
 bool geometry_msgs__msg__polygon__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
@@ -78,6 +81,21 @@ bool custom_interfaces__msg__map_object__convert_from_py(PyObject * _pymsg, void
     }
     Py_DECREF(field);
   }
+  {  // name
+    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -122,6 +140,23 @@ PyObject * custom_interfaces__msg__map_object__convert_to_py(void * raw_ros_mess
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "aabb", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // name
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->name.data,
+      strlen(ros_message->name.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "name", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -21,6 +21,8 @@
 #include "custom_interfaces/msg/aabb.h"
 // Member `aabb`
 #include "custom_interfaces/msg/detail/aabb__rosidl_typesupport_introspection_c.h"
+// Member `name`
+#include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -41,7 +43,7 @@ void custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapO
   custom_interfaces__msg__MapObject__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapObject_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapObject_message_member_array[3] = {
   {
     "mesh",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -75,13 +77,30 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "name",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__MapObject, name),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapObject_message_members = {
   "custom_interfaces__msg",  // message namespace
   "MapObject",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(custom_interfaces__msg__MapObject),
   custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapObject_message_member_array,  // message members
   custom_interfaces__msg__MapObject__rosidl_typesupport_introspection_c__MapObject_init_function,  // function to initialize message memory (memory has to be allocated)

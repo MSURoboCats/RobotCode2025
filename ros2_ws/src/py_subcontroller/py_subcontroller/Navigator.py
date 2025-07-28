@@ -1,19 +1,15 @@
 import math
-
+import time
 import rclpy
 import rclpy.logging
 from rclpy.node import Node
-from rclpy.action import ActionServer
-from rclpy.action.server import ServerGoalHandle
 
 
 from py_objectdetection.detection_publisher import DetectionPublisher
 from py_objectdetection.depth_image_to_map_o3d import DepthImageToMapNode
-from custom_interfaces.action import NavigationGoal
 from custom_interfaces.srv  import SetDepth
 from custom_interfaces.msg import WorldMap, MapObject, AABB, MotionGoal, DetectionBuffer, BoundingBox
 from geometry_msgs.msg import Vector3, Quaternion
-from builtin_interfaces.msg import Time
 import rclpy.parameter
 from sensor_msgs.msg import Imu, Image
 from std_msgs.msg import Header, String
@@ -33,6 +29,10 @@ def IsNewData(original : Header, compare : Header) -> bool:
 class SingleBuoyTest(Node):
 
     _BUOY_DEPTH             : int = -2
+
+    _SUB_WIDTH              : float = 0.60
+
+    _spin_start_time        : float = None
     
     isFinished              : bool
 
@@ -44,13 +44,15 @@ class SingleBuoyTest(Node):
 
     _currentImage           : Image
 
+    _worldMapInstance       : WorldMap
+
     _reachedDepthGoal       : bool
 
     _waitingForDepthGoal    : bool
 
     spinMapperNode          : bool
 
-    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str):
+    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str, world_map_topic : str):
         super().__init__("buoy_test_node")
         
         self._stage = 0
@@ -62,7 +64,7 @@ class SingleBuoyTest(Node):
 
         self._sub_imu = self.create_subscription(Imu,heading_topic,self.HeadingCallback,5)
         self._sub_image = self.create_subscription(Image, image_topic,self.ImageCallback,5)
-
+        self._sub_worldmap = self.create_subscription(WorldMap,world_map_topic,self.WorldMapCallback,1)
         self._sub_depthGoal = self.create_subscription(String,depth_goal_topic,self.DepthGoalCallback,5)
 
         self._depth_control_client = self.create_client(SetDepth,depth_control_service)
@@ -77,6 +79,7 @@ class SingleBuoyTest(Node):
         self._detectionBuffer = None
         self._currentIMU = None
         self._currentImage = None
+        self._worldMapInstance = None
 
 
         self._controlLoopTimer = self.create_timer(0.1, self.ControlLoop)
@@ -86,6 +89,7 @@ class SingleBuoyTest(Node):
 
     def ControlLoop(self):
         detected, bbox = self.IsBuoyDetected()
+        if(self.isFinished) : self.destroy_timer(self._controlLoopTimer)
         match self._stage:
             #case -1: ## go to depth 
             case -1: 
@@ -150,12 +154,74 @@ class SingleBuoyTest(Node):
 
 
             case 3: # do something with lidar map (eg display)
-                self.get_logger().info("Generating Lidar Map") 
-                self.spinMapperNode = True
+                if(self._worldMapInstance is None):
+                    self.get_logger().info("Generating Lidar Map") 
+                    self.spinMapperNode = True
+                    return
+                
+                buoyIsMapObject, buoyObj = self.IsBuoyMapObject()
+
+                if(not buoyIsMapObject):
+                    self.get_logger().error("SingleBuoyTest::ControlLoop() : (Stage 3) Lidar has failed to detect buoy, exiting")
+                    self.isFinished = True
+                    return
+
+                else: 
+                    self.get_logger().info("Buoy has been detected using lidar, proceeding to stage 4")
+                    self._stage = 4
+                    return
+
+
+                ### TODO: Implimente Heading Control
+
+                # Calculate x-y distance to the front of the buoy, we have to subtract half extents from the z value as the z value represents the distance along the camera normal
+                # Since the camera is the origin of the coordinate system, we can just use the x and y components of the AABB center as the x and y distance
+
+                # center = buoyObj.aabb.center
+
+                # dX = center.x
+                # dY = center.y
+
+                # dZ = center.z - (buoyObj.aabb.extents.z * 0.5)
+
+                # ## Calculate the trajectory for the sub such that the sub is 1 sub width center distance left or right of the buoy, by default the units are in meters
+
+                # pt_goal = (dX + self._SUB_WIDTH, dY,dZ)
+
+
+                # d_theta = math.atan2(pt_goal[0],pt_goal[2])
+
+
+
+
+
+
+
+
+
+                
+
                 pass
             case 4: # Spin for a bit
+                self.get_logger().info("Spinning Robot")
+                outmsg = MotionGoal()
+
+                outmsg.goal = "y_le"
+                
+                self._motionGoalPublisher.publish(outmsg)
+
+                if( self._spin_start_time is None):
+                    self._spin_start_time = time.time()
+                elif (time.time() - self._spin_start_time >= 2):
+                    self.get_logger().info("Spin limit reached, proceeding to stage 5")
+                    self._stage = 5
+                    return
+
                 pass
             case 5: # Shutdown
+                self.get_logger().info("All stages of node \"SingleBuoyTest\" have been completed! exiting the node")
+                self.isFinished = True
+                return
                 pass
 
     def isBBoxCentered(self, bbox: BoundingBox, pixelTolerance : int = 10) -> tuple[bool, float]:
@@ -176,6 +242,14 @@ class SingleBuoyTest(Node):
 
 
 
+    def IsBuoyMapObject(self) -> tuple[bool,MapObject]:
+        if self._worldMapInstance is None:
+            return (False, None)
+    
+        for mapObject in self._worldMapInstance.objects:
+            if(mapObject.name == 'buoys'):
+                return (True,mapObject)
+        return (False, None)
 
         
 
@@ -207,6 +281,10 @@ class SingleBuoyTest(Node):
         self._reachedDepthGoal = True
         pass 
 
+    def WorldMapCallback(self, msg): 
+        ### Can optimize a few processes by checking if the published map is new data, if it is then set a flag to let other processes know,
+        ### otherwise dont update the worldmap instance.
+        self._worldMapInstance = msg
 
 def main(args = None):
     rclpy.init()
@@ -216,7 +294,15 @@ def main(args = None):
 
     mapperNode = DepthImageToMapNode()
 
-    buoyTestNode = SingleBuoyTest(heading_topic="camera/camera/imu",detection_topic="DetectionBuffer",motion_goal_topic="pid_tuning/MotionGoal", image_topic="camera/camera/color/image_raw", depth_control_service="pid_tuning/set_depth",depth_goal_topic="pid_tuning/depth_status")
+    buoyTestNode = SingleBuoyTest(
+        heading_topic="camera/camera/imu",
+        detection_topic="DetectionBuffer",
+        motion_goal_topic="pid_tuning/MotionGoal", 
+        image_topic="camera/camera/color/image_raw", 
+        depth_control_service="pid_tuning/set_depth",
+        depth_goal_topic="pid_tuning/depth_status",
+        world_map_topic="WorldMap"
+    )
 
     while not buoyTestNode.isFinished:
         try:
@@ -225,12 +311,11 @@ def main(args = None):
             if(buoyTestNode.spinMapperNode):
                 rclpy.spin_once(mapperNode)
         except SystemExit:
-            rclpy.logging.get_logger("Quitting")
-            rclpy.shutdown()
-            return
-    
+            print("Quitting")
+            break
 
     rclpy.shutdown()
+
     
 
 

@@ -43,14 +43,23 @@ struct MapObject_
   : mesh(_init),
     aabb(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->name = "";
+    }
   }
 
   explicit MapObject_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : mesh(_alloc, _init),
-    aabb(_alloc, _init)
+    aabb(_alloc, _init),
+    name(_alloc)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->name = "";
+    }
   }
 
   // field types and members
@@ -60,6 +69,9 @@ struct MapObject_
   using _aabb_type =
     custom_interfaces::msg::AABB_<ContainerAllocator>;
   _aabb_type aabb;
+  using _name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _name_type name;
 
   // setters for named parameter idiom
   Type & set__mesh(
@@ -72,6 +84,12 @@ struct MapObject_
     const custom_interfaces::msg::AABB_<ContainerAllocator> & _arg)
   {
     this->aabb = _arg;
+    return *this;
+  }
+  Type & set__name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->name = _arg;
     return *this;
   }
 
@@ -121,6 +139,9 @@ struct MapObject_
       return false;
     }
     if (this->aabb != other.aabb) {
+      return false;
+    }
+    if (this->name != other.name) {
       return false;
     }
     return true;

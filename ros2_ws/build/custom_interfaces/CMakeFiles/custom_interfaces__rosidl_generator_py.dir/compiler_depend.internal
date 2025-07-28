@@ -1799,6 +1799,9 @@ CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h
  /usr/include/aarch64-linux-gnu/asm/errno.h

@@ -11,6 +11,8 @@ module custom_interfaces {
       geometry_msgs::msg::Polygon mesh;
 
       custom_interfaces::msg::AABB aabb;
+
+      string name;
     };
   };
 };

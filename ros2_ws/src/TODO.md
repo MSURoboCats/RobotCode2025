@@ -82,7 +82,7 @@ As outlined in [Notes.md](Notes.md), the only reliable method we have of transve
 I need to adjust the navigation to rely on vision instead of dead reckoning.
 
 1. OBJECT DETECTION [DONE]
-2. DISTANCE CALCUATION
+2. DISTANCE CALCUATION [DONE]
 
 <!-- This only works if we have a better accelerometer -->
 <!-- ### SUMMARY: 
@@ -96,14 +96,16 @@ We need a controller that can somehow calculate the required duty cycle to bring
 https://gamzeyilan1.medium.com/pid-controller-for-absolute-beginners-4a49c58c8098  -->
 
 
-## 5 PID TESTING
+## 5 DEPTH PID TESTING
 ### SUMMARY
 - Modify kd, ki, and kp values to have the depth PID controller produce valid motor values 
 	- you can manually set the depth via CLI with:
 		ros2 service call /set_depth custom_interfaces/srv/SetDepth "{depth: [depth]}"
 - Impliment noise filtering into depth sensor (if needed )
 	
-
+## 6 HEADING PID
+### SUMMARY:
+- Create a heading PID controller that takes in the current gyro angle, calculates the error, and turns that into motor powers
 
 
 

@@ -16,6 +16,8 @@
 #include "geometry_msgs/msg/detail/polygon__functions.h"
 // Member `aabb`
 #include "custom_interfaces/msg/detail/aabb__functions.h"
+// Member `name`
+#include "rosidl_runtime_c/string_functions.h"
 
 bool
 custom_interfaces__msg__MapObject__init(custom_interfaces__msg__MapObject * msg)
@@ -33,6 +35,11 @@ custom_interfaces__msg__MapObject__init(custom_interfaces__msg__MapObject * msg)
     custom_interfaces__msg__MapObject__fini(msg);
     return false;
   }
+  // name
+  if (!rosidl_runtime_c__String__init(&msg->name)) {
+    custom_interfaces__msg__MapObject__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -46,6 +53,8 @@ custom_interfaces__msg__MapObject__fini(custom_interfaces__msg__MapObject * msg)
   geometry_msgs__msg__Polygon__fini(&msg->mesh);
   // aabb
   custom_interfaces__msg__AABB__fini(&msg->aabb);
+  // name
+  rosidl_runtime_c__String__fini(&msg->name);
 }
 
 bool
@@ -63,6 +72,12 @@ custom_interfaces__msg__MapObject__are_equal(const custom_interfaces__msg__MapOb
   // aabb
   if (!custom_interfaces__msg__AABB__are_equal(
       &(lhs->aabb), &(rhs->aabb)))
+  {
+    return false;
+  }
+  // name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->name), &(rhs->name)))
   {
     return false;
   }
@@ -86,6 +101,12 @@ custom_interfaces__msg__MapObject__copy(
   // aabb
   if (!custom_interfaces__msg__AABB__copy(
       &(input->aabb), &(output->aabb)))
+  {
+    return false;
+  }
+  // name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->name), &(output->name)))
   {
     return false;
   }

@@ -22,12 +22,15 @@ extern "C"
 #include "geometry_msgs/msg/detail/polygon__struct.h"
 // Member 'aabb'
 #include "custom_interfaces/msg/detail/aabb__struct.h"
+// Member 'name'
+#include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/MapObject in the package custom_interfaces.
 typedef struct custom_interfaces__msg__MapObject
 {
   geometry_msgs__msg__Polygon mesh;
   custom_interfaces__msg__AABB aabb;
+  rosidl_runtime_c__String name;
 } custom_interfaces__msg__MapObject;
 
 // Struct for a sequence of custom_interfaces__msg__MapObject.

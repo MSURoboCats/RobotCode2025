@@ -65,16 +65,19 @@ class MapObject(metaclass=Metaclass_MapObject):
     __slots__ = [
         '_mesh',
         '_aabb',
+        '_name',
     ]
 
     _fields_and_field_types = {
         'mesh': 'geometry_msgs/Polygon',
         'aabb': 'custom_interfaces/AABB',
+        'name': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Polygon'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['custom_interfaces', 'msg'], 'AABB'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -85,6 +88,7 @@ class MapObject(metaclass=Metaclass_MapObject):
         self.mesh = kwargs.get('mesh', Polygon())
         from custom_interfaces.msg import AABB
         self.aabb = kwargs.get('aabb', AABB())
+        self.name = kwargs.get('name', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -118,6 +122,8 @@ class MapObject(metaclass=Metaclass_MapObject):
         if self.mesh != other.mesh:
             return False
         if self.aabb != other.aabb:
+            return False
+        if self.name != other.name:
             return False
         return True
 
@@ -153,3 +159,16 @@ class MapObject(metaclass=Metaclass_MapObject):
                 isinstance(value, AABB), \
                 "The 'aabb' field must be a sub message of type 'AABB'"
         self._aabb = value
+
+    @builtins.property
+    def name(self):
+        """Message field 'name'."""
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'name' field must be of type 'str'"
+        self._name = value

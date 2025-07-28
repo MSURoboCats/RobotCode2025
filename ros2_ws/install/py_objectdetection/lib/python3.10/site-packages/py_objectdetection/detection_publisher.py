@@ -146,7 +146,7 @@ class DetectionPublisher(Node):
     def publisher_callback(self, image : ros2_img):
 
         cv_image = self._cvBridge.imgmsg_to_cv2(image)
-        cv_image = cv2.flip(cv_image,0)
+        cv_image = cv2.flip(cv_image,-1)                    # flip image along both axes due to orientation of camera
         cv_image = cv2.cvtColor(cv_image,cv2.COLOR_BGR2RGB)
 
         results = self._model(cv_image)

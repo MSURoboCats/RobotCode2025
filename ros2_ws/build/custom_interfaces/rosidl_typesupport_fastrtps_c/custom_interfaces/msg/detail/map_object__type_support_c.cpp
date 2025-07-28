@@ -36,6 +36,8 @@ extern "C"
 
 #include "custom_interfaces/msg/detail/aabb__functions.h"  // aabb
 #include "geometry_msgs/msg/detail/polygon__functions.h"  // mesh
+#include "rosidl_runtime_c/string.h"  // name
+#include "rosidl_runtime_c/string_functions.h"  // name
 
 // forward declare type support functions
 size_t get_serialized_size_custom_interfaces__msg__AABB(
@@ -104,6 +106,20 @@ static bool _MapObject__cdr_serialize(
     }
   }
 
+  // Field name: name
+  {
+    const rosidl_runtime_c__String * str = &ros_message->name;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   return true;
 }
 
@@ -144,6 +160,22 @@ static bool _MapObject__cdr_deserialize(
     }
   }
 
+  // Field name: name
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->name.data) {
+      rosidl_runtime_c__String__init(&ros_message->name);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->name,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'name'\n");
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -169,6 +201,10 @@ size_t get_serialized_size_custom_interfaces__msg__MapObject(
 
   current_alignment += get_serialized_size_custom_interfaces__msg__AABB(
     &(ros_message->aabb), current_alignment);
+  // field.name name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->name.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -236,6 +272,18 @@ size_t max_serialized_size_custom_interfaces__msg__MapObject(
       is_plain &= inner_is_plain;
     }
   }
+  // member: name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -245,7 +293,7 @@ size_t max_serialized_size_custom_interfaces__msg__MapObject(
     using DataType = custom_interfaces__msg__MapObject;
     is_plain =
       (
-      offsetof(DataType, aabb) +
+      offsetof(DataType, name) +
       last_member_size
       ) == ret_val;
   }

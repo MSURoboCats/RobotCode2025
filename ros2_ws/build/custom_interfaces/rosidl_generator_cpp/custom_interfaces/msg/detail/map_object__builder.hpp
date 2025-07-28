@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_MapObject_name
+{
+public:
+  explicit Init_MapObject_name(::custom_interfaces::msg::MapObject & msg)
+  : msg_(msg)
+  {}
+  ::custom_interfaces::msg::MapObject name(::custom_interfaces::msg::MapObject::_name_type arg)
+  {
+    msg_.name = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_interfaces::msg::MapObject msg_;
+};
+
 class Init_MapObject_aabb
 {
 public:
   explicit Init_MapObject_aabb(::custom_interfaces::msg::MapObject & msg)
   : msg_(msg)
   {}
-  ::custom_interfaces::msg::MapObject aabb(::custom_interfaces::msg::MapObject::_aabb_type arg)
+  Init_MapObject_name aabb(::custom_interfaces::msg::MapObject::_aabb_type arg)
   {
     msg_.aabb = std::move(arg);
-    return std::move(msg_);
+    return Init_MapObject_name(msg_);
   }
 
 private:

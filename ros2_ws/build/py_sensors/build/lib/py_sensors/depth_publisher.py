@@ -3,6 +3,8 @@ import sys
 import os
 import time
 
+import matplotlib.pyplot as plt
+
 from py_sensors.BAR02 import *
 from rclpy.node import Node
 
@@ -24,6 +26,10 @@ class DepthPublisher(Node):
     num_measurements        : int
 
     first_measurement       : bool
+
+    DEPTH_OFFSET            : float = 0.0
+
+    depth_measurements      : list[float] = list()
 
 
 
@@ -64,9 +70,17 @@ class DepthPublisher(Node):
         msg = DepthReport() 
         data = ReadSensor()
 
-        msg.pressure = data[0]
-        msg.depth = data[1]
-        msg.temperature = data[2]
+        current_pressure = data[0]
+
+        current_depth = data[1] + self.DEPTH_OFFSET
+
+        current_temp = data[2]
+
+        self.depth_measurements.append(current_depth)
+
+        msg.pressure = current_depth
+        msg.depth = current_pressure
+        msg.temperature = current_temp
 
         self.publisher_.publish(msg)
         self.get_logger().info("Published depth sensor values\nPressure:%0.3f\nDepth: %0.3f\nTemperature: %0.3f\n" % data)
@@ -75,15 +89,15 @@ class DepthPublisher(Node):
 
         if(self.first_measurement and valid_data):
             self.first_measurement = False
-            self.last_depth_measurement = data[1]
+            self.last_depth_measurement = current_depth
 
-            self.total_depth = data[1]
+            self.total_depth = current_depth
             self.num_measurements += 1
         elif( (not self.first_measurement) and valid_data):
             self.num_measurements += 1
-            noise = self.last_depth_measurement - data[1]
+            noise = self.last_depth_measurement - current_depth
 
-            self.total_depth += data[1]
+            self.total_depth += current_depth
 
             self.total_noise += noise
 
@@ -96,7 +110,7 @@ class DepthPublisher(Node):
 
             avg_depth = self.total_depth / self.num_measurements         
 
-            self.last_depth_measurement = data[1]
+            self.last_depth_measurement = current_depth
 
             self.get_logger().info(f"Average noise: {avg_noise}\nMax Noise: {self.noise_max}\nMin Noise: {self.noise_min}\nAverage Depth: {avg_depth}")
 
@@ -109,13 +123,19 @@ def write_noise_info_to_file(noise_info):
 
     wsIndex = path.find("ros2_ws")
 
-    path = path[0:wsIndex] + "ros2_ws/testing/logs/depth_sensor_noise_log.txt"
+    masterPath = path[0:wsIndex]
+
+    path = masterPath + "ros2_ws/testing/logs/depth_sensor_noise_log.txt"
 
     with open(path, "a") as file:
         text = f"[{time.asctime()}][{noise_info[3]:.3f} secs] Average Noise: {noise_info[0]}, Max Noise: {noise_info[1]}, Min Noise: {noise_info[2]}\n"
         file.write(text)
 
     print(f"noise data written to {path}")
+
+    plt.plot(range(noise_info[4]),noise_info[4])
+    plt.title(f"[{time.asctime()}][{noise_info[3]:.3f} secs] Depth Values Over Time")
+    plt.savefig(masterPath + "ros2_ws/testing/logs/depth_over_time.png")
 
 def main(args = None):
     try:
@@ -131,7 +151,7 @@ def main(args = None):
         end_time = time.time()
 
         session_time = end_time - start_time
-        noise_info = (d_pub.avg_noise,d_pub.noise_max, d_pub.noise_min, session_time)
+        noise_info = (d_pub.avg_noise,d_pub.noise_max, d_pub.noise_min, session_time,d_pub.depth_measurements)
 
         write_noise_info_to_file(noise_info)
 

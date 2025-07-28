@@ -128,8 +128,8 @@ class DepthImageToMapNode(Node):
         # convert depth image to cv image
         depth_image = self._cv_bridge.imgmsg_to_cv2(self._depth_image)
 
-        # flip image as camera is upside down
-        depth_image = cv2.flip(depth_image,0)
+        # flip image as camera is upside down (and image is flipped for some reason)
+        depth_image = cv2.flip(depth_image,-1)
 
         # validate depth image 
         is_blank = not ((float(depth_image.max()) != 0.0 ) or (float(depth_image.min() != 0.0)))
@@ -282,6 +282,7 @@ class DepthImageToMapNode(Node):
         out_mesh.points = rs2_point_list
 
         out_object.mesh = out_mesh
+        out_object.name = name
 
         return out_object
         

@@ -42,6 +42,13 @@ inline void to_flow_style_yaml(
   {
     out << "aabb: ";
     to_flow_style_yaml(msg.aabb, out);
+    out << ", ";
+  }
+
+  // member: name
+  {
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -66,6 +73,16 @@ inline void to_block_style_yaml(
     }
     out << "aabb:\n";
     to_block_style_yaml(msg.aabb, out, indentation + 2);
+  }
+
+  // member: name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
+    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 
@@ -115,11 +132,11 @@ inline const char * name<custom_interfaces::msg::MapObject>()
 
 template<>
 struct has_fixed_size<custom_interfaces::msg::MapObject>
-  : std::integral_constant<bool, has_fixed_size<custom_interfaces::msg::AABB>::value && has_fixed_size<geometry_msgs::msg::Polygon>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<custom_interfaces::msg::MapObject>
-  : std::integral_constant<bool, has_bounded_size<custom_interfaces::msg::AABB>::value && has_bounded_size<geometry_msgs::msg::Polygon>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<custom_interfaces::msg::MapObject>
