@@ -5,7 +5,7 @@ from rclpy.node import Node
 from py_motors.MotorCommands import*
 
 
-from custom_interfaces.msg import MotorCommand
+from custom_interfaces.msg import MotorCommand, HorizontalMotorCommands, VerticalMotorCommands
 
 # fn that generates a map between the motor number and the i2c channel based on a previous config 
 def GetMotorMap(filePath : str):
@@ -73,30 +73,46 @@ class MotorController(Node):
 
        
 
-        self.subscription = self.create_subscription(MotorCommand, 'MotorCommand',self.listener_callback,5)
+        self.all_motor_subscription = self.create_subscription(MotorCommand, 'MotorCommand',self.listener_callback,5)
+        self.vertical_motor_sub = self.create_subscription(VerticalMotorCommands, "VerticalMotorCMDs",self.listener_callback,5)
+        self.horizontal_motor_sub = self.create_subscription(HorizontalMotorCommands, "HorizontalMotorCMDs",self.listener_callback,5)
+
 
 
 
         
 
-    def _match_all_motorcmds(self, throttles):
-        motorNumber = 0
+    def _match_all_motorcmds(self, throttles, motorNumbers = None):
+        if motorNumbers is None  : motorNumber = 0
         
-        for throttle in throttles:
-            SetMotorSpeed(throttle, self._motorMap[motorNumber])
-            self.get_logger().info("Applied throttle %lf to motor at channel %d\n" % (throttle, motorNumber))
-            motorNumber += 1
+        for i in range(throttles):
+            if motorNumbers is None : motorNumber = i
+            else : motorNumber = motorNumbers[i]
+
+            SetMotorSpeed(throttles[i], self._motorMap[motorNumber])
+            self.get_logger().info("Applied throttle %lf to motor at channel %d\n" % (throttles[i], motorNumber))
 
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard  command %lf, %lf, %lf, %lf, %lf, %lf' % (msg.throttles[0],
-                                                                            msg.throttles[1],
-                                                                            msg.throttles[2],
-                                                                            msg.throttles[3],
-                                                                            msg.throttles[4],
-                                                                            msg.throttles[5]))
+        outstr :  str = "I heard command "
+        motorNumbers = None
+        if(msg is MotorCommand):
+            outstr = 'I heard  command %lf, %lf, %lf, %lf, %lf, %lf' % (msg.throttles[0],
+                                                                        msg.throttles[1],
+                                                                        msg.throttles[2],
+                                                                        msg.throttles[3],
+                                                                        msg.throttles[4],
+                                                                        msg.throttles[5])
 
-        self._match_all_motorcmds(throttles=msg.throttles)
+        else:
+            motorNumbers = msg.motor_numbers
+            throttles = msg.throttles
+            for i in range(len(motorNumbers)):
+                outstr += f"{motorNumbers[i]} : {throttles[i]}"
+
+        self.get_logger().info(outstr)
+
+        self._match_all_motorcmds(throttles=msg.throttles,motorNumbers = motorNumbers)
         
         self.get_logger().info("Motor State Set...")
 

@@ -7,6 +7,8 @@ module custom_interfaces {
   module msg {
     struct MotionGoal {
       string goal;
+
+      boolean keep_unmodified_throttles;
     };
   };
 };

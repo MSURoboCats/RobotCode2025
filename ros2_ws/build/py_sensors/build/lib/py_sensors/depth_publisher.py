@@ -27,7 +27,7 @@ class DepthPublisher(Node):
 
     first_measurement       : bool
 
-    DEPTH_OFFSET            : float = 0.0
+    DEPTH_OFFSET            : float = 1.477
 
     depth_measurements      : list[float] = list()
 
@@ -78,12 +78,12 @@ class DepthPublisher(Node):
 
         self.depth_measurements.append(current_depth)
 
-        msg.pressure = current_depth
-        msg.depth = current_pressure
+        msg.pressure = current_pressure
+        msg.depth = current_depth
         msg.temperature = current_temp
 
         self.publisher_.publish(msg)
-        self.get_logger().info("Published depth sensor values\nPressure:%0.3f\nDepth: %0.3f\nTemperature: %0.3f\n" % data)
+        self.get_logger().info(f"Published depth sensor values\nPressure:{current_pressure}\nDepth: {current_depth}\nTemperature: {current_temp}\n")
 
         valid_data =  (data[0] != data[1] and data[0] != data[2] and data[0] != -1)
 

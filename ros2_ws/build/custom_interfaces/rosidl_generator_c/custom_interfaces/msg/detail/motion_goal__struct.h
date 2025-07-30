@@ -25,6 +25,7 @@ extern "C"
 typedef struct custom_interfaces__msg__MotionGoal
 {
   rosidl_runtime_c__String goal;
+  bool keep_unmodified_throttles;
 } custom_interfaces__msg__MotionGoal;
 
 // Struct for a sequence of custom_interfaces__msg__MotionGoal.

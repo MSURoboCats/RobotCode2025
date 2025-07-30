@@ -12,10 +12,12 @@ custom_interfaces/msg/_aabb.py
 custom_interfaces/msg/_bounding_box.py
 custom_interfaces/msg/_depth_report.py
 custom_interfaces/msg/_detection_buffer.py
+custom_interfaces/msg/_horizontal_motor_commands.py
 custom_interfaces/msg/_imu_data.py
 custom_interfaces/msg/_map_object.py
 custom_interfaces/msg/_motion_goal.py
 custom_interfaces/msg/_motor_command.py
+custom_interfaces/msg/_vertical_motor_commands.py
 custom_interfaces/msg/_world_map.py
 custom_interfaces/srv/__init__.py
 custom_interfaces/srv/_detection_service.py

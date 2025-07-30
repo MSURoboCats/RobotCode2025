@@ -70,6 +70,8 @@ CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/s
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DepthReport.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotionGoal.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MotorCommand.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/HorizontalMotorCommands.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/VerticalMotorCommands.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/BoundingBox.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/DetectionBuffer.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/AABB.msg

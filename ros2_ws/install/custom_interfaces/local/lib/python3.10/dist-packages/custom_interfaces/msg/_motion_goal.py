@@ -56,14 +56,17 @@ class MotionGoal(metaclass=Metaclass_MotionGoal):
 
     __slots__ = [
         '_goal',
+        '_keep_unmodified_throttles',
     ]
 
     _fields_and_field_types = {
         'goal': 'string',
+        'keep_unmodified_throttles': 'boolean',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -71,6 +74,7 @@ class MotionGoal(metaclass=Metaclass_MotionGoal):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.goal = kwargs.get('goal', str())
+        self.keep_unmodified_throttles = kwargs.get('keep_unmodified_throttles', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,6 +107,8 @@ class MotionGoal(metaclass=Metaclass_MotionGoal):
             return False
         if self.goal != other.goal:
             return False
+        if self.keep_unmodified_throttles != other.keep_unmodified_throttles:
+            return False
         return True
 
     @classmethod
@@ -122,3 +128,16 @@ class MotionGoal(metaclass=Metaclass_MotionGoal):
                 isinstance(value, str), \
                 "The 'goal' field must be of type 'str'"
         self._goal = value
+
+    @builtins.property
+    def keep_unmodified_throttles(self):
+        """Message field 'keep_unmodified_throttles'."""
+        return self._keep_unmodified_throttles
+
+    @keep_unmodified_throttles.setter
+    def keep_unmodified_throttles(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'keep_unmodified_throttles' field must be of type 'bool'"
+        self._keep_unmodified_throttles = value

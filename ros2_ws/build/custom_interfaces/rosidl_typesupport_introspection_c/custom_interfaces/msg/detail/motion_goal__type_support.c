@@ -35,7 +35,7 @@ void custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__Mot
   custom_interfaces__msg__MotionGoal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__MotionGoal_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__MotionGoal_message_member_array[2] = {
   {
     "goal",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -52,13 +52,30 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "keep_unmodified_throttles",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__MotionGoal, keep_unmodified_throttles),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__MotionGoal_message_members = {
   "custom_interfaces__msg",  // message namespace
   "MotionGoal",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(custom_interfaces__msg__MotionGoal),
   custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__MotionGoal_message_member_array,  // message members
   custom_interfaces__msg__MotionGoal__rosidl_typesupport_introspection_c__MotionGoal_init_function,  // function to initialize message memory (memory has to be allocated)

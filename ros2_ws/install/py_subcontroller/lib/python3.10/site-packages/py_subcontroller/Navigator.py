@@ -28,7 +28,7 @@ def IsNewData(original : Header, compare : Header) -> bool:
 
 class SingleBuoyTest(Node):
 
-    _BUOY_DEPTH             : int = -2
+    _BUOY_DEPTH             : float = 0.3
 
     _SUB_WIDTH              : float = 0.60
 
@@ -55,7 +55,7 @@ class SingleBuoyTest(Node):
     def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str, world_map_topic : str):
         super().__init__("buoy_test_node")
         
-        self._stage = 0
+        self._stage = -1
 
         self._motionGoalPublisher = self.create_publisher(MotionGoal,motion_goal_topic,5)
 
@@ -144,7 +144,7 @@ class SingleBuoyTest(Node):
 
                 motionGoal.goal = "kill"
 
-                if bbox.width <= 70 and bbox.height <= 70:
+                if bbox.width <= 100 and bbox.height <= 100:
                     motionGoal.goal = "f_sl"
                 else:
                     self._stage = 3

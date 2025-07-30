@@ -65,6 +65,11 @@ static bool _MotionGoal__cdr_serialize(
     cdr << str->data;
   }
 
+  // Field name: keep_unmodified_throttles
+  {
+    cdr << (ros_message->keep_unmodified_throttles ? true : false);
+  }
+
   return true;
 }
 
@@ -93,6 +98,13 @@ static bool _MotionGoal__cdr_deserialize(
     }
   }
 
+  // Field name: keep_unmodified_throttles
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->keep_unmodified_throttles = tmp ? true : false;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -114,6 +126,12 @@ size_t get_serialized_size_custom_interfaces__msg__MotionGoal(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->goal.size + 1);
+  // field.name keep_unmodified_throttles
+  {
+    size_t item_size = sizeof(ros_message->keep_unmodified_throttles);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -155,6 +173,13 @@ size_t max_serialized_size_custom_interfaces__msg__MotionGoal(
         1;
     }
   }
+  // member: keep_unmodified_throttles
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +189,7 @@ size_t max_serialized_size_custom_interfaces__msg__MotionGoal(
     using DataType = custom_interfaces__msg__MotionGoal;
     is_plain =
       (
-      offsetof(DataType, goal) +
+      offsetof(DataType, keep_unmodified_throttles) +
       last_member_size
       ) == ret_val;
   }

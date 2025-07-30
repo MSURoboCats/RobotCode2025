@@ -1,1 +1,2 @@
 string goal
+bool keep_unmodified_throttles

@@ -86,6 +86,16 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/de
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__traits.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/horizontal_motor_commands.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/vertical_motor_commands.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__builder.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/bounding_box__struct.hpp
@@ -157,6 +167,8 @@ rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_i
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/DepthReport.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MotionGoal.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/MotorCommand.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/HorizontalMotorCommands.idl
+rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/VerticalMotorCommands.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/BoundingBox.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/DetectionBuffer.idl
 rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp: rosidl_adapter/custom_interfaces/msg/AABB.idl
@@ -321,6 +333,36 @@ rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__traits.hpp: ros
 
 rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/horizontal_motor_commands.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/horizontal_motor_commands.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/vertical_motor_commands.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/vertical_motor_commands.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__traits.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.hpp
 
 rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/bounding_box.hpp
@@ -505,6 +547,10 @@ custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detect
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__traits.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__builder.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/imu_data__traits.hpp
@@ -521,15 +567,21 @@ custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__traits.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/motor_command__type_support.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__builder.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__traits.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__type_support.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detection_buffer.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/horizontal_motor_commands.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/map_object.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/motion_goal.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/motor_command.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/vertical_motor_commands.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/world_map.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__builder.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/srv/detail/detection_service__struct.hpp

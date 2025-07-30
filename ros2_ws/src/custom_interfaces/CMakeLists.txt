@@ -18,6 +18,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/DepthReport.msg"
 	"msg/MotionGoal.msg"
 	"msg/MotorCommand.msg"
+	"msg/HorizontalMotorCommands.msg"
+	"msg/VerticalMotorCommands.msg"
 	"msg/BoundingBox.msg"
 	"msg/DetectionBuffer.msg"
 	"msg/AABB.msg"

@@ -39,6 +39,7 @@ struct MotionGoal_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->goal = "";
+      this->keep_unmodified_throttles = false;
     }
   }
 
@@ -49,6 +50,7 @@ struct MotionGoal_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->goal = "";
+      this->keep_unmodified_throttles = false;
     }
   }
 
@@ -56,12 +58,21 @@ struct MotionGoal_
   using _goal_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _goal_type goal;
+  using _keep_unmodified_throttles_type =
+    bool;
+  _keep_unmodified_throttles_type keep_unmodified_throttles;
 
   // setters for named parameter idiom
   Type & set__goal(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->goal = _arg;
+    return *this;
+  }
+  Type & set__keep_unmodified_throttles(
+    const bool & _arg)
+  {
+    this->keep_unmodified_throttles = _arg;
     return *this;
   }
 
@@ -108,6 +119,9 @@ struct MotionGoal_
   bool operator==(const MotionGoal_ & other) const
   {
     if (this->goal != other.goal) {
+      return false;
+    }
+    if (this->keep_unmodified_throttles != other.keep_unmodified_throttles) {
       return false;
     }
     return true;

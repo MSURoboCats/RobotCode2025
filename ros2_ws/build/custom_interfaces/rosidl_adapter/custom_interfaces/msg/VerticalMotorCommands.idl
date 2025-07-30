@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/VerticalMotorCommands.msg
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module msg {
+    typedef int16 int16__2[2];
+    typedef double double__2[2];
+    struct VerticalMotorCommands {
+      int16__2 motor_numbers;
+
+      double__2 throttles;
+    };
+  };
+};

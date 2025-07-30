@@ -28,7 +28,7 @@ class DepthController(Node):
 
     KP              : float = 0.6
     KI              : float = 0.1
-    KD              : float = 0.2
+    KD              : float = 0.5
 
     SAMPLE_RATE     : float = DepthPublisher.TIMER_PERIOD
 
@@ -88,6 +88,8 @@ class DepthController(Node):
 
 
     def DepthSubscriptionCallback(self, msg):
+
+        self.get_logger().info(f"Message type: {type(msg)}\n depth: {msg.depth}")
         current_depth = msg.depth 
 
         if((current_depth == msg.pressure) and (current_depth == msg.temperature) and (current_depth == -1)): # check for invalid reading

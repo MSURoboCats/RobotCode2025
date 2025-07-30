@@ -339,6 +339,42 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
   /usr/lib/gcc/aarch64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h
 
+CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o: rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp \
+  rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/aarch64-linux-gnu/bits/long-double.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/time64.h \
+  /usr/include/aarch64-linux-gnu/bits/timesize.h \
+  /usr/include/aarch64-linux-gnu/bits/types.h \
+  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h
+
 CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp.o: rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp \
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__type_support.h \
@@ -461,6 +497,42 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/cust
 CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.cpp.o: rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.cpp \
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/type_support_map.h \
+  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/aarch64-linux-gnu/bits/long-double.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/time64.h \
+  /usr/include/aarch64-linux-gnu/bits/timesize.h \
+  /usr/include/aarch64-linux-gnu/bits/types.h \
+  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h
+
+CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o: rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp \
+  rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
@@ -680,13 +752,19 @@ rosidl_generator_c/custom_interfaces/srv/detail/generate_world_map__struct.h:
 
 rosidl_typesupport_c/custom_interfaces/srv/generate_world_map__type_support.cpp:
 
-rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h:
-
 rosidl_typesupport_c/custom_interfaces/srv/detection_service__type_support.cpp:
 
 rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h:
 
 rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.cpp:
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__struct.h:
+
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
 
@@ -748,6 +826,8 @@ rosidl_generator_c/custom_interfaces/srv/detail/detection_service__struct.h:
 
 /usr/include/stdc-predef.h:
 
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.h:
+
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.h:
 
 /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/visibility_control.h:
@@ -791,8 +871,6 @@ rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
 /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/message_type_support_dispatch.h:
-
-rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h:
 
 rosidl_generator_c/custom_interfaces/action/detection_action.h:
 
@@ -853,6 +931,10 @@ rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h:
 rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__type_support.h:
 
 /usr/include/aarch64-linux-gnu/sys/types.h:
+
+rosidl_generator_c/custom_interfaces/srv/detail/detection_service__type_support.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -932,6 +1014,10 @@ rosidl_typesupport_c/custom_interfaces/msg/map_object__type_support.cpp:
 
 rosidl_generator_c/custom_interfaces/msg/detail/depth_report__type_support.h:
 
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp:
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.h:
+
 rosidl_generator_c/custom_interfaces/msg/detail/imu_data__struct.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/imu_data__type_support.h:
@@ -945,5 +1031,3 @@ rosidl_typesupport_c/custom_interfaces/action/navigation_goal__type_support.cpp:
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h:
 
 rosidl_typesupport_c/custom_interfaces/msg/motion_goal__type_support.cpp:
-
-rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h:

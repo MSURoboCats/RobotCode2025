@@ -20,6 +20,9 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/imu_data__type_support.h \
@@ -32,6 +35,9 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.h \
   rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.h \
   rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h \
   rosidl_generator_c/custom_interfaces/msg/detail/world_map__type_support.h \
@@ -353,21 +359,11 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
 
 /usr/include/python3.10/pymacconfig.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+/usr/include/python3.10/pyhash.h:
 
-/usr/include/linux/errno.h:
+/usr/include/python3.10/pyerrors.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/python3.10/ceval.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+/usr/include/python3.10/pycapsule.h:
 
 /usr/include/aarch64-linux-gnu/bits/types.h:
 
@@ -386,6 +382,14 @@ rosidl_generator_c/custom_interfaces/msg/detail/aabb__type_support.h:
 /usr/include/python3.10/pyport.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/python3.10/ceval.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h:
 
@@ -435,6 +439,8 @@ rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.h:
 
 /usr/include/python3.10/listobject.h:
 
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/aarch64-linux-gnu/bits/confname.h:
 
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
@@ -442,12 +448,6 @@ rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.h:
 /usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/python3.10/cpython/listobject.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/setjmp.h:
-
-/usr/include/aarch64-linux-gnu/asm/posix_types.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h:
 
@@ -459,11 +459,25 @@ rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__functions.h:
 
 /usr/include/python3.10/import.h:
 
-rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/aarch64-linux-gnu/bits/endian.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.h:
+
+/usr/include/aarch64-linux-gnu/bits/waitflags.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+/usr/include/python3.10/cellobject.h:
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/python3.10/pyconfig.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.h:
 
 /usr/include/time.h:
 
@@ -475,39 +489,23 @@ rosidl_generator_c/custom_interfaces/msg/detail/map_object__type_support.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-logb.h:
 
-rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h:
+/usr/include/aarch64-linux-gnu/bits/errno.h:
 
-/usr/include/linux/types.h:
+rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.h:
 
-/usr/include/python3.10/cpython/bytearrayobject.h:
-
-/usr/include/python3.10/object.h:
+/usr/include/python3.10/cpython/traceback.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/imu_data__struct.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
-
-rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h:
-
 rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.h:
 
-rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__type_support.h:
-
-/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.h:
 
 rosidl_generator_c/custom_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/math.h:
 
 /usr/include/python3.10/cpython/pyctype.h:
-
-/usr/include/aarch64-linux-gnu/bits/endian.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.h:
-
-/usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/depth_report__type_support.h:
 
@@ -526,8 +524,6 @@ rosidl_generator_c/custom_interfaces/action/detail/navigation_goal__struct.h:
 /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/python3.10/pyconfig.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__functions.h:
 
@@ -552,8 +548,6 @@ rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport
 /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/python3.10/longobject.h:
-
-rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -591,15 +585,19 @@ rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__struct.h:
 
 /usr/include/python3.10/cpython/pythonrun.h:
 
+/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+
 rosidl_generator_c/custom_interfaces/msg/detail/aabb__struct.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/aarch64-linux-gnu/bits/stat.h:
 
 /usr/include/python3.10/fileutils.h:
 
 /usr/include/python3.10/abstract.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/bounding_box__type_support.h:
 
@@ -611,6 +609,12 @@ rosidl_generator_c/custom_interfaces/msg/detail/depth_report__functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
 
+/usr/include/aarch64-linux-gnu/bits/setjmp.h:
+
+/usr/include/aarch64-linux-gnu/asm/posix_types.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.h:
+
 rosidl_generator_c/custom_interfaces/msg/detail/world_map__struct.h:
 
 /usr/include/python3.10/genobject.h:
@@ -621,17 +625,45 @@ rosidl_generator_c/custom_interfaces/msg/detail/map_object__struct.h:
 
 /usr/include/python3.10/boolobject.h:
 
+rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__struct.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__type_support.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/python3.10/cpython/bytearrayobject.h:
+
+/usr/include/python3.10/object.h:
+
+rosidl_generator_c/custom_interfaces/srv/detail/set_depth__struct.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.h:
+
+/usr/include/asm-generic/errno.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/usr/include/python3.10/descrobject.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/motion_goal__type_support.h:
+
+/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+
+/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h:
+
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 
 rosidl_generator_c/custom_interfaces/action/detail/detection_action__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/python3.10/pycapsule.h:
-
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /usr/include/python3.10/Python.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
 
 rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.h:
 
@@ -645,9 +677,15 @@ rosidl_generator_c/custom_interfaces/srv/detail/detection_service__struct.h:
 
 /usr/include/asm-generic/posix_types.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+/usr/include/python3.10/pyframe.h:
 
-/usr/include/python3.10/descrobject.h:
+/usr/include/python3.10/classobject.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__struct.h:
+
+/usr/include/linux/posix_types.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h:
 
 /usr/include/aarch64-linux-gnu/asm/errno.h:
 
@@ -655,45 +693,25 @@ rosidl_generator_c/custom_interfaces/msg/detail/aabb__functions.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-/usr/include/python3.10/cellobject.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
-
-/usr/include/aarch64-linux-gnu/bits/errno.h:
-
-rosidl_generator_c/custom_interfaces/msg/detail/map_object__functions.h:
-
-/usr/include/python3.10/cpython/traceback.h:
-
-rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h:
-
-/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+/usr/include/python3.10/bltinmodule.h:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
-
-/usr/include/python3.10/bltinmodule.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/asm-generic/int-ll64.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/linux/posix_types.h:
+/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h:
+/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/linux/errno.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/python3.10/cpython/picklebufobject.h:
-
-/usr/include/python3.10/classobject.h:
-
-/usr/include/python3.10/pyframe.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -702,6 +720,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__type_support.h
 /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.h:
 
 /usr/include/aarch64-linux-gnu/python3.10/pyconfig.h:
 
@@ -777,9 +797,19 @@ rosidl_generator_c/custom_interfaces/action/detail/detection_action__type_suppor
 
 /usr/include/limits.h:
 
+/usr/include/python3.10/patchlevel.h:
+
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
+
+/usr/include/python3.10/objimpl.h:
+
+/usr/include/python3.10/funcobject.h:
+
 /usr/include/linux/close_range.h:
 
 /usr/include/linux/stat.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__struct.h:
 
 /usr/include/linux/stddef.h:
 
@@ -878,15 +908,3 @@ rosidl_generator_c/custom_interfaces/srv/detail/detection_service__functions.h:
 /usr/include/python3.10/moduleobject.h:
 
 /usr/include/python3.10/namespaceobject.h:
-
-/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
-
-/usr/include/python3.10/objimpl.h:
-
-/usr/include/python3.10/funcobject.h:
-
-/usr/include/python3.10/patchlevel.h:
-
-/usr/include/python3.10/pyerrors.h:
-
-/usr/include/python3.10/pyhash.h:

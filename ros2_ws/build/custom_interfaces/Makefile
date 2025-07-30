@@ -549,6 +549,30 @@ rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.c.s
 .PHONY : rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.c.s
 
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.o: rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.o
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.o
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.o
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.i: rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.i
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.i
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.i
+
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.s: rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.s
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.s
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.c.s
+
 rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.o: rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.c.o
 .PHONY : rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.o
 
@@ -644,6 +668,30 @@ rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.s: rosi
 rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.s
 .PHONY : rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.c.s
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.o: rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.o
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.o
+
+# target to build an object file
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.o
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.o
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.i: rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.i
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.i
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.i
+
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.s: rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.s
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.s
+.PHONY : rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.c.s
 
 rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.o: rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.c.o
 .PHONY : rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.o
@@ -957,6 +1005,30 @@ rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.c.s
 .PHONY : rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.c.s
 
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.o: rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.o
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.o
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.o
+
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.i: rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.i
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.i
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.i
+
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.s: rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.s
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.s
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c.s
+
 rosidl_generator_py/custom_interfaces/msg/_imu_data_s.o: rosidl_generator_py/custom_interfaces/msg/_imu_data_s.c.o
 .PHONY : rosidl_generator_py/custom_interfaces/msg/_imu_data_s.o
 
@@ -1052,6 +1124,30 @@ rosidl_generator_py/custom_interfaces/msg/_motor_command_s.s: rosidl_generator_p
 rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c.s
 .PHONY : rosidl_generator_py/custom_interfaces/msg/_motor_command_s.c.s
+
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.o: rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.o
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.o
+
+# target to build an object file
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.o
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.o
+
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.i: rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.i
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.i
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.i
+
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.s: rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.s
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.s
+.PHONY : rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.c.s
 
 rosidl_generator_py/custom_interfaces/msg/_world_map_s.o: rosidl_generator_py/custom_interfaces/msg/_world_map_s.c.o
 .PHONY : rosidl_generator_py/custom_interfaces/msg/_world_map_s.o
@@ -1293,6 +1389,30 @@ rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp.s
 
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.o: rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.i: rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.s: rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+
 rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.o: rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.o
 
@@ -1388,6 +1508,30 @@ rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.s: rosidl
 rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.cpp.s
+
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.o: rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.i: rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.s: rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
 
 rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.o: rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.o
@@ -1629,6 +1773,30 @@ rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.cpp.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.cpp.s
 
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.o: rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.i: rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.s: rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.s
+
 rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.o: rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.o
 
@@ -1724,6 +1892,30 @@ rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.s: rosi
 rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.cpp.s
+
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.o: rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.i: rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.s: rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.cpp.s
 
 rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.o: rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.o
@@ -1965,6 +2157,30 @@ rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.o
 
@@ -2060,6 +2276,30 @@ rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_s
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.i: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.s: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.o: rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.o
@@ -2301,6 +2541,30 @@ rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detect
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detection_buffer__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detection_buffer__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.o
 
@@ -2396,6 +2660,30 @@ rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.i: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.s: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.o: rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.o
@@ -2637,6 +2925,30 @@ rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer__type_support.c.s
 
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.c.s
+
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.o: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.o
 
@@ -2732,6 +3044,30 @@ rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__t
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.c.s
+
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.o
+
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.i
+
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.c.s
 
 rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.o: rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.o
@@ -2973,6 +3309,30 @@ rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buff
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.o: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.o
 
@@ -3068,6 +3428,30 @@ rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command_
 rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.o: rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.o
@@ -3214,6 +3598,9 @@ help:
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.o"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.i"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/detection_buffer__functions.s"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.o"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.i"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/horizontal_motor_commands__functions.s"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.o"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.i"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/imu_data__functions.s"
@@ -3226,6 +3613,9 @@ help:
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.o"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.i"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/motor_command__functions.s"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.o"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.i"
+	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/vertical_motor_commands__functions.s"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.o"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.i"
 	@echo "... rosidl_generator_c/custom_interfaces/msg/detail/world_map__functions.s"
@@ -3265,6 +3655,9 @@ help:
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.o"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.i"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.s"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.o"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.i"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.s"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_imu_data_s.o"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_imu_data_s.i"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_imu_data_s.s"
@@ -3277,6 +3670,9 @@ help:
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_motor_command_s.o"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_motor_command_s.i"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_motor_command_s.s"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.o"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.i"
+	@echo "... rosidl_generator_py/custom_interfaces/msg/_vertical_motor_commands_s.s"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_world_map_s.o"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_world_map_s.i"
 	@echo "... rosidl_generator_py/custom_interfaces/msg/_world_map_s.s"
@@ -3307,6 +3703,9 @@ help:
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.s"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.s"
@@ -3319,6 +3718,9 @@ help:
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/motor_command__type_support.s"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_c/custom_interfaces/msg/vertical_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.o"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.i"
 	@echo "... rosidl_typesupport_c/custom_interfaces/msg/world_map__type_support.s"
@@ -3349,6 +3751,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/detection_buffer__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/horizontal_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/imu_data__type_support.s"
@@ -3361,6 +3766,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/motor_command__type_support.s"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/vertical_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.o"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.i"
 	@echo "... rosidl_typesupport_cpp/custom_interfaces/msg/world_map__type_support.s"
@@ -3391,6 +3799,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/detection_buffer__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/imu_data__type_support_c.s"
@@ -3403,6 +3814,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/motor_command__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/world_map__type_support_c.s"
@@ -3433,6 +3847,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detection_buffer__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detection_buffer__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/detection_buffer__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/horizontal_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/imu_data__type_support.s"
@@ -3445,6 +3862,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/motor_command__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/vertical_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/world_map__type_support.s"
@@ -3475,6 +3895,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/detection_buffer__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/imu_data__type_support.s"
@@ -3487,6 +3910,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/motor_command__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/world_map__type_support.s"
@@ -3517,6 +3943,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.s"
@@ -3529,6 +3958,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/motor_command__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/vertical_motor_commands__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/world_map__type_support.s"

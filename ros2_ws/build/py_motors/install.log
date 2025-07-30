@@ -3,6 +3,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/MotorCommands.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__init__.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/keyboard_input.py
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/heading_controller.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/depth_controller.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/torpedo_controller.py
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/motor_conductor.cpython-310.pyc
@@ -10,6 +11,7 @@
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/MotorCommands.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/__init__.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/keyboard_input.cpython-310.pyc
+/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/heading_controller.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/depth_controller.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/lib/python3.10/site-packages/py_motors/__pycache__/torpedo_controller.cpython-310.pyc
 /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/install/py_motors/share/ament_index/resource_index/packages/py_motors

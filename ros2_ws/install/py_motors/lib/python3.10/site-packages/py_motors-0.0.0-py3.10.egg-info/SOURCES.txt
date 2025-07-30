@@ -12,6 +12,7 @@ setup.py
 py_motors/MotorCommands.py
 py_motors/__init__.py
 py_motors/depth_controller.py
+py_motors/heading_controller.py
 py_motors/keyboard_input.py
 py_motors/motor_conductor.py
 py_motors/motor_controller.py

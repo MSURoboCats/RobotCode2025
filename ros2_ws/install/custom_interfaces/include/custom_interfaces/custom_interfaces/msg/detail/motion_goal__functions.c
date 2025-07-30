@@ -26,6 +26,7 @@ custom_interfaces__msg__MotionGoal__init(custom_interfaces__msg__MotionGoal * ms
     custom_interfaces__msg__MotionGoal__fini(msg);
     return false;
   }
+  // keep_unmodified_throttles
   return true;
 }
 
@@ -37,6 +38,7 @@ custom_interfaces__msg__MotionGoal__fini(custom_interfaces__msg__MotionGoal * ms
   }
   // goal
   rosidl_runtime_c__String__fini(&msg->goal);
+  // keep_unmodified_throttles
 }
 
 bool
@@ -49,6 +51,10 @@ custom_interfaces__msg__MotionGoal__are_equal(const custom_interfaces__msg__Moti
   if (!rosidl_runtime_c__String__are_equal(
       &(lhs->goal), &(rhs->goal)))
   {
+    return false;
+  }
+  // keep_unmodified_throttles
+  if (lhs->keep_unmodified_throttles != rhs->keep_unmodified_throttles) {
     return false;
   }
   return true;
@@ -68,6 +74,8 @@ custom_interfaces__msg__MotionGoal__copy(
   {
     return false;
   }
+  // keep_unmodified_throttles
+  output->keep_unmodified_throttles = input->keep_unmodified_throttles;
   return true;
 }
 

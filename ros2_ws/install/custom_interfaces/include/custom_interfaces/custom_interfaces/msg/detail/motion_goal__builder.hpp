@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_MotionGoal_keep_unmodified_throttles
+{
+public:
+  explicit Init_MotionGoal_keep_unmodified_throttles(::custom_interfaces::msg::MotionGoal & msg)
+  : msg_(msg)
+  {}
+  ::custom_interfaces::msg::MotionGoal keep_unmodified_throttles(::custom_interfaces::msg::MotionGoal::_keep_unmodified_throttles_type arg)
+  {
+    msg_.keep_unmodified_throttles = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_interfaces::msg::MotionGoal msg_;
+};
+
 class Init_MotionGoal_goal
 {
 public:
   Init_MotionGoal_goal()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::custom_interfaces::msg::MotionGoal goal(::custom_interfaces::msg::MotionGoal::_goal_type arg)
+  Init_MotionGoal_keep_unmodified_throttles goal(::custom_interfaces::msg::MotionGoal::_goal_type arg)
   {
     msg_.goal = std::move(arg);
-    return std::move(msg_);
+    return Init_MotionGoal_keep_unmodified_throttles(msg_);
   }
 
 private:

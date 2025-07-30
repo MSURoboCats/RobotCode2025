@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   {
     out << "goal: ";
     rosidl_generator_traits::value_to_yaml(msg.goal, out);
+    out << ", ";
+  }
+
+  // member: keep_unmodified_throttles
+  {
+    out << "keep_unmodified_throttles: ";
+    rosidl_generator_traits::value_to_yaml(msg.keep_unmodified_throttles, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,6 +51,16 @@ inline void to_block_style_yaml(
     }
     out << "goal: ";
     rosidl_generator_traits::value_to_yaml(msg.goal, out);
+    out << "\n";
+  }
+
+  // member: keep_unmodified_throttles
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "keep_unmodified_throttles: ";
+    rosidl_generator_traits::value_to_yaml(msg.keep_unmodified_throttles, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

@@ -68,6 +68,15 @@ bool custom_interfaces__msg__motion_goal__convert_from_py(PyObject * _pymsg, voi
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
+  {  // keep_unmodified_throttles
+    PyObject * field = PyObject_GetAttrString(_pymsg, "keep_unmodified_throttles");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->keep_unmodified_throttles = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -101,6 +110,17 @@ PyObject * custom_interfaces__msg__motion_goal__convert_to_py(void * raw_ros_mes
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "goal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // keep_unmodified_throttles
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->keep_unmodified_throttles ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "keep_unmodified_throttles", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

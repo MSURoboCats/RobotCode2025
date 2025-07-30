@@ -10,6 +10,8 @@ msg/DepthReport.idl
 msg/DepthReport.msg
 msg/DetectionBuffer.idl
 msg/DetectionBuffer.msg
+msg/HorizontalMotorCommands.idl
+msg/HorizontalMotorCommands.msg
 msg/ImuData.idl
 msg/ImuData.msg
 msg/MapObject.idl
@@ -18,6 +20,8 @@ msg/MotionGoal.idl
 msg/MotionGoal.msg
 msg/MotorCommand.idl
 msg/MotorCommand.msg
+msg/VerticalMotorCommands.idl
+msg/VerticalMotorCommands.msg
 msg/WorldMap.idl
 msg/WorldMap.msg
 srv/DetectionService.idl
