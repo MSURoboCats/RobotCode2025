@@ -67,6 +67,7 @@ class ImuData(metaclass=Metaclass_ImuData):
     __slots__ = [
         '_global_time_seconds',
         '_orientation',
+        '_euler_angles',
         '_angular_velocity',
         '_linear_acceleration',
     ]
@@ -74,6 +75,7 @@ class ImuData(metaclass=Metaclass_ImuData):
     _fields_and_field_types = {
         'global_time_seconds': 'double',
         'orientation': 'geometry_msgs/Quaternion',
+        'euler_angles': 'geometry_msgs/Vector3',
         'angular_velocity': 'geometry_msgs/Vector3',
         'linear_acceleration': 'geometry_msgs/Vector3',
     }
@@ -81,6 +83,7 @@ class ImuData(metaclass=Metaclass_ImuData):
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Quaternion'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
     )
@@ -92,6 +95,8 @@ class ImuData(metaclass=Metaclass_ImuData):
         self.global_time_seconds = kwargs.get('global_time_seconds', float())
         from geometry_msgs.msg import Quaternion
         self.orientation = kwargs.get('orientation', Quaternion())
+        from geometry_msgs.msg import Vector3
+        self.euler_angles = kwargs.get('euler_angles', Vector3())
         from geometry_msgs.msg import Vector3
         self.angular_velocity = kwargs.get('angular_velocity', Vector3())
         from geometry_msgs.msg import Vector3
@@ -129,6 +134,8 @@ class ImuData(metaclass=Metaclass_ImuData):
         if self.global_time_seconds != other.global_time_seconds:
             return False
         if self.orientation != other.orientation:
+            return False
+        if self.euler_angles != other.euler_angles:
             return False
         if self.angular_velocity != other.angular_velocity:
             return False
@@ -169,6 +176,20 @@ class ImuData(metaclass=Metaclass_ImuData):
                 isinstance(value, Quaternion), \
                 "The 'orientation' field must be a sub message of type 'Quaternion'"
         self._orientation = value
+
+    @builtins.property
+    def euler_angles(self):
+        """Message field 'euler_angles'."""
+        return self._euler_angles
+
+    @euler_angles.setter
+    def euler_angles(self, value):
+        if __debug__:
+            from geometry_msgs.msg import Vector3
+            assert \
+                isinstance(value, Vector3), \
+                "The 'euler_angles' field must be a sub message of type 'Vector3'"
+        self._euler_angles = value
 
     @builtins.property
     def angular_velocity(self):

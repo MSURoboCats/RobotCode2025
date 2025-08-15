@@ -13,8 +13,12 @@ module custom_interfaces {
       double global_time_seconds;
 
       @verbatim (language="comment", text=
-        "Gyro orientation as a Quaternion (rad)")
+        "Gyro orientation as a Quaternion")
       geometry_msgs::msg::Quaternion orientation;
+
+      @verbatim (language="comment", text=
+        "Gyro orientation in euler angles (rad)")
+      geometry_msgs::msg::Vector3 euler_angles;
 
       @verbatim (language="comment", text=
         "Angular Velocity (rad/s)")

@@ -66,6 +66,8 @@ max_serialized_size_Vector3(
 
 // functions for geometry_msgs::msg::Vector3 already declared above
 
+// functions for geometry_msgs::msg::Vector3 already declared above
+
 
 namespace custom_interfaces
 {
@@ -87,6 +89,10 @@ cdr_serialize(
   // Member: orientation
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.orientation,
+    cdr);
+  // Member: euler_angles
+  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.euler_angles,
     cdr);
   // Member: angular_velocity
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
@@ -111,6 +117,10 @@ cdr_deserialize(
   // Member: orientation
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.orientation);
+
+  // Member: euler_angles
+  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.euler_angles);
 
   // Member: angular_velocity
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
@@ -147,6 +157,11 @@ get_serialized_size(
   current_alignment +=
     geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.orientation, current_alignment);
+  // Member: euler_angles
+
+  current_alignment +=
+    geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.euler_angles, current_alignment);
   // Member: angular_velocity
 
   current_alignment +=
@@ -201,6 +216,25 @@ max_serialized_size_ImuData(
       bool inner_is_plain;
       size_t inner_size =
         geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Quaternion(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: euler_angles
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Vector3(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;

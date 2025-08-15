@@ -12,6 +12,7 @@ setup.py
 py_objectdetection/__init__.py
 py_objectdetection/depth_image_to_map_o3d.py
 py_objectdetection/detection_publisher.py
+py_objectdetection/image_stream_save.py
 resource/py_objectdetection
 test/test_copyright.py
 test/test_flake8.py

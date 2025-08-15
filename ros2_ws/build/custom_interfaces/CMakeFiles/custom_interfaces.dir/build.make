@@ -77,6 +77,7 @@ CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/s
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/AABB.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/WorldMap.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/MapObject.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/msg/HeadingResult.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/GenerateWorldMap.srv
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/GenerateWorldMap_Request.msg
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/GenerateWorldMap_Response.msg
@@ -86,6 +87,9 @@ CMakeFiles/custom_interfaces: rosidl_cmake/srv/DetectionService_Response.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/SetDepth.srv
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetDepth_Request.msg
 CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetDepth_Response.msg
+CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/srv/SetHeading.srv
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetHeading_Request.msg
+CMakeFiles/custom_interfaces: rosidl_cmake/srv/SetHeading_Response.msg
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/DetectionAction.action
 CMakeFiles/custom_interfaces: /home/robocatsorin/Desktop/RobotCode2025/ros2_ws/src/custom_interfaces/action/NavigationGoal.action
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl

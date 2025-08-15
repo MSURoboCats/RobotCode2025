@@ -29,6 +29,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__struct.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__traits.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/detail/heading_result__builder.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/detail/heading_result__struct.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/detail/heading_result__traits.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/detail/heading_result__type_support.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__builder.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__struct.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__traits.hpp"
@@ -58,6 +62,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__traits.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detail/world_map__type_support.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/detection_buffer.hpp"
+  "rosidl_generator_cpp/custom_interfaces/msg/heading_result.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/horizontal_motor_commands.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/imu_data.hpp"
   "rosidl_generator_cpp/custom_interfaces/msg/map_object.hpp"
@@ -77,9 +82,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__struct.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__traits.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detail/set_depth__type_support.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_heading__builder.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_heading__struct.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_heading__traits.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/detail/set_heading__type_support.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/detection_service.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/generate_world_map.hpp"
   "rosidl_generator_cpp/custom_interfaces/srv/set_depth.hpp"
+  "rosidl_generator_cpp/custom_interfaces/srv/set_heading.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

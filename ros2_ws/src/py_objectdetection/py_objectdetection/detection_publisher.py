@@ -1,6 +1,7 @@
 import rclpy
 import cv2
 import os
+import time
 import cv_bridge
 
 
@@ -46,7 +47,7 @@ def buildmodel(path : str, task : str) -> YOLO:
 
 
 
-
+    
 
 
     
@@ -66,9 +67,9 @@ class DetectionPublisher(Node):
     _lastFrameCapture   : DetectionBuffer
     def __init__(self, **kwargs):
         super().__init__('detection_publisher', **kwargs)
-        self.declare_parameter("model_path", "ultralyticsplus/yolov8s.pt")
+        self.declare_parameter("model_path", "models/training_results_02.pt")
         self.declare_parameter("task", "detect")
-        self.declare_parameter("topic","usb_cam_0/image_raw")
+        self.declare_parameter("topic","camera/camera/color/image_raw")
         self.declare_parameter("filter", "all")
 
         self.declare_parameter("detection_service_name","detection_service")
@@ -95,8 +96,8 @@ class DetectionPublisher(Node):
         self._detection_service = self.create_service(DetectionService,self.get_parameter("detection_service_name").get_parameter_value().string_value,self.get_current_detection_buffer)
 
 
-        cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
-        cv2.resizeWindow("detection_publisher",640,480)
+        #cv2.namedWindow("detection_publisher",cv2.WINDOW_KEEPRATIO)
+        #cv2.resizeWindow("detection_publisher",640,480)
 
     # def __init__(self, name : str = 'detection_publisher', model_path : str ="ultralyticsplus/yolov8s.pt", image_stream_topic : str = "usb_cam_0/image_raw", task : str = "detect", filter : str = "all"):
     #     super().__init__(name)
@@ -138,6 +139,14 @@ class DetectionPublisher(Node):
         return response
 
         
+    def save_image_to_file(self,cv_image, name):
+        cDir = os.getcwd()
+        baseDirectory = cDir[0:cDir.find("ros2_ws")] + "ros2_ws/image_capture"
+        outputFolder = baseDirectory + "/detections/"
+        if not os.path.isdir(outputFolder):
+            os.makedirs(outputFolder,exist_ok=True)
+
+        cv2.imwrite(outputFolder + f"{name}.png",cv_image)
 
 
 
@@ -154,6 +163,8 @@ class DetectionPublisher(Node):
 
         bboxes = []
 
+        hasDetections = False
+
 
         for i in range(len(results)):
             for box in results[i].boxes :
@@ -161,7 +172,7 @@ class DetectionPublisher(Node):
                 if(float(box.conf) < 0.75): 
                     continue
 
-               
+                
                 xywh = box.xywh
                 name = results[i].names[int(box.cls)]
 
@@ -183,7 +194,8 @@ class DetectionPublisher(Node):
                 p2 = (int(xywh[0][0] + xywh[0][2] * 0.5), int(xywh[0][1] + xywh[0][3] * 0.5))
                 cv_image = cv2.rectangle(cv_image,p1,p2,(255,0,0),2)
                 cv_image = cv2.putText(cv_image, f"{bbox.name}, conf: {bbox.conf:.2f}\n wxh: {bbox.width}x{bbox.height}",p1,cv2.FONT_HERSHEY_PLAIN,1,(255,0,0),1)
-                
+                self.save_image_to_file(cv_image,f"detections_{time.time_ns()}")
+
                 # print("########\n")
             # print("------\n")
         
@@ -201,9 +213,12 @@ class DetectionPublisher(Node):
 
         cv_image = cv2.putText(cv_image,"frame #" + str(self._frameNumber),(0,12),cv2.FONT_HERSHEY_PLAIN,1.0, (100,0,150),1)
 
+
+
         self._frameNumber += 1
 
-        cv2.imshow("detection_publisher",cv_image)
+
+        #cv2.imshow("detection_publisher",cv_image)
         cv2.waitKey(1)
             
 

@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_depth_report_s.c"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_detection_buffer.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_detection_buffer_s.c"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_heading_result.py"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_heading_result_s.c"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_horizontal_motor_commands_s.c"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_imu_data.py"
@@ -37,6 +39,8 @@ file(REMOVE_RECURSE
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_generate_world_map_s.c"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_depth.py"
   "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_depth_s.c"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_heading.py"
+  "/home/robocatsorin/Desktop/RobotCode2025/ros2_ws/build/custom_interfaces/rosidl_generator_py/custom_interfaces/srv/_set_heading_s.c"
   "CMakeFiles/custom_interfaces__py"
 )
 

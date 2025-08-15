@@ -7,12 +7,12 @@ from rclpy.node import Node
 
 from py_objectdetection.detection_publisher import DetectionPublisher
 from py_objectdetection.depth_image_to_map_o3d import DepthImageToMapNode
-from custom_interfaces.srv  import SetDepth
-from custom_interfaces.msg import WorldMap, MapObject, AABB, MotionGoal, DetectionBuffer, BoundingBox
+from custom_interfaces.srv  import SetDepth, SetHeading
+from custom_interfaces.msg import WorldMap, MapObject, AABB, MotionGoal, DetectionBuffer, BoundingBox, ImuData, HeadingResult
 from geometry_msgs.msg import Vector3, Quaternion
 import rclpy.parameter
-from sensor_msgs.msg import Imu, Image
-from std_msgs.msg import Header, String
+from sensor_msgs.msg import Image
+from std_msgs.msg import Header, String, Float64
 
 
 def IsNewData(original : Header, compare : Header) -> bool:
@@ -28,6 +28,8 @@ def IsNewData(original : Header, compare : Header) -> bool:
 
 class SingleBuoyTest(Node):
 
+    _PIXELS_PER_DEGREE      : tuple[float, float] = (640.0/90.0, 480.0/65.0)
+
     _BUOY_DEPTH             : float = 0.3
 
     _SUB_WIDTH              : float = 0.60
@@ -40,7 +42,7 @@ class SingleBuoyTest(Node):
 
     _detectionBuffer        : DetectionBuffer
 
-    _currentIMU             : Imu
+    _currentIMU             : ImuData
 
     _currentImage           : Image
 
@@ -50,9 +52,15 @@ class SingleBuoyTest(Node):
 
     _waitingForDepthGoal    : bool
 
+    _waitingForHeading      : bool
+
+    _currentHeadingResult   : HeadingResult
+
     spinMapperNode          : bool
 
-    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str, world_map_topic : str):
+
+
+    def __init__(self, heading_topic : str, detection_topic : str, motion_goal_topic : str, image_topic : str, depth_control_service : str, depth_goal_topic : str, world_map_topic : str, heading_control_service : str, heading_goal_topic):
         super().__init__("buoy_test_node")
         
         self._stage = -1
@@ -62,12 +70,16 @@ class SingleBuoyTest(Node):
         self._sub_detbuff = self.create_subscription(DetectionBuffer,detection_topic,self.DetectionCallback,5)
         #self._depth_controller_client = self.create_client(SetDepth,)
 
-        self._sub_imu = self.create_subscription(Imu,heading_topic,self.HeadingCallback,5)
+        self._sub_imu = self.create_subscription(ImuData,heading_topic,self.HeadingCallback,5)
         self._sub_image = self.create_subscription(Image, image_topic,self.ImageCallback,5)
         self._sub_worldmap = self.create_subscription(WorldMap,world_map_topic,self.WorldMapCallback,1)
         self._sub_depthGoal = self.create_subscription(String,depth_goal_topic,self.DepthGoalCallback,5)
+        self._sub_headingGoal = self.create_subscription(HeadingResult, heading_goal_topic,self.HeadingGoalCallback,5)
+
 
         self._depth_control_client = self.create_client(SetDepth,depth_control_service)
+        self._heading_control_client = self.create_client(SetHeading,heading_control_service)
+
 
 
         self.isFinished = False
@@ -76,9 +88,12 @@ class SingleBuoyTest(Node):
         self._reachedDepthGoal = False
         self._waitingForDepthGoal = False
 
+        self._waitingForHeading = False
+
         self._detectionBuffer = None
         self._currentIMU = None
         self._currentImage = None
+        self._currentHeadingResult = None
         self._worldMapInstance = None
 
 
@@ -105,6 +120,7 @@ class SingleBuoyTest(Node):
                 if (not detected):
                     outmsg = MotionGoal()
                     outmsg.goal = "y_le"
+                    outmsg.keep_unmodified_throttles = True
                     self._motionGoalPublisher.publish(outmsg)
                     self.get_logger().info("buoy not detected, spinning..")
                 else:
@@ -119,80 +135,102 @@ class SingleBuoyTest(Node):
 
                 if detected:
                     centered, distance = self.isBBoxCentered(bbox)
+
+                    
+
                     outmsg = MotionGoal()
-                    if centered: 
+                    if (self._currentHeadingResult is not None) and self._currentHeadingResult.average_error <= 0.1: 
+                         ## sleep for 2 seconds, and check if centered 
+                        centered, distance = self.isBBoxCentered(bbox)
+                        if not centered and not self._currentHeadingResult.average_error <= 0.1 : return
+
                         self.get_logger().info("buoy is centered, proceeding to stage 2")
                         self._stage = 2
-                        outmsg.goal = "kill"
-                        self._motionGoalPublisher.publish(outmsg)
+                        #outmsg.goal = "kill"
+                        #self._motionGoalPublisher.publish(outmsg)
                         return
                     elif distance is None:
                         self.get_logger().warning("SingleBuoyTest::ControlLoop() (Stage 1): Warning! robot is not aligned with buoy and lacks direction, doing nothing...")
-                    elif distance < 0:
-                        
-                        outmsg.goal = "y_le"
-                        self._motionGoalPublisher.publish(outmsg)
-                    else:
-                        outmsg = MotionGoal()
-                        outmsg.goal = "y_ri"
-                        self._motionGoalPublisher.publish(outmsg)
-                    self.get_logger().info(f"publishing motor goal: {outmsg.goal}")
-            case 2: # move within LIDAR range
-                self.get_logger().info("Attempting to get within LIDAR distance")
+                    else: 
+                            angular_distance = (distance * 1.0 / self._PIXELS_PER_DEGREE[0]) * (math.pi / 180.0)
 
+                            request = SetHeading.Request()
+
+                            desired_euler = [self._currentIMU.euler_angles.x + angular_distance, self._currentIMU.euler_angles.y, self._currentIMU.euler_angles.z]
+
+                            request.heading = desired_euler
+                            request.keep_heading_until_override = False
+
+                            self._heading_control_client.call_async(request)
+
+                            self._waitingForHeading = True
+
+                    
+
+
+
+
+                            
+
+
+                    # elif distance < 0:
+                        
+                    #     outmsg.goal = "y_le"
+                    #     outmsg.keep_unmodified_throttles = True
+                    #     self._motionGoalPublisher.publish(outmsg)
+                    # else:
+                    #     outmsg = MotionGoal()
+                    #     outmsg.goal = "y_ri"
+                    #     outmsg.keep_unmodified_throttles = True
+                    #     self._motionGoalPublisher.publish(outmsg)
+                    self.get_logger().info(f"publishing motor goal: {outmsg.goal}")
+            
+            case 2: # buoy bump
+                self.get_logger().info("Attempting to ram the buoy")
                 motionGoal = MotionGoal()
 
-                motionGoal.goal = "kill"
+                motionGoal.goal = "f_me"
 
-                if bbox.width <= 100 and bbox.height <= 100:
-                    motionGoal.goal = "f_sl"
-                else:
+
+                if(bbox is not None):
+                    centered, distance = self.isBBoxCentered(bbox)
+
+
+                    angular_distance = (distance * 1.0 / self._PIXELS_PER_DEGREE[0]) * (math.pi / 180.0)
+
+                    request = SetHeading.Request()
+                    desired_euler = [self._currentIMU.euler_angles.x + angular_distance, self._currentIMU.euler_angles.y, self._currentIMU.euler_angles.z]
+                    request.heading = desired_euler
+                    request.keep_heading_until_override = False
+                    self._heading_control_client.call_async(request)
+                    self._waitingForHeading = True
+
+                if (bbox is not None) and (bbox.width >= 400 and bbox.height >= 400):
+                    motionGoal.goal = "kill"
+                    self._motionGoalPublisher.publish(motionGoal)
                     self._stage = 3
-                    self.get_logger().info("Sub is within lidar range, proceeding to stage 3")
-                
+
+                    return
+                motionGoal.keep_unmodified_throttles = True
                 self._motionGoalPublisher.publish(motionGoal)
 
+            case 3: # backup and spin
+                motionGoal = MotionGoal()
 
-            case 3: # do something with lidar map (eg display)
-                if(self._worldMapInstance is None):
-                    self.get_logger().info("Generating Lidar Map") 
-                    self.spinMapperNode = True
-                    return
-                
-                buoyIsMapObject, buoyObj = self.IsBuoyMapObject()
+                cTime = time.time()
 
-                if(not buoyIsMapObject):
-                    self.get_logger().error("SingleBuoyTest::ControlLoop() : (Stage 3) Lidar has failed to detect buoy, exiting")
-                    self.isFinished = True
-                    return
+                while(time.time() < cTime + 2):
+                    motionGoal.goal = "r_me"
+                    self._motionGoalPublisher.publish(motionGoal)
 
-                else: 
-                    self.get_logger().info("Buoy has been detected using lidar, proceeding to stage 4")
-                    self._stage = 4
-                    return
+                cTime = time.time()
+                while(time.time() < cTime + 2):
+                    motionGoal.goal = "y_le"
+                    self._motionGoalPublisher.publish(motionGoal)
+                    self._lastTimeStamp = time.time()
 
-
-                ### TODO: Implimente Heading Control
-
-                # Calculate x-y distance to the front of the buoy, we have to subtract half extents from the z value as the z value represents the distance along the camera normal
-                # Since the camera is the origin of the coordinate system, we can just use the x and y components of the AABB center as the x and y distance
-
-                # center = buoyObj.aabb.center
-
-                # dX = center.x
-                # dY = center.y
-
-                # dZ = center.z - (buoyObj.aabb.extents.z * 0.5)
-
-                # ## Calculate the trajectory for the sub such that the sub is 1 sub width center distance left or right of the buoy, by default the units are in meters
-
-                # pt_goal = (dX + self._SUB_WIDTH, dY,dZ)
-
-
-                # d_theta = math.atan2(pt_goal[0],pt_goal[2])
-
-
-
+                self.isFinished = True
+                return
 
 
 
@@ -200,8 +238,71 @@ class SingleBuoyTest(Node):
 
 
                 
+            # case 2: # move within LIDAR range
+            #     self.get_logger().info("Attempting to get within LIDAR distance")
 
-                pass
+            #     motionGoal = MotionGoal()
+
+            #     motionGoal.goal = "kill"
+
+            #     if bbox.width <= 100 and bbox.height <= 100:
+            #         motionGoal.goal = "f_sl"
+            #     else:
+            #         self._stage = 3
+            #         self.get_logger().info("Sub is within lidar range, proceeding to stage 3")
+            #     motionGoal.keep_unmodified_throttles = True
+            #     self._motionGoalPublisher.publish(motionGoal)
+
+
+            # case 3: # do something with lidar map (eg display)
+            #     if(self._worldMapInstance is None):
+            #         self.get_logger().info("Generating Lidar Map") 
+            #         self.spinMapperNode = True
+            #         return
+                
+            #     buoyIsMapObject, buoyObj = self.IsBuoyMapObject()
+
+            #     if(not buoyIsMapObject):
+            #         self.get_logger().error("SingleBuoyTest::ControlLoop() : (Stage 3) Lidar has failed to detect buoy, exiting")
+            #         self.isFinished = True
+            #         return
+
+            #     else: 
+            #         self.get_logger().info("Buoy has been detected using lidar, proceeding to stage 4")
+            #         self._stage = 4
+            #         return
+
+
+            #     ### TODO: Implimente Heading Control
+
+            #     # Calculate x-y distance to the front of the buoy, we have to subtract half extents from the z value as the z value represents the distance along the camera normal
+            #     # Since the camera is the origin of the coordinate system, we can just use the x and y components of the AABB center as the x and y distance
+
+            #     # center = buoyObj.aabb.center
+
+            #     # dX = center.x
+            #     # dY = center.y
+
+            #     # dZ = center.z - (buoyObj.aabb.extents.z * 0.5)
+
+            #     # ## Calculate the trajectory for the sub such that the sub is 1 sub width center distance left or right of the buoy, by default the units are in meters
+
+            #     # pt_goal = (dX + self._SUB_WIDTH, dY,dZ)
+
+
+            #     # d_theta = math.atan2(pt_goal[0],pt_goal[2])
+
+
+
+
+
+
+
+
+
+                
+
+            #     pass
             case 4: # Spin for a bit
                 self.get_logger().info("Spinning Robot")
                 outmsg = MotionGoal()
@@ -264,7 +365,9 @@ class SingleBuoyTest(Node):
 
     def HeadingCallback(self, msg):
         self._currentIMU = msg 
-        
+
+    def HeadingGoalCallback(self,msg):
+        self._currentHeadingResult = msg
 
     def DetectionCallback(self, msg):
         self._detectionBuffer = msg
@@ -272,6 +375,8 @@ class SingleBuoyTest(Node):
     def ImageCallback(self, msg):
         self._currentImage = msg
     
+
+
     def DepthGoalCallback(self, msg):
         if(self._reachedDepthGoal == True): return
 
@@ -280,6 +385,8 @@ class SingleBuoyTest(Node):
 
         self._reachedDepthGoal = True
         pass 
+
+
 
     def WorldMapCallback(self, msg): 
         ### Can optimize a few processes by checking if the published map is new data, if it is then set a flag to let other processes know,
@@ -295,13 +402,16 @@ def main(args = None):
     mapperNode = DepthImageToMapNode()
 
     buoyTestNode = SingleBuoyTest(
-        heading_topic="camera/camera/imu",
+        heading_topic="heading_pid_tuning/imu",
         detection_topic="DetectionBuffer",
         motion_goal_topic="pid_tuning/MotionGoal", 
         image_topic="camera/camera/color/image_raw", 
         depth_control_service="pid_tuning/set_depth",
         depth_goal_topic="pid_tuning/depth_status",
-        world_map_topic="WorldMap"
+        world_map_topic="WorldMap",
+        heading_control_service="heading_pid_tuning/set_heading",
+        heading_goal_topic="heading_pid_tuning/heading_goal_status"
+
     )
 
     while not buoyTestNode.isFinished:

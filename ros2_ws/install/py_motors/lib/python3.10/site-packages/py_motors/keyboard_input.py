@@ -6,7 +6,7 @@ from custom_interfaces.msg import MotorCommand
 from sshkeyboard import listen_keyboard
 
 
-throttle = 0.1
+throttle = 0.2
 
 class KeyboardMotorController(Node):
     _currentMsg = MotorCommand()
@@ -22,12 +22,12 @@ class KeyboardMotorController(Node):
         match key:
             ### VERTICAL
             case "q":        ## UP MEDIUM
-                throttles[1] = -throttle
-                throttles[4] = throttle
+                throttles[1] = -throttle * 1.5
+                throttles[4] = throttle * 1.5
             
             case "e":        ## DOWN MEDIUM
-                throttles[1] = throttle
-                throttles[4] = -throttle
+                throttles[1] = throttle * 1.5
+                throttles[4] = -throttle * 1.5
             
             case "w":        ## FORWARD MEDIUM
                 throttles[0] = throttle

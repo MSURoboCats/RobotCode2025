@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/depth_report__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/heading_result__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/heading_result__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__type_support.cpp.o"
@@ -31,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/generate_world_map__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_depth__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_depth__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_heading__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_heading__type_support.cpp.o.d"
   "libcustom_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libcustom_interfaces__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/action/detail/detection_action__rosidl_typesupport_introspection_cpp.hpp"
@@ -45,6 +49,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/depth_report__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/detection_buffer__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/heading_result__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/heading_result__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/horizontal_motor_commands__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp"
@@ -65,6 +71,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/generate_world_map__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_depth__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_depth__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_heading__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/set_heading__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

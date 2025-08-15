@@ -14,6 +14,7 @@
 // Include directives for member types
 // Member `orientation`
 #include "geometry_msgs/msg/detail/quaternion__functions.h"
+// Member `euler_angles`
 // Member `angular_velocity`
 // Member `linear_acceleration`
 #include "geometry_msgs/msg/detail/vector3__functions.h"
@@ -27,6 +28,11 @@ custom_interfaces__msg__ImuData__init(custom_interfaces__msg__ImuData * msg)
   // global_time_seconds
   // orientation
   if (!geometry_msgs__msg__Quaternion__init(&msg->orientation)) {
+    custom_interfaces__msg__ImuData__fini(msg);
+    return false;
+  }
+  // euler_angles
+  if (!geometry_msgs__msg__Vector3__init(&msg->euler_angles)) {
     custom_interfaces__msg__ImuData__fini(msg);
     return false;
   }
@@ -52,6 +58,8 @@ custom_interfaces__msg__ImuData__fini(custom_interfaces__msg__ImuData * msg)
   // global_time_seconds
   // orientation
   geometry_msgs__msg__Quaternion__fini(&msg->orientation);
+  // euler_angles
+  geometry_msgs__msg__Vector3__fini(&msg->euler_angles);
   // angular_velocity
   geometry_msgs__msg__Vector3__fini(&msg->angular_velocity);
   // linear_acceleration
@@ -71,6 +79,12 @@ custom_interfaces__msg__ImuData__are_equal(const custom_interfaces__msg__ImuData
   // orientation
   if (!geometry_msgs__msg__Quaternion__are_equal(
       &(lhs->orientation), &(rhs->orientation)))
+  {
+    return false;
+  }
+  // euler_angles
+  if (!geometry_msgs__msg__Vector3__are_equal(
+      &(lhs->euler_angles), &(rhs->euler_angles)))
   {
     return false;
   }
@@ -102,6 +116,12 @@ custom_interfaces__msg__ImuData__copy(
   // orientation
   if (!geometry_msgs__msg__Quaternion__copy(
       &(input->orientation), &(output->orientation)))
+  {
+    return false;
+  }
+  // euler_angles
+  if (!geometry_msgs__msg__Vector3__copy(
+      &(input->euler_angles), &(output->euler_angles)))
   {
     return false;
   }

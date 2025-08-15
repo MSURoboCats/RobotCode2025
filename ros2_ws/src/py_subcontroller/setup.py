@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'navigator = py_subcontroller.Navigator:main'
+            'navigator = py_subcontroller.Navigator:main',
+            'coin_flip = py_subcontroller.coin_flip_task:main'
         ],
     },
 )

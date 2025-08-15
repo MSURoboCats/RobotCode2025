@@ -37,7 +37,7 @@ void ImuData_fini_function(void * message_memory)
   typed_message->~ImuData();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ImuData_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ImuData_message_member_array[5] = {
   {
     "global_time_seconds",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -64,6 +64,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ImuData_messa
     0,  // array size
     false,  // is upper bound
     offsetof(custom_interfaces::msg::ImuData, orientation),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "euler_angles",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Vector3>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces::msg::ImuData, euler_angles),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -111,7 +128,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ImuData_messa
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ImuData_message_members = {
   "custom_interfaces::msg",  // message namespace
   "ImuData",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(custom_interfaces::msg::ImuData),
   ImuData_message_member_array,  // message members
   ImuData_init_function,  // function to initialize message memory (memory has to be allocated)

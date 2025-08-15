@@ -42,7 +42,7 @@ To have the imu data be published from one topic, set the parameter unite_imu_me
 
 from this a new topic is created camera/imu
 
-all these parameters combined would look something like "ros2 run realsense2_camera realsense2_camera_node --ros-args -p align_depth.enable:=True unite_imu_method:=[1 or 2]
+all these parameters combined would look something like "ros2 run realsense2_camera realsense2_camera_node --ros-args -p align_depth.enable:=True -p unite_imu_method:=[1 or 2]
 
 ### TODO
 1. Find out how to make depth_image gathering asynchronous from the service stuff, or find a way to ensure that depth_image data is gathered before calling the service stuff
@@ -104,8 +104,11 @@ https://gamzeyilan1.medium.com/pid-controller-for-absolute-beginners-4a49c58c809
 - Impliment noise filtering into depth sensor (if needed )
 	
 ## 6 HEADING PID
+
 ### SUMMARY:
 - Create a heading PID controller that takes in the current gyro angle, calculates the error, and turns that into motor powers
+	- Create service to set the heading, look at depth PID for more details
+
 
 
 

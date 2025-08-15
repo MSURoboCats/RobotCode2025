@@ -28,6 +28,10 @@ ROSIDL_GENERATOR_C_IMPORT
 bool geometry_msgs__msg__vector3__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * geometry_msgs__msg__vector3__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__vector3__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__vector3__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_interfaces__msg__imu_data__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -77,6 +81,17 @@ bool custom_interfaces__msg__imu_data__convert_from_py(PyObject * _pymsg, void *
       return false;
     }
     if (!geometry_msgs__msg__quaternion__convert_from_py(field, &ros_message->orientation)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // euler_angles
+    PyObject * field = PyObject_GetAttrString(_pymsg, "euler_angles");
+    if (!field) {
+      return false;
+    }
+    if (!geometry_msgs__msg__vector3__convert_from_py(field, &ros_message->euler_angles)) {
       Py_DECREF(field);
       return false;
     }
@@ -145,6 +160,20 @@ PyObject * custom_interfaces__msg__imu_data__convert_to_py(void * raw_ros_messag
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "orientation", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // euler_angles
+    PyObject * field = NULL;
+    field = geometry_msgs__msg__vector3__convert_to_py(&ros_message->euler_angles);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "euler_angles", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

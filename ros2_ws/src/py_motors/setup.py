@@ -23,7 +23,8 @@ setup(
             'motor_conductor = py_motors.motor_conductor:main',
             'motor_controller = py_motors.motor_controller:main',
             'keyboard_controller = py_motors.keyboard_input:main',
-            'depth_controller = py_motors.depth_controller:main'
+            'depth_controller = py_motors.depth_controller:main',
+            'heading_controller = py_motors.heading_controller:main'
         ],
     },
 )

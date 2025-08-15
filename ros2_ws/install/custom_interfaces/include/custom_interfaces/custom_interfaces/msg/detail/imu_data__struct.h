@@ -20,6 +20,7 @@ extern "C"
 // Include directives for member types
 // Member 'orientation'
 #include "geometry_msgs/msg/detail/quaternion__struct.h"
+// Member 'euler_angles'
 // Member 'angular_velocity'
 // Member 'linear_acceleration'
 #include "geometry_msgs/msg/detail/vector3__struct.h"
@@ -31,8 +32,10 @@ extern "C"
 typedef struct custom_interfaces__msg__ImuData
 {
   double global_time_seconds;
-  /// Gyro orientation as a Quaternion (rad)
+  /// Gyro orientation as a Quaternion
   geometry_msgs__msg__Quaternion orientation;
+  /// Gyro orientation in euler angles (rad)
+  geometry_msgs__msg__Vector3 euler_angles;
   /// Angular Velocity (rad/s)
   geometry_msgs__msg__Vector3 angular_velocity;
   /// Linear Acceleration (m/s^2)

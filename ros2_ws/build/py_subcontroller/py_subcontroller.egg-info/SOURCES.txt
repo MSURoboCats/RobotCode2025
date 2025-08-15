@@ -11,6 +11,7 @@ setup.py
 ../../build/py_subcontroller/py_subcontroller.egg-info/zip-safe
 py_subcontroller/Navigator.py
 py_subcontroller/__init__.py
+py_subcontroller/coin_flip_task.py
 resource/py_subcontroller
 test/test_copyright.py
 test/test_flake8.py

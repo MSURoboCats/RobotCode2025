@@ -11,14 +11,17 @@ class MotorConductor(Node):
     V_THROTTLES = [1, 4]
     H_THROTTLES = [0, 2, 3, 5]
 
-    def __init__(self):
-        super().__init__('motor_conductor')
+    def __init__(self, **kwargs):
+        super().__init__('motor_conductor', **kwargs)
         self._commandSubscription = self.create_subscription(MotionGoal,"MotionGoal",self.command_callback, 5)
         self._altitudeSubscription = self.create_subscription(Float64,"altitude_adjustment",self.altitude_adjustment_callback,5)
+        self._headingSubscription = self.create_subscription(Float64, "heading_adjustment", self.heading_adjustment_callback,5)
+
         self._all_motor_publisher = self.create_publisher(MotorCommand, "MotorCommand", 5)
         self._vertical_motor_publisher = self.create_publisher(VerticalMotorCommands, "VerticalMotorCMDs",5)
         self._horizontal_motor_publisher = self.create_publisher(HorizontalMotorCommands, "HorizontalMotorCMDs",5)
         
+    
     def altitude_adjustment_callback(self, msg):
 
         power = msg.data
@@ -38,7 +41,23 @@ class MotorConductor(Node):
         self._vertical_motor_publisher.publish(out_msg)
  
 
-    
+    def heading_adjustment_callback(self, msg):
+        power = msg.data 
+
+        if(power > 1.0) : power = 1.0 
+        elif(power < -1.0) : power = -1.0
+
+        motor_numbers = [0,2,3,5]
+
+        throttles = [power, -power, power, -power]
+
+        out_msg = HorizontalMotorCommands()
+
+        out_msg.motor_numbers = motor_numbers
+        out_msg.throttles = throttles
+
+        self._horizontal_motor_publisher.publish(out_msg)
+
     ### Callback for receiving "verbal" commands and turning them into motor powers
     def command_callback(self, msg):
         in_msg = msg.goal
@@ -163,6 +182,7 @@ class MotorConductor(Node):
             
             out_msg.motor_numbers = self.V_THROTTLES
             out_msg.throttles = out_throttles
+            self._vertical_motor_publisher.publish(out_msg)
         elif motionDirection == 1:
             out_msg = HorizontalMotorCommands()
 
@@ -172,14 +192,15 @@ class MotorConductor(Node):
                 out_throttles.append(throttles[motorNumber])
             
             out_msg.motor_numbers = self.H_THROTTLES
-            out_msg.throttles = out_throttles            
+            out_msg.throttles = out_throttles         
+            self._horizontal_motor_publisher.publish(out_msg)   
 
 
 
 
         self.get_logger().info(f"Received motor goal \"{in_msg}\" with direction {motionDirection}")
         
-        if out_msg is MotorCommand:
+        if isinstance(out_msg,MotorCommand):
             self.get_logger().info("Publishing motor command: 0: %lf, 1: %lf, 2: %lf, 3: %lf, 4: %lf, 5: %lf," % (  out_msg.throttles[0],
                                                                                                                     out_msg.throttles[1],
                                                                                                                     out_msg.throttles[2],
@@ -190,7 +211,7 @@ class MotorConductor(Node):
             motor_cmd_str : str = "Publishing motor command: "
 
             for i in range(len(out_msg.motor_numbers)): 
-                motor_cmd_str += f"{out_msg.motor_numbers[i]}: {out_msg.throttles[i]}"
+                motor_cmd_str += f" {out_msg.motor_numbers[i]}: {out_msg.throttles[i]}"
 
             self.get_logger().info(motor_cmd_str)
 

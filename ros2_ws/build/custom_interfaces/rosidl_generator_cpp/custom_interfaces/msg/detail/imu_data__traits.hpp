@@ -17,6 +17,7 @@
 // Include directives for member types
 // Member 'orientation'
 #include "geometry_msgs/msg/detail/quaternion__traits.hpp"
+// Member 'euler_angles'
 // Member 'angular_velocity'
 // Member 'linear_acceleration'
 #include "geometry_msgs/msg/detail/vector3__traits.hpp"
@@ -43,6 +44,13 @@ inline void to_flow_style_yaml(
   {
     out << "orientation: ";
     to_flow_style_yaml(msg.orientation, out);
+    out << ", ";
+  }
+
+  // member: euler_angles
+  {
+    out << "euler_angles: ";
+    to_flow_style_yaml(msg.euler_angles, out);
     out << ", ";
   }
 
@@ -82,6 +90,15 @@ inline void to_block_style_yaml(
     }
     out << "orientation:\n";
     to_block_style_yaml(msg.orientation, out, indentation + 2);
+  }
+
+  // member: euler_angles
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "euler_angles:\n";
+    to_block_style_yaml(msg.euler_angles, out, indentation + 2);
   }
 
   // member: angular_velocity

@@ -18,6 +18,7 @@
 // Include directives for member types
 // Member 'orientation'
 #include "geometry_msgs/msg/detail/quaternion__struct.hpp"
+// Member 'euler_angles'
 // Member 'angular_velocity'
 // Member 'linear_acceleration'
 #include "geometry_msgs/msg/detail/vector3__struct.hpp"
@@ -42,6 +43,7 @@ struct ImuData_
 
   explicit ImuData_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : orientation(_init),
+    euler_angles(_init),
     angular_velocity(_init),
     linear_acceleration(_init)
   {
@@ -54,6 +56,7 @@ struct ImuData_
 
   explicit ImuData_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : orientation(_alloc, _init),
+    euler_angles(_alloc, _init),
     angular_velocity(_alloc, _init),
     linear_acceleration(_alloc, _init)
   {
@@ -71,6 +74,9 @@ struct ImuData_
   using _orientation_type =
     geometry_msgs::msg::Quaternion_<ContainerAllocator>;
   _orientation_type orientation;
+  using _euler_angles_type =
+    geometry_msgs::msg::Vector3_<ContainerAllocator>;
+  _euler_angles_type euler_angles;
   using _angular_velocity_type =
     geometry_msgs::msg::Vector3_<ContainerAllocator>;
   _angular_velocity_type angular_velocity;
@@ -89,6 +95,12 @@ struct ImuData_
     const geometry_msgs::msg::Quaternion_<ContainerAllocator> & _arg)
   {
     this->orientation = _arg;
+    return *this;
+  }
+  Type & set__euler_angles(
+    const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
+  {
+    this->euler_angles = _arg;
     return *this;
   }
   Type & set__angular_velocity(
@@ -150,6 +162,9 @@ struct ImuData_
       return false;
     }
     if (this->orientation != other.orientation) {
+      return false;
+    }
+    if (this->euler_angles != other.euler_angles) {
       return false;
     }
     if (this->angular_velocity != other.angular_velocity) {

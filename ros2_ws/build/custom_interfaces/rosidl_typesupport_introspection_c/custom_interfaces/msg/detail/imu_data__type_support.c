@@ -17,9 +17,11 @@
 #include "geometry_msgs/msg/quaternion.h"
 // Member `orientation`
 #include "geometry_msgs/msg/detail/quaternion__rosidl_typesupport_introspection_c.h"
+// Member `euler_angles`
 // Member `angular_velocity`
 // Member `linear_acceleration`
 #include "geometry_msgs/msg/vector3.h"
+// Member `euler_angles`
 // Member `angular_velocity`
 // Member `linear_acceleration`
 #include "geometry_msgs/msg/detail/vector3__rosidl_typesupport_introspection_c.h"
@@ -43,7 +45,7 @@ void custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuDat
   custom_interfaces__msg__ImuData__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array[5] = {
   {
     "global_time_seconds",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -70,6 +72,23 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
     0,  // array size
     false,  // is upper bound
     offsetof(custom_interfaces__msg__ImuData, orientation),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "euler_angles",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interfaces__msg__ImuData, euler_angles),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -117,7 +136,7 @@ static rosidl_typesupport_introspection_c__MessageMember custom_interfaces__msg_
 static const rosidl_typesupport_introspection_c__MessageMembers custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_members = {
   "custom_interfaces__msg",  // message namespace
   "ImuData",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(custom_interfaces__msg__ImuData),
   custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array,  // message members
   custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -140,6 +159,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
   custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array[2].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
   custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array[3].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
+  custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_member_array[4].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
   if (!custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_type_support_handle.typesupport_identifier) {
     custom_interfaces__msg__ImuData__rosidl_typesupport_introspection_c__ImuData_message_type_support_handle.typesupport_identifier =

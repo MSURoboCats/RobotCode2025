@@ -12,6 +12,7 @@ custom_interfaces/msg/_aabb.py
 custom_interfaces/msg/_bounding_box.py
 custom_interfaces/msg/_depth_report.py
 custom_interfaces/msg/_detection_buffer.py
+custom_interfaces/msg/_heading_result.py
 custom_interfaces/msg/_horizontal_motor_commands.py
 custom_interfaces/msg/_imu_data.py
 custom_interfaces/msg/_map_object.py
@@ -23,3 +24,4 @@ custom_interfaces/srv/__init__.py
 custom_interfaces/srv/_detection_service.py
 custom_interfaces/srv/_generate_world_map.py
 custom_interfaces/srv/_set_depth.py
+custom_interfaces/srv/_set_heading.py

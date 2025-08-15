@@ -44,7 +44,7 @@ class DepthController(Node):
 
     sum_of_errors   : float = 0.0
 
-    last_depth      : float = 0.0
+    last_error      : float = 0.0
 
     hasTargetDepth  : bool
 
@@ -84,6 +84,11 @@ class DepthController(Node):
             self.get_parameter("motor_control_topic").get_parameter_value().string_value,
             5    
         )
+        init_motor_command = Float64() 
+
+        init_motor_command.data = 0.0
+
+        self.motor_publisher.publish(init_motor_command)
 
 
 
@@ -98,7 +103,8 @@ class DepthController(Node):
         if(self.hasTargetDepth):
 
             error = self.desired_depth - current_depth
-
+            # this might cause the sub to oscillate around the target depth.
+            # test what happens when you dont kill the motors
             if(abs(error)  <  self.DEPTH_TOLERANCE):
                 outmsg = String()
                 outmsg.data = f"Depth Goal {self.desired_depth:.3f} reached! ({current_depth:.3f})"
@@ -131,7 +137,12 @@ class DepthController(Node):
 
 
             self.get_logger().info(f"PID Stats:\n kp,ki,kd = {self.KP}, {self.KI}, {self.KD}\nCurrent: {current_depth}\nTarget: {self.desired_depth}\nControl (Clamped): {control}\nControl (Real Value): {control_actual}")
-        
+        else:
+            init_motor_command = Float64() 
+
+            init_motor_command.data = 0.0
+
+            self.motor_publisher.publish(init_motor_command)            
 
     
 
@@ -158,9 +169,9 @@ class DepthController(Node):
 
         iTerm = self.KI * self.sum_of_errors * self.SAMPLE_RATE
 
-        dTerm = self.KD * ((error - self.last_depth) / self.SAMPLE_RATE)
+        dTerm = self.KD * ((error - self.last_error) / self.SAMPLE_RATE)
 
-        self.last_depth = error
+        self.last_error = error
 
         return pTerm + iTerm + dTerm
     

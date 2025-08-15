@@ -1,0 +1,2 @@
+string text
+float64 average_error

@@ -35,7 +35,7 @@ extern "C"
 #endif
 
 #include "geometry_msgs/msg/detail/quaternion__functions.h"  // orientation
-#include "geometry_msgs/msg/detail/vector3__functions.h"  // angular_velocity, linear_acceleration
+#include "geometry_msgs/msg/detail/vector3__functions.h"  // angular_velocity, euler_angles, linear_acceleration
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_custom_interfaces
@@ -93,6 +93,20 @@ static bool _ImuData__cdr_serialize(
       )()->data);
     if (!callbacks->cdr_serialize(
         &ros_message->orientation, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: euler_angles
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->euler_angles, cdr))
     {
       return false;
     }
@@ -157,6 +171,20 @@ static bool _ImuData__cdr_deserialize(
     }
   }
 
+  // Field name: euler_angles
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->euler_angles))
+    {
+      return false;
+    }
+  }
+
   // Field name: angular_velocity
   {
     const message_type_support_callbacks_t * callbacks =
@@ -212,6 +240,10 @@ size_t get_serialized_size_custom_interfaces__msg__ImuData(
 
   current_alignment += get_serialized_size_geometry_msgs__msg__Quaternion(
     &(ros_message->orientation), current_alignment);
+  // field.name euler_angles
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Vector3(
+    &(ros_message->euler_angles), current_alignment);
   // field.name angular_velocity
 
   current_alignment += get_serialized_size_geometry_msgs__msg__Vector3(
@@ -269,6 +301,25 @@ size_t max_serialized_size_custom_interfaces__msg__ImuData(
       size_t inner_size;
       inner_size =
         max_serialized_size_geometry_msgs__msg__Quaternion(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: euler_angles
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Vector3(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;

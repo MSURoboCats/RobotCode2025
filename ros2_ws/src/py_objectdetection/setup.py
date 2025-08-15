@@ -22,7 +22,7 @@ setup(
         'console_scripts': [
             'detector = py_objectdetection.detection_publisher:main',
             'mapper = py_objectdetection.depth_image_to_map_o3d:main',
-            'tester = py_objectdetection.DItM_tester:main'
+            'image_saver = py_objectdetection.image_stream_save:main'            
         ],
     },
 )

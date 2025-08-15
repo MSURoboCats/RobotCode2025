@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/depth_report__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/heading_result__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/heading_result__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp.o"
@@ -31,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/generate_world_map__type_support.cpp.o.d"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/set_depth__type_support.cpp.o"
   "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/set_depth__type_support.cpp.o.d"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/set_heading__type_support.cpp.o"
+  "CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/set_heading__type_support.cpp.o.d"
   "libcustom_interfaces__rosidl_typesupport_c.pdb"
   "libcustom_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/custom_interfaces/action/detection_action__type_support.cpp"
@@ -39,6 +43,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_c/custom_interfaces/msg/bounding_box__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/msg/depth_report__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/msg/detection_buffer__type_support.cpp"
+  "rosidl_typesupport_c/custom_interfaces/msg/heading_result__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/msg/horizontal_motor_commands__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/msg/imu_data__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/msg/map_object__type_support.cpp"
@@ -49,6 +54,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_c/custom_interfaces/srv/detection_service__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/srv/generate_world_map__type_support.cpp"
   "rosidl_typesupport_c/custom_interfaces/srv/set_depth__type_support.cpp"
+  "rosidl_typesupport_c/custom_interfaces/srv/set_heading__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

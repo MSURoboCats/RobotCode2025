@@ -59,8 +59,8 @@ class MotorController(Node):
     _motorMap : dict
 
 
-    def __init__(self):
-        super().__init__('motor_controller')
+    def __init__(self, **kwargs):
+        super().__init__('motor_controller', **kwargs)
 
         configPath = os.getcwd()
 
@@ -85,7 +85,7 @@ class MotorController(Node):
     def _match_all_motorcmds(self, throttles, motorNumbers = None):
         if motorNumbers is None  : motorNumber = 0
         
-        for i in range(throttles):
+        for i in range(len(throttles)):
             if motorNumbers is None : motorNumber = i
             else : motorNumber = motorNumbers[i]
 
@@ -96,7 +96,7 @@ class MotorController(Node):
     def listener_callback(self, msg):
         outstr :  str = "I heard command "
         motorNumbers = None
-        if(msg is MotorCommand):
+        if(isinstance(msg,MotorCommand)):
             outstr = 'I heard  command %lf, %lf, %lf, %lf, %lf, %lf' % (msg.throttles[0],
                                                                         msg.throttles[1],
                                                                         msg.throttles[2],
@@ -108,7 +108,7 @@ class MotorController(Node):
             motorNumbers = msg.motor_numbers
             throttles = msg.throttles
             for i in range(len(motorNumbers)):
-                outstr += f"{motorNumbers[i]} : {throttles[i]}"
+                outstr += f" {motorNumbers[i]} : {throttles[i]}"
 
         self.get_logger().info(outstr)
 

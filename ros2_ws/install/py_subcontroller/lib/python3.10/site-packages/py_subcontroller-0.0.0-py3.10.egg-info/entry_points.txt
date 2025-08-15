@@ -1,3 +1,4 @@
 [console_scripts]
+coin_flip = py_subcontroller.coin_flip_task:main
 navigator = py_subcontroller.Navigator:main
 

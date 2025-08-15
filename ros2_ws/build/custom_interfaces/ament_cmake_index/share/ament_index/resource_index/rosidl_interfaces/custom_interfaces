@@ -10,6 +10,8 @@ msg/DepthReport.idl
 msg/DepthReport.msg
 msg/DetectionBuffer.idl
 msg/DetectionBuffer.msg
+msg/HeadingResult.idl
+msg/HeadingResult.msg
 msg/HorizontalMotorCommands.idl
 msg/HorizontalMotorCommands.msg
 msg/ImuData.idl
@@ -36,3 +38,7 @@ srv/SetDepth.idl
 srv/SetDepth.srv
 srv/SetDepth_Request.msg
 srv/SetDepth_Response.msg
+srv/SetHeading.idl
+srv/SetHeading.srv
+srv/SetHeading_Request.msg
+srv/SetHeading_Response.msg

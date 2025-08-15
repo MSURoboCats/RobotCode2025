@@ -53,16 +53,32 @@ private:
   ::custom_interfaces::msg::ImuData msg_;
 };
 
+class Init_ImuData_euler_angles
+{
+public:
+  explicit Init_ImuData_euler_angles(::custom_interfaces::msg::ImuData & msg)
+  : msg_(msg)
+  {}
+  Init_ImuData_angular_velocity euler_angles(::custom_interfaces::msg::ImuData::_euler_angles_type arg)
+  {
+    msg_.euler_angles = std::move(arg);
+    return Init_ImuData_angular_velocity(msg_);
+  }
+
+private:
+  ::custom_interfaces::msg::ImuData msg_;
+};
+
 class Init_ImuData_orientation
 {
 public:
   explicit Init_ImuData_orientation(::custom_interfaces::msg::ImuData & msg)
   : msg_(msg)
   {}
-  Init_ImuData_angular_velocity orientation(::custom_interfaces::msg::ImuData::_orientation_type arg)
+  Init_ImuData_euler_angles orientation(::custom_interfaces::msg::ImuData::_orientation_type arg)
   {
     msg_.orientation = std::move(arg);
-    return Init_ImuData_angular_velocity(msg_);
+    return Init_ImuData_euler_angles(msg_);
   }
 
 private:

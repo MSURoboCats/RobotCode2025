@@ -25,9 +25,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/AABB.msg"
 	"msg/WorldMap.msg"
 	"msg/MapObject.msg"
+	"msg/HeadingResult.msg"
 	"srv/GenerateWorldMap.srv"
 	"srv/DetectionService.srv"
 	"srv/SetDepth.srv"
+	"srv/SetHeading.srv"
 	"action/DetectionAction.action"
 	"action/NavigationGoal.action"
 	
